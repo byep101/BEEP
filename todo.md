@@ -1,62 +1,72 @@
-# BEEP 项目任务清单 (To-Do List)
-## 课题：生合成遺伝子クラスタにおける共進化解析に基づくヘム酵素の機能決定残基の推定
+﻿# BEEP To-Do
 
----
+最終更新日: 2026-07-06
 
-## 🟢 阶段一：数据准备与预处理 (Data Foundation)
-- [ ] **BGC 种子序列提取**
-    - [ ] 在 MIBiG 数据库中检索目标ヘム酵素相关的 BGC 编号。
-    - [ ] 从 NCBI (GenBank) 下载对应的完全基因组序列。
-    - [ ] 提取目标ヘム酵素（P450, ジオキシゲナーゼ等）的原始氨基酸序列。
-- [ ] **同源序列扩增 (Homolog Expansion)**
-    - [ ] 使用 Jackhmmer 或 HHblits 在 UniRef90 数据库中进行多轮迭代搜索。
-    - [ ] 设置合理的 E-value 阈值，筛选具有代表性的同源序列（目标 1,000+ 条）。
-- [ ] **多序列比对 (MSA) 构建**
-    - [ ] 使用 MAFFT 或 Clustal Omega 生成 MSA 文件。
-    - [ ] **质量检查**：去除序列覆盖度低于 70% 的碎片序列。
+## Phase 0: リポジトリ整理
 
----
+- [x] 文字化けしていた root `README.md` を、読めるプロジェクト概要に置き換える。
+- [x] 文字化けしていた root `todo.md` を、現在の進捗に合わせたタスクリストに置き換える。
+- [x] root の主要 Markdown を日本語で統一する。
+- [ ] `concept.md` を今後どの粒度で維持するか決める。短い研究概要にするか、詳細な研究計画書にするかを選ぶ。
+- [ ] TamI/TxtC を横断比較する summary table が必要になった時点で、root に `metadata/` または `docs/` を追加する。
 
-## 🔵 阶段二：并行核心分析 (Core Analysis)
-- [ ] **共进化分析 (Co-evolution Analysis)**
-    - [ ] 配置并运行 EVcouplings 流程（使用 PLMC 统计模型）。
-    - [ ] 提取 DI (Direct Information) 或耦合强度前 50 的残基对。
-    - [ ] 生成共进化接触矩阵图（Contact Map）。
-- [ ] **三维结构预测 (Structural Modeling)**
-    - [ ] 运行 AlphaFold2 或调用 ColabFold 进行单体结构预测。
-    - [ ] **评估指标**：检查 pLDDT 分数，确保活性中心附近的建模置信度 > 85。
-    - [ ] 提取 PDB 格式模型文件。
+## Phase 1: Benchmark データセット基盤
 
----
+- [x] `tami_project` を標準化データセット構造で作成する。
+- [x] TamI の raw data を収集する: MIBiG、NCBI FASTA、UniProt FASTA、PDB/mmCIF。
+- [x] TamI の metadata CSV、data collection log、literature note、validation checklist を作成する。
+- [x] `txtc_project` を `tami_project` と同じ基本構造で作成する。
+- [x] TxtC の raw data を収集する: MIBiG、NCBI FASTA、UniProt FASTA、PDB/mmCIF。
+- [x] TxtC の metadata CSV、data collection log、literature note、validation checklist を作成する。
+- [x] TxtC の AAW49320.1 と Q8VS75 の配列差分を記録する。
+- [ ] TamI と TxtC の主要項目を比較する root-level benchmark summary table を作成する。
+- [ ] RosC/RosD、MpaD/MpaE/MpaDE を追加する前に、最低限必要な metadata fields を確定する。
 
-## 🟡 阶段三：集成解析与验证 (Integration & Validation)
-- [ ] **结构-进化映射 (Mapping)**
-    - [ ] 编写 PyMOL 脚本，将共进化强度分数映射至 AlphaFold 模型的 B-factor 列。
-    - [ ] 可视化高分残基在空间上的分布（是否聚集在基质口袋周边）。
-- [ ] **FDR (功能决定残基) 推定**
-    - [ ] 结合 BGC 的基质信息，识别在特定支系中保守但在全局不保守的“开关残基”。
-    - [ ] 定义功能差异化的分子基础假设。
-- [ ] **计算设计验证 (ProteinMPNN)**
-    - [ ] 使用 ProteinMPNN 对推定残基进行“反向设计”模拟。
-    - [ ] 验证在固定 FDR 残基的情况下，序列生成的收敛性。
+## Phase 2: データセット検証
 
----
+- [x] TamI: NCBI と UniProt の配列一致を確認する。
+- [x] TamI: Leu101、Leu244、Leu295 が 6XA2/6XA3 構造中で確認できることを検証する。
+- [x] TxtC: MIBiG BGC0000444.5 の parse result と source status を確認する。
+- [x] TxtC: AAW49320.1 と Q8VS75 の長さ、および mismatch positions を確認する。
+- [x] TxtC: Ser280 と Thr385 が 6F0B/6F0C 構造中で確認できることを検証する。
+- [ ] TxtC の下流解析で使う残基番号体系を決める。候補は Q8VS75/PDB numbering、AAW49320.1 numbering、または二列 mapping。
+- [ ] candidate residue を benchmark residue に昇格できる条件を短く定義する。
 
-## 🔴 阶段四：产出与实验对接 (Output & Handoff)
-- [ ] **自动化报告生成**
-    - [ ] 生成包含 3D 映射图、共进化网络图和残基列表的 PDF 报告。
-- [ ] **突变实验设计**
-    - [ ] 挑选 3-5 个关键突变位点（Point Mutations），拟定 wet-lab 验证方案。
-- [ ] **项目归档**
-    - [ ] 将解析流程（Scripts/Notebooks）上传至内部 Git 仓库。
-    - [ ] 将集成数据集按 FAIR 原则进行本地备份。
+## Phase 3: 次の Benchmark 系
 
----
+- [ ] RosC/RosD の対象 BGC、protein IDs、PDB/AlphaFold availability、文献証拠を確認する。
+- [ ] `rosc_project` の初期構造を作成する。
+- [ ] MpaD、MpaE、MpaDE を一つの系として扱うか、分けて扱うか決める。
+- [ ] `mpa_project` または `mpade_project` の初期構造を作成する。
+- [ ] 新規系ごとに、MIBiG、NCBI、UniProt、PDB の source URLs を先に記録してからファイルを取得する。
+- [ ] 新規系ごとに、metadata CSV、data collection log、literature note、validation checklist を共進化解析より前に作成する。
 
-## 📅 里程碑 (Milestones)
-- [ ] **M1 (第4周)**：完成所有目标 BGC 的 MSA 构建与质量评估。
-- [ ] **M2 (第8周)**：完成首批 10 组ヘム酵素的共进化与结构映射分析。
-- [ ] **M3 (第12周)**：提交 FDR 推定报告及后续生化验证建议。
+## Phase 4: MSA と共進化 MVP
 
----
-*Status: 🚀 In Progress | Priority: High | Owner: BEEP Research Team*
+- [ ] 最初の解析対象を決める。TamI のみで始めるか、TamI と TxtC を並行して進めるかを選ぶ。
+- [ ] homolog search strategy を定義する: database、E-value threshold、identity range、coverage cutoff、maximum sequence count。
+- [ ] full-length MSA と catalytic-domain MSA を作成する。
+- [ ] MSA quality metrics を記録する: sequence count、Neff、gap fraction、coverage、conserved P450 motif alignment。
+- [ ] 最初の軽量 baseline として MIp/APC を実行する。
+- [ ] MSA quality が許容範囲に入った後、DCA または EVcouplings を実行する。
+- [ ] すべての解析コマンドと parameter を、再実行可能な script または notebook に保存する。
+
+## Phase 5: 構造マッピング
+
+- [ ] TamI の共進化スコアを 6XA2 と 6XA3 にマッピングする。
+- [ ] TxtC の共進化スコアを Q8VS75/PDB numbering で 6F0B と 6F0C にマッピングする。
+- [ ] region、PDB availability、ligand/heme proximity、literature support を含む residue annotation table を作成する。
+- [ ] SRS、BC loop、FG loop、substrate channel、heme-proximal residues をどのように score 化するか決める。
+
+## Phase 6: 候補残基ランキング
+
+- [ ] DCA/MIp rank、structure priority、literature support、uncertainty penalty を含む初期 FDetR scoring table を設計する。
+- [ ] TamI の既知残基を用いて、ranking が既知の機能残基または pocket residue を回収できるか確認する。
+- [ ] TxtC を用いて、dynamic/conformational-switching residue を過剰解釈せずに扱えるか確認する。
+- [ ] 最初の candidate-residue report を Markdown 形式で作成する。
+
+## 現在の優先事項
+
+1. TamI と TxtC の cross-dataset summary table を完成させる。
+2. TxtC の下流解析における residue numbering convention を決定する。
+3. 新しい系を追加する前に、TamI の MSA/coevolution MVP を開始する。

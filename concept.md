@@ -1,293 +1,68 @@
-# 課題：生合成遺伝子クラスタにおける共進化解析に基づくヘム酵素の機能決定残基の推定
+﻿# BEEP 研究コンセプト
 
-## 研究コンセプトドキュメント v1.2：BGC 文脈・共進化・構造を統合した P450 機能決定残基推定
+## 概要
 
-**プロジェクト名：** BEEP（BGC-Heme Enzyme Evolution Project）  
-**対象研究題目：** 生合成遺伝子クラスタにおける共進化解析に基づくヘム酵素の機能決定残基の推定  
-**作成日：** 2026年4月  
-**改訂日：** 2026年5月  
-**ステータス：** 研究計画・技術検証段階  
-**初期対象：** BGC に含まれるシトクロム P450 を中心とするヘム酵素  
-**最終アウトプット：** 候補残基リスト、構造マッピング、根拠つき機能予測レポート、再現可能な解析パイプライン
+BEEP (BGC-Heme Enzyme Evolution Project) は、生合成遺伝子クラスター (BGC) に含まれる heme enzyme、特に cytochrome P450 の機能分化を、BGC context、配列共進化、三次元構造、文献証拠を統合して解析する研究プロジェクトである。
 
----
+中心となる問いは次の通りである。
 
-## 0. エグゼクティブサマリー
+> なぜ、ある P450 は特定の BGC の中で特定の基質選択性、反応順序、酸化位置、または遠隔的な構造制御を獲得したのか。
 
-本研究は、生合成遺伝子クラスタ（BGC）に含まれるヘム酵素、特にシトクロム P450 を対象として、**BGC の進化的文脈**と**P450 配列内の残基共進化**を統合し、基質特異性・反応順序・多段階酸化などを決める機能決定残基を推定することを目的とする。
+この問いに対して、単なる配列類似性ではなく、BGC 内での役割、隣接遺伝子との関係、残基間共進化、構造上の位置、既知の実験証拠を組み合わせて答えることを目指す。
 
-従来の配列相同性検索は「この酵素は何に似ているか」を説明するのに強い。一方、本研究が目指すのは、BGC という代謝経路単位の進化史を踏まえて、**「なぜこの P450 がこの BGC に取り込まれ、どの残基ネットワークが機能分化に関与したのか」**を説明することである。
+## 背景
 
-そのために、以下の二層を明確に分けて扱う。
+天然物生合成に関わる P450 は、保存された heme 結合モチーフを持つ一方で、基質選択性や酸化順序を決める領域が多様である。重要な情報は、活性中心近傍だけでなく、substrate recognition sites、BC loop、FG loop、基質チャネル、水分子ネットワーク、さらには fusion enzyme の interface にも現れる可能性がある。
 
-1. **BGC / 遺伝子レベルの共進化**  
-   P450 と周辺遺伝子の共起・共消失、シンテニー保存、遺伝子樹と種樹の対応から、どの P450 がどの BGC 文脈で機能的に固定されたかを推定する。
+従来の配列類似性検索は「どの酵素に似ているか」を示すには有効だが、「どの残基が機能分化を支えたか」を説明するには不十分である。BEEP では、BGC という代謝経路単位の文脈を加え、P450 内部の残基レベル共進化と構造情報を統合する。
 
-2. **P450 / 残基レベルの共進化**  
-   MSA に基づく MIp、DCA / EVcouplings、系統樹ベース置換マッピング、構造マッピングを統合し、活性中心、SRS、BC loop、FG loop、基質チャネル、ゲーティング領域に存在する候補残基を優先順位づける。
+## 作業仮説
 
-短期的には TamI、TxtC、RosC、MpaD/E または MpaDE を benchmark として解析手法を確立し、中期的には thalianol、avenacin、ginkgolide などの比較進化系へ拡張する。
+1. BGC 内に取り込まれた P450 は、周辺遺伝子、基質供給、反応順序による制約を受けている。
+2. 機能分化に関わる残基は、単純な全体保存度ではなく、系統特異的置換や残基間共進化として現れやすい。
+3. 重要残基は heme 近傍だけでなく、基質チャネル、loop、SRS、水分子ネットワーク、動的構造制御領域にも分布しうる。
+4. MIp/DCA/EVcouplings の結果は、構造マッピングと文献証拠を組み合わせることで、実験候補として解釈しやすくなる。
+5. ProteinMPNN などの構造条件付き配列設計は、機能証明ではなく、構造的妥当性を補助的に評価する手段として扱うべきである。
 
----
+## 初期 Benchmark 系
 
-## 1. 研究フィロソフィー
+| System | BGC / Product | P450 | Benchmark value |
+| --- | --- | --- | --- |
+| TamI | tirandamycin BGC / tirandamycin | TamI | 既知の構造、反応機構、文献証拠、候補残基が揃っている第一 benchmark。 |
+| TxtC | thaxtomin BGC / thaxtomin A | TxtC | substrate conformational switching を扱う第二 benchmark。構造配列と BGC 配列の差異も、番号対応の検証例として有用。 |
+| RosC/RosD | rosamicin 関連 BGC | RosC/RosD | 多段階酸化や loop dynamics の検証候補。 |
+| MpaD/MpaE/MpaDE | mycophenolic acid BGC | MpaD/MpaE/MpaDE | P450-hydrolase fusion や domain interface の解析候補。 |
 
-### 1.1 核心的な問い
-
-既存のバイオインフォマティクスツールは、「この配列は何に似ているか」という相同性の問いには答えられる。しかし、本研究で明らかにしたいのは、より機能の本質に近い問いである。
-
-> **なぜ、このヘム酵素は BGC という代謝文脈の中で、特定の基質特異性・反応性・反応順序を獲得したのか。**
-
-酵素の機能を単なるアノテーションラベルとして扱うのではなく、BGC の成立・保存・喪失・再編成と、P450 内部のアミノ酸残基ネットワークの変化を接続し、進化の記録として機能決定因子を読み解く。
-
-### 1.2 本研究のポジショニング
-
-本研究は、個別酵素の構造機能解析と BGC 進化解析の間にあるギャップを埋めることを目指す。
-
-| 観点 | 従来研究で強い点 | 残された課題 | 本研究での扱い |
-|---|---|---|---|
-| BGC 進化 | クラスタの成立、保存、喪失、水平移動、シンテニー解析 | 個別 P450 のどの残基が機能分化したかまでは届きにくい | BGC 文脈から対象 P450 と比較群を定義する |
-| P450 構造機能 | 活性中心、SRS、基質ポケット、反応機構の解析 | BGC の進化史と結びつけた説明が不足しやすい | 残基候補を BGC 内での機能固定と接続する |
-| 共進化解析 | 残基間相関、直接結合、エピスタシス候補の抽出 | 系統バイアス、浅い MSA、間接相関による偽陽性 | MIp、DCA、系統樹ベース法、構造情報を統合する |
-
----
-
-## 2. 背景と研究課題
-
-### 2.1 BGC と P450 の複雑性
-
-生合成遺伝子クラスタ（BGC）は、微生物や植物において二次代謝産物の生合成に関わる遺伝子が近接して存在するゲノム領域である。BGC には酸化、環化、メチル化、アシル化、糖転移など多様な tailoring enzyme が含まれ、その中でもシトクロム P450 は、酸化位置、酸化回数、基質再配向、反応順序の制御に深く関わる。
-
-P450 は保存されたヘム結合モチーフを持つ一方で、基質特異性を決める領域は多様である。特に天然物生合成に関わる P450 では、単に活性中心に近い残基だけでなく、以下の領域が機能分化に関与しうる。
-
-- substrate recognition sites（SRS）
-- BC loop、FG loop などの可動ループ
-- 基質進入チャネルとゲーティング残基
-- ヘム近傍の疎水性・極性残基
-- 中間体の再配向や水分子侵入に関わる残基
-- 融合酵素ではドメイン間 interface 残基
-
-### 2.2 研究上のギャップ
-
-BGC 研究はクラスタの成立や多様化を説明する方向に発展してきた。一方、P450 研究は個別酵素の構造機能や反応機構を詳しく明らかにしてきた。しかし、**BGC 全体の進化**と**P450 の残基レベル機能決定因子**を同時に扱う研究はまだ少ない。
-
-したがって、本研究の中心課題は次のように定義できる。
-
-> **BGC の進化的文脈は、P450 のどの残基ネットワークを保存・改変し、その結果としてどのような基質特異性や反応性が生じたのか。**
-
----
-
-## 3. 研究目的・仮説・到達目標
-
-### 3.1 研究目的
-
-本研究の目的は、BGC に含まれるヘム酵素、特にシトクロム P450 を対象として、共進化解析と構造解析を統合し、酵素機能の分化に寄与する**機能決定残基**を系統的に推定することである。
-
-ここでいう機能決定残基とは、単に保存性が高い残基ではなく、以下のいずれかに該当する残基を指す。
-
-- 基質特異性を変える可能性が高い残基
-- 酸化位置・酸化回数・反応順序に関わる残基
-- 基質や中間体の保持・再配向を制御する残基
-- BGC 内の特定機能とともに保存・変化した残基
-- 既知変異実験、構造、MD、文献情報と整合する残基
-
-> 注：FDR という略称は false discovery rate と混同しやすいため、実装やファイル名では `FDetR`（Functional Determinant Residue）などの表記を併用する。
-
-### 3.2 作業仮説
-
-**仮説 1：BGC 文脈仮説**  
-BGC に取り込まれた P450 は、周辺遺伝子との共起・共消失・シンテニー保存を通じて、経路内の特定反応に合わせた機能的制約を受けている。
-
-**仮説 2：残基ネットワーク仮説**  
-P450 の機能分化は、ヘム結合モチーフそのものよりも、SRS、BC/FG loop、基質チャネル、ゲーティング領域、ドメイン interface などの可変領域に現れやすい。
-
-**仮説 3：統合スコア仮説**  
-MIp や DCA だけで候補残基を決めるよりも、BGC 文脈、系統樹、構造位置、既知機構情報を統合したスコアリングの方が、実験的に妥当な候補残基を高精度に抽出できる。
-
-### 3.3 到達目標
-
-| フェーズ | 到達目標 | 具体的成果物 |
-|---|---|---|
-| 短期 | benchmark 系で解析パイプラインを構築する | 配列セット、MSA、系統樹、DCA/MIp 結果、構造マッピング |
-| 中期 | BGC 文脈を含めた候補残基ランキングを作成する | P450 ごとの top 10–20 候補残基表、根拠レポート |
-| 長期 | 新規 BGC / 未注釈 P450 へ応用する | 機能予測報告書、再利用可能なワークフロー、学会発表用図表 |
-
----
-
-## 4. 対象データセット
-
-### 4.1 選定基準
-
-対象 BGC / P450 は、以下の基準で優先順位づける。
-
-1. BGC の境界と産物が比較的明確である。
-2. P450 の機能、反応順序、または変異体情報が報告されている。
-3. 近縁配列またはオーソログを十分に収集できる。
-4. PDB 構造または高信頼 AlphaFold モデルを利用できる。
-5. BGC 内の周辺遺伝子情報が取得可能で、シンテニー解析ができる。
-6. 将来的に LC-MS などの実験検証へ接続できる。
-
-### 4.2 コア実験 benchmark セット
-
-| 系 | BGC / 配列アンカー | 対象 P450 | benchmark としての価値 | 優先解析 |
-|---|---|---|---|---|
-| Tirandamycin | MIBiG BGC0001052、TamI | TamI | 可溶性 bacterial P450。構造・MD・変異導入情報が比較的充実 | DCA / MIp の既知残基再現性検証 |
-| Thaxtomin | MIBiG BGC0000444、TxtC | TxtC | 遠隔二部位の順次水酸化。基質・中間体の結合モード切替が重要 | 動的残基、再配向残基の検出 |
-| Rosamicin | MIBiG BGC0002086、RosC / RosD | RosC、RosD | 多段階酸化と FG loop 動態の関係を検証しやすい | loop 共進化ネットワーク解析 |
-| Mycophenolic acid | MIBiG BGC0000104、mpaD / mpaE / MpaDE | MpaD/E、MpaDE | 真菌 BGC 進化と P450-hydrolase 融合酵素を扱える | ドメイン interface 残基の評価 |
-
-### 4.3 比較進化セット
-
-| 系 | 対象 P450 | 目的 |
-|---|---|---|
-| Arabidopsis thalianol cluster | CYP708A2、CYP705A5 | 属内比較、purifying selection、クラスター固定化の解析 |
-| Oat avenacin cluster | Sad2 / CYP51H10 | 古い CYP51 ファミリーから specialized metabolism への転用を追跡 |
-| Ginkgo ginkgolide cluster | 5 つの multifunctional CYP | 系統特異的 P450 多重化と機能分化を比較 |
-
-### 4.4 データベースと役割
-
-| データベース / ツール | 役割 | 使用目的 |
-|---|---|---|
-| MIBiG | 実験確認済み BGC の基準点 | BGC ID、産物、遺伝子、文献根拠の取得 |
-| antiSMASH / antiSMASH DB | 新規・近縁 BGC の探索 | BGC 境界、周辺遺伝子、既知クラスタ類似性の確認 |
-| NCBI GenBank / RefSeq | ゲノム・タンパク質配列 | オーソログ、近縁株、周辺遺伝子の取得 |
-| UniProt / UniRef | アノテーション済み配列、冗長性調整 | 相同配列拡張、MSA 構築 |
-| PDB | 実験構造 | 構造マッピング、既知リガンド / ヘム位置の参照 |
-| AlphaFold DB / ColabFold | 予測構造 | PDB がない P450 の構造モデル取得 |
-| MISTIC2 | MI / DCA 可視化 | 共進化ネットワークと構造上可視化 |
-| EVcouplings | DCA / 直接結合推定 | 残基ペアの直接共進化スコア算出 |
-| OrthoFinder / MMseqs2 / BLAST | オーソログ推定 | P450 と周辺遺伝子の比較群構築 |
-| MAFFT / HHfilter | MSA と冗長削減 | 残基レベル解析の前処理 |
-| IQ-TREE / FastTree | 系統樹推定 | 系統バイアス確認、置換マッピング |
-| ProteinMPNN | 構造条件付き配列設計 | 候補残基の構造的妥当性を補助評価 |
-
----
-
-## 5. 解析パイプライン
-
-### 5.1 全体設計
+## 解析パイプライン
 
 ```text
-BGC 選定
-  ↓
-P450 と周辺遺伝子の抽出
-  ↓
-オーソログ収集・MSA・系統樹構築
-  ↓
-BGC / 遺伝子レベル共進化解析
-  ↓
-P450 / 残基レベル共進化解析
-  ↓
-PDB / AlphaFold 構造へのマッピング
-  ↓
-統合スコアリング
-  ↓
-候補残基リスト化
-  ↓
-ProteinMPNN・文献・既知変異情報による補助検証
-  ↓
-機能予測レポート作成
+BGC / P450 benchmark selection
+  -> raw data collection and metadata logging
+  -> sequence-source validation and residue-numbering check
+  -> homolog search and MSA construction
+  -> MIp/APC, DCA, EVcouplings
+  -> structural mapping to PDB or AlphaFold models
+  -> integration with BGC context and literature evidence
+  -> FDetR candidate ranking
+  -> mutation-priority report
 ```
 
-### 5.2 Step 1：対象 BGC の選定
+## FDetR の考え方
 
-まず MIBiG の reviewed / high-confidence 相当のエントリを中心に、既知産物と P450 の対応が明確な BGC を選ぶ。RosC や MPA 系のように、データベース上の品質表示だけでは評価しきれないが機構研究上重要な系は、一次文献の情報で補完する。
+FDetR は Functional Determinant Residue の略称として使う。これは false discovery rate の FDR と混同しないようにするための作業上の表記である。
 
-**成果物**
+FDetR candidate は、以下の要素を統合して優先順位をつける。
 
-- target_bgc_list.tsv
-- target_p450_list.tsv
-- BGC ごとの文献メモ
-- 解析優先度表
+- DCA / EVcouplings rank
+- MIp/APC rank
+- BGC context support
+- structural priority
+- lineage-specific substitution
+- literature support
+- sequence-numbering uncertainty
+- MSA quality uncertainty
 
-### 5.3 Step 2：P450 と周辺遺伝子の収集
-
-P450 単体だけでなく、BGC 内の隣接酵素、転写因子、輸送体、足場酵素なども同時に収集する。BGC 文脈を保持するため、ゲノム上の座標、遺伝子向き、距離、アノテーションを保存する。
-
-**保存すべきメタデータ**
-
-| 項目 | 内容 |
-|---|---|
-| bgc_id | MIBiG / antiSMASH ID |
-| organism | 生物種名 |
-| protein_id | NCBI / UniProt ID |
-| gene_name | tamI、txtC、rosC など |
-| product | 生合成産物 |
-| genomic_position | contig、start、end、strand |
-| neighbor_genes | 上下流遺伝子 |
-| evidence | 実験確認、予測、文献根拠 |
-
-### 5.4 Step 3：MSA と系統樹構築
-
-P450 は膜結合 N 末端や低複雑領域を含むことがあるため、以下の二種類のアラインメントを作成する。
-
-1. **full-length MSA**：全体の系統関係を把握する。
-2. **catalytic-domain MSA**：残基共進化解析の主入力とする。
-
-冗長な近縁配列は 90–95% identity 程度で間引き、ギャップの多い列や明らかな断片配列を除去する。DCA には十分な配列深度が必要なため、系ごとに有効配列数（Neff）を記録する。
-
-**品質確認項目**
-
-- 配列数
-- Neff
-- アラインメント長
-- ギャップ率
-- 保存モチーフの整列状態
-- 異常に長い枝や断片配列の有無
-
-### 5.5 Step 4：BGC / 遺伝子レベル共進化解析
-
-BGC レベルでは、P450 と周辺遺伝子が進化的にどの程度連動しているかを調べる。
-
-**主な解析**
-
-- phylogenetic profiling：遺伝子ファミリーの presence / absence 行列を作成
-- シンテニー保存：P450 と隣接遺伝子の並び、向き、距離を比較
-- 遺伝子樹 / 種樹比較：水平移動、重複、喪失の候補を検出
-- BGC 境界の比較：P450 を含む領域の保存・喪失・再編成を評価
-
-**出力**
-
-- BGC presence / absence matrix
-- P450–neighbor gene co-occurrence score
-- synteny plot
-- gene tree と species tree の比較図
-
-### 5.6 Step 5：P450 / 残基レベル共進化解析
-
-残基レベルでは、MIp と DCA / EVcouplings を並行して実行し、間接相関や系統バイアスを抑える。
-
-| 手法 | 目的 | 本研究での位置づけ |
-|---|---|---|
-| MIp / APC 補正 MI | 広く候補残基ペアを拾う | 第一段スクリーニング |
-| DCA / EVcouplings | 直接共進化ペアを推定する | 主力スコア |
-| 系統樹ベース置換マッピング | 同一枝上の置換連動を確認する | 偽陽性除去 |
-| 保存性解析 | 必須モチーフと可変部位を分ける | 解釈補助 |
-| SRS マッピング | P450 特異性領域と対応させる | 機能解釈 |
-
-**重要方針**
-
-- 不変の触媒モチーフだけに注目しない。
-- SRS、BC loop、FG loop、基質チャネル、ゲーティング残基を優先的に見る。
-- DCA 上位ペアが構造上接触していなくても、allosteric / dynamic network として解釈できるか検討する。
-- 植物・真菌 P450 では膜アンカーを除いた catalytic domain を中心に解析する。
-
-### 5.7 Step 6：構造マッピング
-
-PDB 構造がある場合は実験構造を優先し、ない場合は AlphaFold DB または ColabFold による予測構造を用いる。候補残基は以下の空間的特徴とともに評価する。
-
-- ヘム鉄からの距離
-- 基質または既知リガンドからの距離
-- SRS 上かどうか
-- BC loop / FG loop 上かどうか
-- 基質進入チャネル上かどうか
-- ドメイン interface 上かどうか
-- pLDDT / PAE による構造信頼度
-- 既知変異残基との空間的近接
-
-### 5.8 Step 7：統合スコアリング
-
-各残基に対して、複数の証拠を統合した優先順位をつける。初期実装では、以下のような重みつきスコアを用いる。
+初期スコアの概念式は以下のように置く。
 
 ```text
 FDetR_score =
@@ -300,264 +75,14 @@ FDetR_score =
 - w7 * uncertainty_penalty
 ```
 
-**各項目の例**
+このスコアは最初から絶対的な答えとして扱わず、benchmark 系で検証しながら重みと解釈を調整する。
 
-| スコア | 内容 |
-|---|---|
-| DCA_rank_score | DCA 上位ペアに含まれる頻度、直接結合強度 |
-| MIp_rank_score | MIp 上位ペアに含まれる頻度 |
-| gene_context_score | BGC 内周辺遺伝子との共起・シンテニー保存 |
-| structural_priority_score | SRS、ループ、ヘム近傍、チャネル上の位置 |
-| lineage_specific_substitution_score | クラスタ化 P450 系列に特異的な置換 |
-| literature_support_score | 既知変異、MD、構造機構研究との整合 |
-| uncertainty_penalty | 浅い MSA、低 pLDDT、高ギャップ率、低 Neff など |
+## 直近の研究方針
 
-### 5.9 Step 8：補助検証
+短期的には、TamI と TxtC を用いて、データ整理、配列検証、構造マッピング、候補残基整理の標準手順を固める。次に TamI の MSA/coevolution MVP を実行し、既知残基 Leu101、Leu244、Leu295 がどの程度回収されるかを確認する。
 
-ProteinMPNN は、候補残基の機能を直接証明するものではない。したがって、本研究では**構造的妥当性の補助評価**として位置づける。
+TxtC では、Q8VS75/PDB 番号系と AAW49320.1/BGC 番号系の違いを明示的に扱い、Ser280/Thr385 のような candidate mechanism residues を過剰に benchmark residue として扱わないようにする。
 
-**検証設計**
+中期的には、RosC/RosD と MpaD/MpaE/MpaDE を追加し、loop dynamics、多段階酸化、fusion enzyme interface など、TamI/TxtC だけでは見えにくい機能分化のパターンを比較する。
 
-1. 候補残基を固定した状態で周辺配列を再設計し、天然配列との整合性を確認する。
-2. 候補残基を置換した場合、構造的に不自然な配列要求が増えるかを見る。
-3. 既知の機能変異と同じ方向の不安定化・再設計困難性が出るか確認する。
-4. 可能であれば、MD、docking、または文献中の変異実験結果と照合する。
-
----
-
-## 6. 候補残基レポートの標準形式
-
-各 P450 について、最終的に以下の形式で候補残基を報告する。
-
-| enzyme | residue | region | evidence | expected role | priority | next validation |
-|---|---:|---|---|---|---|---|
-| TamI | L101 | substrate pocket / channel | DCA、既知変異、構造近接 | 基質配向・反応順序制御 | High | L101A / saturation |
-| TamI | L244 | SRS / pocket | DCA、既知変異 | 選択性制御 | High | pairwise mutagenesis |
-| TxtC | S280 | loop / water network | MIp、理論研究、構造 | 中間体再配向・水分子導入 | Medium–High | saturation |
-| RosC | L176 | FG loop | loop 動態、既知変異 | 多段階酸化時の基質保持 | High | loop-focused scan |
-
-実際のレポートでは、各残基について以下を必ず記載する。
-
-- 対応する MSA position
-- 元配列での residue number
-- DCA / MIp rank
-- 構造上の位置
-- ヘム / 基質からの距離
-- BGC 文脈上の根拠
-- 文献上の既知情報
-- 予測される機能影響
-- 推奨される変異実験
-
----
-
-## 7. 技術ロードマップ
-
-### 7.1 MVP：最小実行パイプライン（4–6週間）
-
-**目的**  
-TamI または TxtC を用いて、配列収集から候補残基ランキングまでの最小パイプラインを完成させる。
-
-**実施内容**
-
-- MIBiG / NCBI / UniProt から標的 P450 配列を取得
-- MMseqs2 / BLAST による相同配列収集
-- MAFFT による MSA 作成
-- HHfilter による冗長削減
-- EVcouplings による DCA 実行
-- MIp / APC 補正 MI の実装または既存ツール利用
-- PDB / AF2 構造への候補残基マッピング
-- 既知重要残基が上位候補に入るか確認
-
-**成果物**
-
-- reproducible notebook / script
-- benchmark 結果表
-- 構造マッピング図
-- 初回候補残基リスト
-
-### 7.2 Beta：BGC コンテキスト統合（8–12週間）
-
-**目的**  
-P450 単体の残基解析に、BGC 内周辺遺伝子との共起・シンテニー情報を統合する。
-
-**実施内容**
-
-- BGC 周辺遺伝子の presence / absence 行列作成
-- P450 と隣接遺伝子の共起スコア算出
-- シンテニー保存の可視化
-- 遺伝子レベルスコアを FDetR_score に統合
-- TamI、TxtC、RosC、MpaDE の横断比較
-
-**成果物**
-
-- BGC context matrix
-- synteny plot
-- P450 ごとの統合ランキング
-- benchmark 間の比較表
-
-### 7.3 V1.0：機能予測レポート生成（12–16週間）
-
-**目的**  
-新規 BGC または未注釈 P450 に対して、根拠つき候補残基レポートを出力できる状態にする。
-
-**実施内容**
-
-- 入力 BGC から標的 P450 を自動抽出
-- MSA / DCA / MIp / 構造マッピングを半自動化
-- 候補残基ごとの根拠を Markdown / HTML / PDF 形式で出力
-- ProteinMPNN による補助評価を追加
-- 実験担当者へ渡せる mutation priority list を生成
-
-**成果物**
-
-- pipeline v1.0
-- sample report
-- mutation priority table
-- 学会発表用の図表セット
-
----
-
-## 8. 令和8年度の研究実施計画
-
-研究指導計画に合わせ、2026年度は以下のスケジュールで進める。
-
-| 期間 | 目標 | 実施内容 | 成果物 |
-|---|---|---|---|
-| 4月–5月 | 対象 BGC と解析手法の確定 | 文献整理、benchmark 選定、MIBiG / NCBI / UniProt から対象リスト作成、EVcouplings / AlphaFold / ProteinMPNN の環境確認 | target list、tool check log |
-| 6月–8月 | 配列・MSA・系統樹・構造の整備 | P450 と周辺遺伝子の収集、MSA、冗長削減、系統樹、PDB / AF2 構造取得 | MSA、tree、structure files |
-| 9月–12月 | 遺伝子レベル・残基レベル共進化解析 | phylogenetic profiling、シンテニー比較、MIp、DCA、構造マッピング、初回ランキング | coevolution results、candidate table |
-| 1月–3月 | 統合評価・報告書作成 | ProteinMPNN 補助検証、文献照合、候補残基の優先順位確定、成果整理 | final report、figures、presentation draft |
-
-**分岐方針**
-
-- 配列深度が不足した場合：対象 P450 の比較範囲を広げる、MIp と系統樹ベース解析を優先する。
-- BGC 境界が不明確な場合：MIBiG high-confidence 系または TamI / TxtC などの benchmark 系に戻す。
-- DCA 結果が不安定な場合：MSA 品質を再評価し、冗長削減閾値とドメイン範囲を調整する。
-- 構造信頼度が低い場合：PDB のある系を優先し、AlphaFold 低信頼ループの解釈を控えめにする。
-
----
-
-## 9. 成功指標
-
-### 9.1 技術的成功指標
-
-| 指標 | 目標 |
-|---|---|
-| データ再現性 | 配列取得、MSA、DCA、構造マッピングをスクリプトで再実行できる |
-| MSA 品質 | 保存モチーフが正しく整列し、Neff とギャップ率を記録できる |
-| benchmark 再現性 | TamI、TxtC、RosC などで既知重要残基またはその近傍が top 10–20 に入る |
-| 構造妥当性 | 候補残基が SRS、loop、substrate channel、heme 周辺など解釈可能な領域に濃縮する |
-| 説明可能性 | 各候補残基について、配列・進化・構造・文献の根拠を表形式で提示できる |
-
-### 9.2 研究上の成功指標
-
-- BGC 文脈を入れた場合と入れない場合で、候補残基ランキングがどの程度変わるかを評価できる。
-- クラスタ化 P450 と非クラスタ化 paralog の間で、SRS や loop の置換パターン差を検出できる。
-- 既知の機能変異と整合する候補に加え、新規の実験検証候補を提示できる。
-- 年度末までに、少なくとも 1 つの benchmark 系で図表つきの解析レポートを完成させる。
-
----
-
-## 10. 研究の独自性と貢献
-
-### 10.1 独自性
-
-本研究の独自性は、単に EVcouplings、AlphaFold、ProteinMPNN を組み合わせる点ではない。重要なのは、**BGC という代謝経路単位の進化文脈を、残基レベルの機能推定に接続する設計**である。
-
-特に以下の点が本研究の強みとなる。
-
-1. P450 単体ではなく、BGC 内での共起・共消失・シンテニーを考慮する。
-2. 保存性だけでなく、MIp / DCA による残基ネットワークを評価する。
-3. 活性中心だけでなく、SRS、BC/FG loop、基質チャネル、ゲーティング残基を重視する。
-4. ProteinMPNN を機能証明ではなく、構造的妥当性の補助検証として慎重に使う。
-5. benchmark 系で検証してから、比較進化系・未知 BGC へ展開する。
-
-### 10.2 科学的インパクト
-
-本研究により、以下の貢献が期待される。
-
-- BGC の進化と P450 の機能分化を接続する解析フレームワークの提示
-- 天然物 P450 における基質特異性・反応順序制御残基の予測精度向上
-- 未注釈 BGC に含まれる P450 の機能推定
-- 酵素改変や合成生物学に向けた変異候補の合理的選定
-- 将来的な LC-MS 実験や部位特異的変異導入への候補提示
-
----
-
-## 11. リスクと対策
-
-| リスク | 影響 | 対策 |
-|---|---|---|
-| MSA が浅く DCA が不安定 | 偽陽性が増える | 比較範囲を広げる、MIp と系統樹法を併用、benchmark 系を優先 |
-| 系統バイアスが強い | 共進化と共通祖先由来の相関を混同 | 系統樹ベース置換マッピング、配列冗長削減、clade 別解析 |
-| BGC 境界が不確実 | gene-context score が不安定 | MIBiG、antiSMASH、文献を併用し、confidence flag を付ける |
-| 植物・真菌 P450 の膜領域がノイズ | MSA と構造解釈が悪化 | catalytic domain 中心に解析し、N 末端膜アンカーは別扱い |
-| AlphaFold の loop 予測が不確実 | loop 残基の過解釈 | pLDDT / PAE を記録し、PDB 構造や MD 情報と照合 |
-| ProteinMPNN を過大評価する | 機能証明と誤解される | 「構造的補助評価」と明記し、文献・変異実験との整合を重視 |
-| 実験検証が年度内に難しい | 機能証明が不足 | 計算 benchmark と既知変異再現性を主成果とし、実験候補を明確化 |
-
----
-
-## 12. 直近の実行タスク
-
-### 12.1 最初の 2 週間
-
-- [ ] TamI、TxtC、RosC、MpaD/E の target table を作成する。
-- [ ] MIBiG ID、NCBI protein ID、UniProt ID、PDB ID を整理する。
-- [ ] 各 P450 の既知重要残基を文献から表にまとめる。
-- [ ] EVcouplings 実行環境を確認する。
-- [ ] MSA 作成と冗長削減の標準コマンドを決める。
-
-### 12.2 最初の 1 か月
-
-- [ ] TamI を最初の benchmark として DCA / MIp を実行する。
-- [ ] DCA 上位ペアを PDB 構造にマッピングする。
-- [ ] Leu101、Leu244、Leu295 など既知候補が上位または近傍ネットワークに現れるか確認する。
-- [ ] 成功・失敗条件を記録し、TxtC / RosC へ展開する。
-- [ ] 解析結果を Markdown レポート形式で保存する。
-
----
-
-## 13. 成果物ディレクトリ案
-
-```text
-BEEP/
-├── data/
-│   ├── raw/
-│   ├── mibig/
-│   ├── ncbi/
-│   ├── uniprot/
-│   └── structures/
-├── metadata/
-│   ├── target_bgc_list.tsv
-│   ├── target_p450_list.tsv
-│   └── literature_evidence.tsv
-├── msa/
-│   ├── full_length/
-│   └── catalytic_domain/
-├── trees/
-├── coevolution/
-│   ├── mip/
-│   ├── dca/
-│   └── evcouplings/
-├── structure_mapping/
-├── proteinmpnn/
-├── reports/
-│   ├── benchmark/
-│   └── final/
-└── scripts/
-```
-
----
-
-## 14. まとめ
-
-本研究は、BGC の進化的文脈から「どの P450 を比較すべきか」を定義し、P450 の残基共進化と構造情報から「どの残基を検証すべきか」を推定する、二段階の統合解析である。
-
-短期的には TamI、TxtC、RosC、MpaD/E を用いて解析パイプラインを確立し、既知重要残基を再現できるかを benchmark とする。中期的には thalianol、avenacin、ginkgolide などの比較進化系に拡張し、BGC 化に伴う P450 残基ネットワークの偏りを解析する。
-
-最終的には、未知 BGC に含まれる P450 について、基質特異性や反応順序に関与する候補残基を、根拠つきで提示できる解析基盤を構築する。
-
----
-
-*「BGC の進化を読み解き、P450 の機能決定残基を構造上に描き出す。」*
+最終的には、未知または未注釈 BGC 中の P450 に対して、根拠付きの候補機能残基リストと mutation-priority report を出力できる解析基盤を構築する。
