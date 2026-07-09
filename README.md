@@ -1,23 +1,27 @@
 ﻿# BEEP
 
-BEEP (BGC-Heme Enzyme Evolution Project) は、生合成遺伝子クラスター (BGC) に含まれる heme enzyme、特に細菌由来 cytochrome P450 を対象とした、標準化データ整理および共進化解析プロジェクトである。
+BEEP (BGC-Heme Enzyme Evolution Project) は、生合成遺伝子クラスター (BGC) に含まれる heme enzyme、特に細菌および真菌由来 cytochrome P450 を対象とした、標準化データ整理および共進化解析プロジェクトである。
 
 本プロジェクトの目的は、BGC レベルの代謝経路情報、P450 配列の共進化シグナル、三次元構造情報、文献証拠を統合し、機能決定残基 Functional Determinant Residues (FDetR) を推定するための再利用可能な解析基盤を構築することである。
 
-最終更新日: 2026-07-06
+最終更新日: 2026-07-09
 
 ## 現在の範囲
 
 現段階では、benchmark データセットの標準化を優先する。まず、出典、ファイル、ハッシュ、配列対応、構造対応を追跡できるローカルデータパッケージを作成し、その後に MSA、MIp/DCA/EVcouplings、構造マッピング、候補残基ランキングへ進む。
 
-現在整備済みの benchmark 系は以下の通り。
+現在の core dataset v0.1 統合版に入っている benchmark 系は以下の通り。
 
 | Dataset | BGC / Product | Main P450 | Status | Notes |
 | --- | --- | --- | --- | --- |
 | `tami_project` | tirandamycin BGC / tirandamycin | TamI | v0.1 complete | 第一 benchmark。NCBI と UniProt の配列は一致し、Leu101, Leu244, Leu295 を既知参照残基として記録済み。 |
 | `txtc_project` | thaxtomin BGC / thaxtomin A | TxtC | v0.1 complete | 第二 benchmark。BGC/NCBI 配列と UniProt/PDB 構造配列の由来が異なるため、配列差分表を作成済み。 |
+| `metadata/per_system` | rosamicin BGC / rosamicin | RosC | integrated in master v0.1 | FG-loop と変異体情報を含む loop dynamics benchmark。P107S/L176Q、Leu176 FG loop、PDB 9VGM/9VGN/9VGQ/9VGP/9VGO を記録済み。 |
+| `metadata/per_system` | mycophenolic acid BGC / mycophenolic acid | MpaDE / MpaD | integrated in master v0.1 | 真菌由来 P450-hydrolase fusion benchmark。MpaDE fusion と MpaD/MpaE domain cross-reference を一行で記録する。 |
 
-今後の候補系として、RosC/RosD、MpaD/MpaE/MpaDE、さらに thalianol、avenacin、ginkgolide などの比較進化系を想定している。
+今後の候補系として、さらに thalianol、avenacin、ginkgolide などの比較進化系を想定している。
+
+統合版 master CSV は `metadata/core_bgc_p450_dataset_v0.1_master.csv` に置く。体系別の normalized row は `metadata/per_system/` に保存し、既存の `tami_project/` と `txtc_project/` の原始データパッケージは移動せず保持する。
 
 ## リポジトリ構成
 
@@ -26,6 +30,11 @@ BEEP/
   README.md
   todo.md
   concept.md
+  metadata/
+    core_bgc_p450_dataset_v0.1_master.csv
+    data_collection_log_master_v0.1.csv
+    validation_checklist_master_v0.1.md
+    per_system/
   tami_project/
     data/
       raw/
@@ -82,6 +91,32 @@ TamI は、residue-level coevolution が既知の機能部位や基質ポケッ�
 - Candidate mechanism residues: Q8VS75/PDB 番号系における Ser280, Thr385
 
 重要な注意点: AAW49320.1 と Q8VS75 はどちらも 395 aa だが、40 箇所でアミノ酸が異なる。Ser280 は Q8VS75/PDB 番号系では Ser だが、AAW49320.1 の同じ位置では Ala である。残基レベルで解釈する前に、`txtc_project/metadata/TxtC_AAW49320.1_vs_Q8VS75_sequence_mismatches_v0.1.csv` を参照する。
+
+### RosC
+
+RosC は `metadata/core_bgc_p450_dataset_v0.1_master.csv` の v0.1 統合行として整備済み。
+
+- MIBiG: BGC0002086.3
+- Product: rosamicin
+- Main literature source: Micromonospora rosaria IFO 13697
+- Protein IDs: RosC BAM35932.1; RosD BAM35933.1
+- Structures: PDB 9VGM, 9VGN, 9VGQ, 9VGP, 9VGO
+- Loop/mutant evidence: Pro107, Leu176 in FG loop, P107S/L176Q mutant
+
+注意点: MIBiG 側の taxonomy は Micromonospora carbonacea で、RosC/RosD の機能・変異体文献は Micromonospora rosaria に基づく。BGC source と RosC sequence source を同一視する前に、この source split を確認する。
+
+### MpaDE_MpaD
+
+MpaDE_MpaD は `metadata/core_bgc_p450_dataset_v0.1_master.csv` の v0.1 統合行として整備済み。
+
+- MIBiG: BGC0000104.4
+- Product: mycophenolic acid
+- Organism: Penicillium brevicompactum IBT 23078
+- Fusion reference: BK008023.1 / DAA35181.1
+- Legacy domain references: mpaD ADY00131.1; mpaE ADY00132.1 from HQ731031.1
+- Domain architecture: N-terminal MpaD/CYP631B5 P450 + C-terminal MpaE Zn-dependent hydrolase/lactone synthase
+
+注意点: MpaDE_MpaD は一つの比較体系として記録する。後続解析では full-fusion numbering と P450-domain-only numbering を分けて扱う必要がある。
 
 ## 解析方針
 

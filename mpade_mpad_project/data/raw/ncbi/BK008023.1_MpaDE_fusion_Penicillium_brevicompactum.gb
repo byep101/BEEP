@@ -1,0 +1,117 @@
+LOCUS       BK008023                2910 bp    DNA     linear   PLN 29-JUN-2012
+DEFINITION  TPA_exp: Penicillium brevicompactum MpaD/MpaE fusion protein
+            (mpaD/mpaE fusion) gene, complete cds.
+ACCESSION   BK008023
+VERSION     BK008023.1
+KEYWORDS    Third Party Data; TPA; TPA:experimental.
+SOURCE      Penicillium brevicompactum
+  ORGANISM  Penicillium brevicompactum
+            Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina;
+            Eurotiomycetes; Eurotiomycetidae; Eurotiales; Aspergillaceae;
+            Penicillium.
+REFERENCE   1  (bases 1 to 2910)
+  AUTHORS   Hansen,B.G., Mnich,E., Nielsen,K.F., Nielsen,J.B., Nielsen,M.T.,
+            Mortensen,U.H., Larsen,T.O. and Patil,K.R.
+  TITLE     Involvement of a natural fusion of a cytochrome p450 and a
+            hydrolase in mycophenolic Acid biosynthesis
+  JOURNAL   Appl. Environ. Microbiol. 78 (14), 4908-4913 (2012)
+   PUBMED   22544261
+REFERENCE   2  (bases 1 to 2910)
+  AUTHORS   Hansen,B.G., Mnich,E., Patil,K.R., Mortensen,U.H., Nielsen,K.F.,
+            Nielsen,J.B. and Larsen,T.O.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-APR-2011) Department of Systems Biology, Center for
+            Microbial Biotechnology, Technical University of Denmark, Soltoft
+            Plads, Kgs Lyngby 2800, Denmark
+COMMENT     THIRD PARTY DATABASE: This TPA record uses data from
+            DDBJ/EMBL/GenBank entry HQ731031.1.
+FEATURES             Location/Qualifiers
+     source          1..2910
+                     /organism="Penicillium brevicompactum"
+                     /mol_type="genomic DNA"
+                     /strain="IBT23078"
+                     /culture_collection="IBT:23078"
+                     /db_xref="taxon:5074"
+     gene            <1..>2910
+                     /gene="mpaD/mpaE fusion"
+     mRNA            join(<1..288,362..730,789..1003,1067..1517,1572..1661,
+                     1712..1902,1953..>2910)
+                     /gene="mpaD/mpaE fusion"
+                     /product="MpaD/MpaE fusion protein"
+     CDS             join(1..288,362..730,789..1003,1067..1517,1572..1661,
+                     1712..1902,1953..2910)
+                     /gene="mpaD/mpaE fusion"
+                     /note="a natural fusion of a cytochrome P450 (CYP631B5)
+                     and a hydrolase (calalyses the ring-closure in the lactone
+                     formation of the lactone in mycophenolic acid
+                     biosynthesis); MpaDE"
+                     /codon_start=1
+                     /product="MpaD/MpaE fusion protein"
+                     /protein_id="DAA35181.1"
+                     /translation="MKSLSLTWITAVAVVLYLVQRYVRSYWRLKDIPGPVLAKLTDLQ
+                     RVWWVKTGRAHEFHRDMHAMYGPIVRFGPNMVSVSDPRVIPTIYPSRPGFPKGDFYRT
+                     QKPYTRNKGAMPAVFNTQDEDLHKQLRSPIASLYSMTNVVRLEPLVDETLTVLSKQLD
+                     ERFVGTNDKPFDLGDWLQYFAFDSMGTLTFSRRYGFLEQGRDMHGILQEIWNFMTRVA
+                     VMGQIPWFDEIWNKNSFITLFKRPTGFGVLKVVDNFISQRVSSRENDEKADEKDMLSQ
+                     FLDIQASNPHSIMPWAPRAWTFSNVMAGSDSTANVMRTMMYNLLVDRDTLRSLRAELL
+                     EAENSNGLSRSLPSWDGVRSLPYLDACVLEALRLHPPFCLPFERVVPEGGITVCETYL
+                     PAGTVVGISPYLANRDKQTFGDDADKWRPSRWLDLSREDRVKLENSILTFGAGRRTCL
+                     GKNIAILEIKKLFPMLLLNYEIEIVNPENYQTTNAWFFRQWGLQAVIRKLPAPERDDT
+                     IEQKASIPPALNIPPSSSTVEVRIIDSGTLLDLRPDLFWTPDLPGLLKVTAPTYCFLI
+                     SNGTRHVLFDLAVRQDWENLPPSIVAMIKSQTVIQEPRNISDVLDSDESSLGVRSKDI
+                     EAIIWSHAHFDHIGDPSTFPPSTELVVGPGIRDTHWPGFPTNPDAINLNTDIQGRNVR
+                     EISFEKTQKGATKIGSFDAVDYFGDGSFYLLDAAGHSVGHIGALARVTTSPVSFVFMG
+                     GDSCHHAGVLRPTKYLPCPLDSGDTSLPCKSDSVFTLSPALPTDYTAALRTVENIKEL
+                     DACEDVFVVLAHDATLKGKVDFYPSKINDWKAKEYGKKTKWLFYKDIENSIEGQK"
+ORIGIN      
+        1 atgaagtctt tgtcgctaac atggatcacg gctgttgccg tggtactata tctcgtccaa
+       61 cgctatgtca ggtcatattg gcggctcaag gatataccag gtccggtgtt ggcaaaactc
+      121 acagatctcc aacgtgtgtg gtgggtgaag actggccgag cacatgagtt tcatcgtgac
+      181 atgcatgcca tgtatggccc tatcgttcga tttggaccaa acatggtttc agtctctgat
+      241 cctcgtgtta taccgaccat ctacccaagt agacctggat tcccgaaggt ctgttattgc
+      301 gattcattgc tccccaaatc tccatacgac cggatcccat ttgctaactc tcaggttcca
+      361 gggtgacttc tatcgcacgc aaaagccata cacccggaat aagggcgcaa tgcccgcggt
+      421 cttcaacact caagacgagg atctgcacaa gcaacttcga agcccgatcg cctcgttata
+      481 ttccatgaca aatgtggtga gactcgagcc actggttgat gaaactctta cagtactatc
+      541 gaaacaactc gatgagcgct tcgtgggtac gaatgataag ccgttcgatc tcggggactg
+      601 gttgcaatat ttcgccttcg actccatggg cacattgact ttctcgcgaa gatacggctt
+      661 tttggaacaa ggtcgtgata tgcatggaat cttgcaggag atttggaatt ttatgacccg
+      721 agtcgctgtg gtgggtacac gcgattaaaa taagatgaaa ttcaaatact aatacaaatt
+      781 caacgcagat gggacaaatt ccgtggtttg acgagatctg gaataagaat tcgttcatta
+      841 ctttattcaa gcgacctacc ggctttggtg tgttgaaggt tgtcgataac tttatatctc
+      901 aacgagtgtc cagtcgtgag aatgacgaga aagcagacga aaaagacatg ctttctcagt
+      961 tcttggacat ccaagcatca aatcctcact ctatcatgcc ttggtaagcc accttttgat
+     1021 cgaatgatca cttttctcgg acctaattcg gctgacgcat ttccagggca ccaagagcgt
+     1081 ggaccttctc taatgtcatg gctggctcag actctactgc gaatgtcatg cgtaccatga
+     1141 tgtacaacct tctcgttgac cgagatacgt tgagaagtct gcgagccgag cttttggaag
+     1201 cggagaactc aaatggcctg tctcgatcct tgccttcttg ggatggagtg agaagcttgc
+     1261 cttaccttga tgcatgcgtt ctcgaagctt tgcgtctgca tcccccattc tgtctgccct
+     1321 ttgaacgagt cgtccctgaa ggcggtatca cagtctgtga gacatatctt ccagcgggaa
+     1381 cagttgttgg aattagtccc tacttggcca accgcgataa acaaaccttt ggtgatgacg
+     1441 cagataaatg gcgacccagc agatggttag atttgagccg cgaagatcgg gtcaaacttg
+     1501 agaacagtat tctcacggtg agtcgaagct tcgattatgt caaagatgcc cttgctgacg
+     1561 tgtaaaccca gtttggtgcg ggacgtcgga cttgtttagg aaagaacatc gccattcttg
+     1621 agatcaagaa gctctttccg atgttgcttt tgaattatga agtaagttat cctcccgttt
+     1681 agataaaatc tcttgtgcta ataccaccca gatcgaaatt gtgaaccctg aaaactacca
+     1741 gaccacaaat gcctggtttt tcagacagtg gggcttgcaa gcggtgattc gcaaactgcc
+     1801 agcaccagaa cgagatgata ccattgagca gaaagcttcc atcccgcctg ctttgaatat
+     1861 tcctccttca tcttcgacag tcgaagtgcg aattattgac tcgtaagatt tcttgattgc
+     1921 ctgggttcta cgttatactg atttgagcac aggggaacac tacttgatct gagacctgat
+     1981 ctattctgga cacctgatct cccagggctt ctgaaggtca cagctccaac ttactgcttt
+     2041 ttgatctcaa atggcactcg acacgttctg tttgacctag ctgtccgaca agactgggaa
+     2101 aacctcccac catccattgt ggccatgatc aaatcgcaaa cggtcatcca agagccacgc
+     2161 aacatctcag atgttcttga ctcagacgaa tcctctctgg gggtccggag caaagatatt
+     2221 gaagcgatta tctggtcaca tgcccatttt gaccacattg gtgacccatc aactttcccc
+     2281 ccgtctaccg agctagtcgt cggacctggc atccgagaca cccactggcc cggcttccca
+     2341 actaacccag acgcaatcaa cctcaacacc gacatccaag gtcgcaatgt gcgagaaatt
+     2401 tccttcgaaa agacacagaa gggagccacc aagatcggtt ctttcgacgc cgtggactat
+     2461 tttggcgatg ggtcctttta tcttctagat gctgcgggtc attccgtggg ccatatcggt
+     2521 gctcttgctc gcgtgactac ctctccagtc tcgtttgtct tcatgggtgg tgactcatgt
+     2581 caccatgccg gagtgcttcg acccacaaaa tatcttcctt gtccacttga ctctggtgac
+     2641 acttcacttc catgcaaatc cgactctgtt ttcacgttat cgcctgcact gccaactgat
+     2701 tacactgctg ctttgaggac agtcgagaat attaaggagc tcgatgcctg tgaggatgta
+     2761 ttcgtcgtcc ttgctcatga tgctaccttg aaagggaagg tcgactttta cccttcgaaa
+     2821 atcaatgatt ggaaggcgaa agagtacggc aagaagacaa agtggctttt ttacaaggat
+     2881 attgagaatt ccatagaagg acagaagtaa
+//
+
