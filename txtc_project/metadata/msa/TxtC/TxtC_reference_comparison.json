@@ -1,0 +1,14 @@
+{
+  "fasta_a": ".\\txtc_project\\data\\raw\\ncbi\\AAW49320.1_TxtC_Streptomyces_turgidiscabies_Car8.fasta",
+  "id_a": "AAW49320.1",
+  "length_a": 395,
+  "fasta_b": ".\\txtc_project\\data\\raw\\uniprot\\Q8VS75_TxtC_UniProt.fasta",
+  "id_b": "tr|Q8VS75|Q8VS75_9ACTN",
+  "length_b": 395,
+  "alignment_length": 395,
+  "identical_positions": 355,
+  "identity_fraction": 0.898734,
+  "difference_count": 40,
+  "indel_columns": 0,
+  "coordinate_systems_share_positions": true
+}

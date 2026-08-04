@@ -1,0 +1,8 @@
+TamI/TxtC pilot phylogeny environment (2026-08-04)
+Windows 11 native workflow; WSL distribution unavailable
+Python 3.14.5 (standard-library QC scripts)
+NCBI BLAST+ blastp 2.17.0+ (build 2025-07-01)
+MAFFT 7.526 (2024-04-26)
+IQ-TREE multicore 2.4.0 for Windows 64-bit (build 2025-02-07)
+ClipKIT 2.13.2 package inspected; direct execution unavailable because local application-control policy blocks the Biopython compiled extension.
+Tree-MSA trimming therefore uses scripts/p450_phylo.py trim, a pure-Python reproduction of ClipKIT 2.13.2 smart_gap_helper.py threshold selection. The selected threshold and retained columns are recorded per system.

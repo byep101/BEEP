@@ -1,0 +1,81 @@
+{
+  "workflow_version": "0.1",
+  "created": "2026-08-04",
+  "systems": {
+    "TamI": {
+      "project": "tami_project",
+      "reference_accession": "ADC79647.1",
+      "analysis_reference_id": "TamI_REF_ADC79647.1",
+      "reference_length": 413,
+      "benchmark_positions": {
+        "101": "L",
+        "244": "L",
+        "295": "L"
+      }
+    },
+    "TxtC": {
+      "project": "txtc_project",
+      "reference_accession": "AAW49320.1",
+      "analysis_reference_id": "TxtC_REF_AAW49320.1",
+      "structure_reference": "Q8VS75",
+      "reference_length": 395,
+      "candidate_positions_structure_reference": {
+        "280": "S",
+        "385": "T"
+      },
+      "candidate_positions_bgc_reference": {
+        "280": "A",
+        "385": "T"
+      }
+    }
+  },
+  "blast": {
+    "database": "swissprot",
+    "database_source": "NCBI preformatted BLAST database",
+    "database_update_date": "2026-07-31",
+    "remote": false,
+    "taxonomy_filter": "taxid:2 (Bacteria)",
+    "max_target_seqs": 500,
+    "evalue": 1e-20,
+    "min_identity_percent": 25,
+    "max_identity_percent": 95,
+    "min_query_coverage_percent": 70,
+    "task": "blastp-fast",
+    "sequence_extraction": "blastdbcmd",
+    "initial_attempts": [
+      "remote nr + Bacteria (NCBI CPU limit)",
+      "remote nr + Actinomycetota (stalled)",
+      "remote refseq_protein + Bacteria/Actinomycetota (failed or stalled)",
+      "remote Swiss-Prot + Bacteria (stalled)"
+    ],
+    "deviation_reason": "The successful pilot used the official local Swiss-Prot snapshot because all remote searches failed or exceeded the practical queue window."
+  },
+  "fasta_filter": {
+    "min_length_ratio": 0.75,
+    "max_length_ratio": 1.25,
+    "max_x_fraction": 0.01,
+    "remove_exact_sequence_duplicates": true
+  },
+  "mafft": {
+    "up_to_200_sequences": [
+      "--localpair",
+      "--maxiterate",
+      "1000"
+    ],
+    "over_200_sequences": [
+      "--auto"
+    ],
+    "threads": 4
+  },
+  "tree_trimming": {
+    "mode": "smart-gap-compatible",
+    "note": "Pure-Python implementation of the ClipKIT 2.13.2 smart-gap threshold algorithm is used because local application control blocks Biopython compiled extensions."
+  },
+  "iqtree": {
+    "sequence_type": "AA",
+    "model": "MFP",
+    "alrt_replicates": 1000,
+    "ultrafast_bootstrap_replicates": 1000,
+    "max_threads": 8
+  }
+}

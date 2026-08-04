@@ -1,0 +1,3 @@
+reference_id	reference_position	expected_residue	observed_residue	msa_column	status
+TxtC_REF_AAW49320.1	272	E	E	367	pass
+TxtC_REF_AAW49320.1	344	C	C	453	pass

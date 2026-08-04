@@ -1,0 +1,3 @@
+structure_reference	structure_position	structure_residue	bgc_reference	bgc_position	bgc_residue	coordinate_relation	interpretation
+Q8VS75/PDB_6F0B_6F0C	280	S	AAW49320.1	280	A	same_coordinate_no_indel	Residue identity differs; retain both labels and do not call AAW49320.1 position 280 Ser.
+Q8VS75/PDB_6F0B_6F0C	385	T	AAW49320.1	385	T	same_coordinate_no_indel	Residue identity agrees in both references.

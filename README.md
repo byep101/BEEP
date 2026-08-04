@@ -4,7 +4,7 @@ BEEP (BGC-Heme Enzyme Evolution Project) は、生合成遺伝子クラスター
 
 本プロジェクトの目的は、BGC レベルの代謝経路情報、P450 配列の共進化シグナル、三次元構造情報、文献証拠を統合し、機能決定残基 Functional Determinant Residues (FDetR) を推定するための再利用可能な解析基盤を構築することである。
 
-最終更新日: 2026-07-09
+最終更新日: 2026-08-04
 
 ## 現在の範囲
 
@@ -137,3 +137,10 @@ MpaDE_MpaD は `metadata/core_bgc_p450_dataset_v0.1_master.csv` の v0.1 統合�
 - 残基番号を benchmark 証拠として使う前に、配列出典の違いや番号対応を明記する。
 - 候補残基は保守的に分類する。direct mutant evidence、structure-supported residue、mechanism candidate を区別する。
 - 新しい benchmark 系を追加する場合、実際の schema gap が見つかるまでは TamI/TxtC の構造を再利用する。
+
+
+## TamI / TxtC pilot MSA・系統樹 (2026-08-04)
+
+TamI と TxtC について、reference 確認、local Swiss-Prot/Bacteria homolog 検索、filter、MAFFT full-length MSA、残基・P450 motif QC、smart-gap tree MSA、IQ-TREE ModelFinder + SH-aLRT 1000 + UFBoot 1000 を実行した。結果と制約は `reports/TamI_TxtC_MSA_tree_workflow_v0.1.md`、共通 parameter は `config/p450_phylo_pilot_v0.1.json`、集計値は各 system の `metadata/msa/<System>/msa_tree_summary.csv` に記録している。
+
+TamI は reference を含む 69 配列、TxtC は 44 配列である。TxtC は手順書の pilot 推奨 50 配列を下回るため、最終共進化解析へ進む前により広いデータベースで homolog set を拡張する。

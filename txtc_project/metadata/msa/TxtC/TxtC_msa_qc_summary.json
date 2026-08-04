@@ -1,0 +1,10 @@
+{
+  "alignment": ".\\txtc_project\\data\\processed\\msa\\TxtC\\TxtC_full_msa.faa",
+  "sequence_count": 44,
+  "alignment_length": 518,
+  "columns_gap_ge_0_5": 117,
+  "columns_gap_ge_0_8": 95,
+  "mean_column_gap_fraction": 0.22135,
+  "sequences_gap_ge_0_5": 0,
+  "sha256": "473f44f0a766d98f82c0588675a66da3b659eb7c06ad3e1d4bc0b40617c80f52"
+}

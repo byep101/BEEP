@@ -1,6 +1,6 @@
 ﻿# BEEP To-Do
 
-最終更新日: 2026-07-09
+最終更新日: 2026-08-04
 
 ## Phase 0: リポジトリ整理
 
@@ -43,13 +43,15 @@
 
 ## Phase 4: MSA と共進化 MVP
 
-- [ ] 最初の解析対象を決める。TamI のみで始めるか、TamI と TxtC を並行して進めるかを選ぶ。
-- [ ] homolog search strategy を定義する: database、E-value threshold、identity range、coverage cutoff、maximum sequence count。
-- [ ] full-length MSA と catalytic-domain MSA を作成する。
-- [ ] MSA quality metrics を記録する: sequence count、Neff、gap fraction、coverage、conserved P450 motif alignment。
+- [x] 最初の解析対象を TamI と TxtC の並行 pilot に決定する。
+- [x] homolog search strategy を定義する: local Swiss-Prot/Bacteria、E-value 1e-20、identity 25–95%、coverage 70%以上、最大500件。
+- [x] full-length MSA と tree-building 用 smart-gap trimmed MSA を作成する。
+- [ ] catalytic-domain MSA を追加する。
+- [x] pilot MSA quality metrics を記録する: sequence count、gap fraction、coverage、conserved P450 motif alignment、reference residue mapping。
+- [ ] 最終共進化用セットを拡張した後に Neff を算出する。
 - [ ] 最初の軽量 baseline として MIp/APC を実行する。
 - [ ] MSA quality が許容範囲に入った後、DCA または EVcouplings を実行する。
-- [ ] すべての解析コマンドと parameter を、再実行可能な script または notebook に保存する。
+- [x] pilot 解析コマンドと parameter を、再実行可能な script、config、IQ-TREE log に保存する。
 
 ## Phase 5: 構造マッピング
 
