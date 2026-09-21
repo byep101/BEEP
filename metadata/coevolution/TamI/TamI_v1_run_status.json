@@ -1,0 +1,18 @@
+{
+  "System_ID": "TamI",
+  "run_id": "TamI_v1",
+  "run_date": "2026-09-21",
+  "input_msa_sha256": "af2cb39fe1415cb426c21f6147040b2eb9893a09a288aa05e85e870b8355cced",
+  "focus_alignment_sha256": "ed43a914d3f5b74538094450dc66524043e2c2a75fadcccc1a1586b720f858a4",
+  "weights_sha256": "29ab94bd89bf69af3704b1d38dad9c7d78a7c3d5ee723027f28bc128297bea99",
+  "N": 69,
+  "L_model": 384,
+  "Neff": 57.333333333333336,
+  "Neff_over_L_model": 0.14930555555555555,
+  "MIp_status": "complete_technical_low_depth",
+  "DCA_status": "not_run_environment_missing",
+  "comparison_status": "pending_DCA",
+  "result_directory": "TamI_coev_minimal_kit/results/TamI_v1",
+  "run_record": "TamI_coev_minimal_kit/results/TamI_v1/run_record.md",
+  "notes": "Starter kit was unavailable; prepare and MIp/APC were reconstructed from manual v1.0 and tested. No substitute DCA method was used."
+}

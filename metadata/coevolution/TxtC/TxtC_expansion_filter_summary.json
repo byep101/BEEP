@@ -1,0 +1,26 @@
+{
+  "blast_rows": 10000,
+  "best_subject_hits": 10000,
+  "reference_id": "TxtC_REF_AAW49320.1",
+  "reference_length": 395,
+  "bits_per_residue_threshold": 0.5,
+  "absolute_bitscore_threshold": 197.5,
+  "minimum_identity_percent": 25.0,
+  "maximum_identity_percent": 95.0,
+  "minimum_query_coverage_percent": 70.0,
+  "length_ratio_range": [
+    0.75,
+    1.25
+  ],
+  "maximum_x_fraction": 0.01,
+  "included_sequences_with_reference": 6802,
+  "included_homologs": 6801,
+  "exact_unique_sequences_with_reference": 6802,
+  "excluded_hits": 3199,
+  "p450_signature_pass_included": 6598,
+  "p450_signature_pass_rate_included": 0.970009,
+  "p450_signature_pattern": "PROSITE PS00086",
+  "output_fasta_sha256": "61cefbef81157a87677cd60dcef8c9dccd9ebcd1ff71b1e8353e23ac8a1e46ea",
+  "metadata_sha256": "5eaa201b82a545908becd10b0aa98a5e00cd15c140b0b70718313052fbe3a75b",
+  "excluded_sha256": "2b65b2f00077eb50048cc299e37bed94abfda8d1b653bfce8eabdbab83830a7b"
+}
