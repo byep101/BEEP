@@ -1,0 +1,5 @@
+Documentation correction for curation_note_v2.txt
+
+The preliminary prepare step contained 189 model rows: 187 passed the E287/R290/C359 three-anchor check and 2 failed it.
+The two failed records, WP_453160342.1 and MDT7786182.1, were excluded before the final curated-v2 MSA.
+This correction changes documentation only and does not change the curated FASTA, MSA, model alignment, or weights.

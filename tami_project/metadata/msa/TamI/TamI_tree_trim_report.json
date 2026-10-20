@@ -1,0 +1,10 @@
+{
+  "mode": "smart-gap-compatible",
+  "algorithm_source": "ClipKIT 2.13.2 smart_gap_helper.py",
+  "gap_characters": "Xx-?*",
+  "selected_threshold": 0.971,
+  "input_columns": 654,
+  "retained_columns": 521,
+  "trimmed_columns": 133,
+  "output_sha256": "5144fad10f41a14e6c07eaae4de086dce4b32db60ebd9b30f73ebd9d2569cedb"
+}

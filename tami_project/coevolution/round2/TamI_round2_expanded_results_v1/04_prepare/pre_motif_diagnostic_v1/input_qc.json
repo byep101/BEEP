@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "time_utc": "2026-10-19T17:53:51.403607+00:00",
+  "reference_id": "TamI_REF_ADC79647.1",
+  "input_rows": 193,
+  "full_msa_columns": 601,
+  "focus_rows_before_model_dedup": 189,
+  "model_rows": 189,
+  "reference_length": 413,
+  "model_length": 411,
+  "neff": 33.14090353059123,
+  "neff_over_model_length": 0.08063480177759423,
+  "neff_over_reference_length": 0.08024431847600783,
+  "weighting": {
+    "theta_identity": 0.8,
+    "minimum_shared_fraction_of_model": 0.7,
+    "identity_denominator": "pairwise jointly observed 20-AA sites",
+    "self_included": true,
+    "method": "project_defined_external_weights"
+  },
+  "coverage_cutoffs": {
+    "sequence_focus": 0.7,
+    "column_at_mask_before_model_dedup": 0.7
+  },
+  "model_min_column_occupancy_after_dedup": 0.8095238095238095,
+  "reference_sequence_sha256": "fbc563a7aeebba572bac52607531eb227351b690037bf8108f176a3f8701027a",
+  "baseline_reference_hash_match": true,
+  "source_msa_sha256": "09f0f99cd629ee06d46011fae331e144523c0e19b052dec5323fdeeaa16d5d67",
+  "source_reference_file_sha256": "2b3fb203b546637ae6892666697ddd305bfde639254c84cf2d42f673506eb69c",
+  "benchmark": {
+    "101": {
+      "reference_position": 101,
+      "reference_aa": "L",
+      "full_msa_column": 202,
+      "column_occupancy_at_mask": 0.9947089947089947,
+      "model_column": 99,
+      "status": "retained"
+    },
+    "244": {
+      "reference_position": 244,
+      "reference_aa": "L",
+      "full_msa_column": 374,
+      "column_occupancy_at_mask": 1.0,
+      "model_column": 242,
+      "status": "retained"
+    },
+    "295": {
+      "reference_position": 295,
+      "reference_aa": "L",
+      "full_msa_column": 428,
+      "column_occupancy_at_mask": 1.0,
+      "model_column": 293,
+      "status": "retained"
+    }
+  },
+  "interpretation": "method-development pilot; no depth threshold certifies biological validity",
+  "output_hashes": {
+    "focus_cov70.faa": "d3667db5b589aabc101ae4bc318e6849c75651d48f159e88c550aa55d76dfd27",
+    "column_map.tsv": "cac7e3bb48ef4d6f6c9c5a7ecf24c67090af27728aafcd4a1b4253db500e20f5",
+    "weights.txt": "1aeda8950269fde5e921f9f8d46b42991d39bca926b63577c472156d6810ada1"
+  }
+}

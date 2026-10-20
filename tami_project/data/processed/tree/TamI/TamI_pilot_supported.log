@@ -1,0 +1,793 @@
+IQ-TREE multicore version 2.4.0 for Windows 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    LAPTOP-UCHHDFAC (AVX2, FMA3, 15 GB RAM)
+Command: C:\tmp\beep-tools-installed\iqtree\iqtree-2.4.0-Windows\bin\iqtree2.exe -s .\tami_project\data\processed\msa\TamI\TamI_tree_msa.faa -st AA -m MFP -alrt 1000 -B 1000 -T AUTO -ntmax 8 -redo -pre .\tami_project\data\processed\tree\TamI\TamI_pilot_supported
+Seed:    354087 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Aug 04 22:34:38 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file .\tami_project\data\processed\msa\TamI\TamI_tree_msa.faa ... Fasta format detected
+Reading fasta file: done in 0.0011041 secs
+Alignment most likely contains protein sequences
+Alignment has 69 sequences with 521 columns, 519 distinct patterns
+454 parsimony-informative, 54 singleton sites, 13 constant sites
+                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.21e-005 secs
+   1  TamI_REF_ADC79647.1   21.11%    passed     94.03%
+   2  P33271.1              22.26%    passed     85.60%
+   3  O87605.1              20.15%    passed     44.27%
+   4  C4B644.1              22.65%    passed     81.38%
+   5  Q00441.2              22.84%    passed     81.94%
+   6  O31785.2              22.26%    failed      0.00%
+   7  D5E3H2.1              21.31%    failed      0.00%
+   8  O08469.1              21.50%    failed      0.00%
+   9  Q5J1R4.1              23.61%    passed      5.82%
+  10  Q59523.1              23.80%    passed      6.32%
+  11  Q83WF5.3              25.53%    passed     92.18%
+  12  O34374.1              24.57%    failed      0.00%
+  13  P53554.1              24.18%    failed      0.13%
+  14  P18327.2              22.65%    passed     29.82%
+  15  P18326.2              22.07%    passed     86.47%
+  16  Q825I8.2              22.84%    passed     70.57%
+  17  Q59831.3              21.88%    passed     96.43%
+  18  Q84HB6.1              21.31%    passed     17.92%
+  19  P27632.1              22.84%    failed      0.00%
+  20  P26911.1              20.92%    passed     55.26%
+  21  E0D207.1              20.92%    passed     52.65%
+  22  B2HG54.1              20.92%    passed     91.66%
+  23  P23296.1              26.87%    failed      2.03%
+  24  A8M6W1.1              24.18%    passed     12.93%
+  25  Q9FCA6.1              22.46%    passed     42.91%
+  26  Q9PGC5.1              22.84%    passed      9.76%
+  27  Q87AX5.1              22.84%    passed     10.42%
+  28  P46373.1              23.42%    passed     34.46%
+  29  Q9PGE6.1              23.22%    passed      8.23%
+  30  Q9ZHQ1.2              19.96%    passed     23.24%
+  31  P9WPL4.1              28.60%    passed     32.44%
+  32  P9WPL5.1              23.61%    passed     37.96%
+  33  Q8RN03.1              22.07%    passed     83.11%
+  34  Q87AV9.1              23.42%    passed     14.61%
+  35  E3VWI3.1              23.80%    passed     95.44%
+  36  A0R4Q6.1              23.03%    passed     28.68%
+  37  E3VWJ9.1              23.80%    passed     99.44%
+  38  P63722.1              16.70%    passed     41.19%
+  39  P9WPN4.1              22.46%    passed     15.39%
+  40  Q8RN05.1              25.34%    passed     62.13%
+  41  P55544.1              23.22%    passed     49.04%
+  42  Q59203.2              23.03%    passed     16.43%
+  43  P48635.3              24.18%    passed     53.01%
+  44  Q9KIZ4.1              19.77%    passed     38.34%
+  45  Q8RN04.1              25.14%    passed     69.82%
+  46  A0R4Y3.1              18.62%    passed     19.43%
+  47  Q06069.1              21.50%    failed      0.00%
+  48  Q9KZF5.1              21.88%    failed      2.83%
+  49  P55543.1              15.93%    failed      1.14%
+  50  P14762.1              21.50%    failed      0.00%
+  51  Q59204.1              17.85%    failed      3.17%
+  52  Q0S7M1.1              13.05%    failed      0.30%
+  53  P9WPP2.1              18.04%    passed     43.99%
+  54  P0A517.1              18.04%    passed     48.31%
+  55  P63708.1              22.84%    passed     16.46%
+  56  P9WPL6.1              23.22%    passed     27.22%
+  57  P9WPL7.1              23.22%    passed     30.30%
+  58  P63714.1              15.93%    passed     35.92%
+  59  A9FDB7.1              25.53%    passed     98.45%
+  60  P43492.2              16.89%    passed     57.37%
+  61  Q59723.1              22.07%    passed     39.53%
+  62  Q6N8N2.1              21.11%    passed     47.47%
+  63  P33006.1              19.00%    passed     14.17%
+  64  P9WPL0.1              19.77%    passed     58.03%
+  65  O34926.1              22.46%    failed      0.07%
+  66  B4XY99.1              23.03%    passed     11.85%
+  67  Q93MI2.1              19.39%    passed     23.05%
+  68  Q9ZAU3.1              20.35%    passed     20.74%
+  69  Q59971.1              19.00%    passed     22.96%
+****  TOTAL                 21.83%  14 sequences failed composition chi2 test (p-value<5%; df=19)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.021 seconds
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+17 trees examined
+Threads: 1 / Time: 8.423 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -58936
+Threads: 2 / Time: 4.917 sec / Speedup: 1.713 / Efficiency: 86% / LogL: -58936
+Threads: 3 / Time: 6.524 sec / Speedup: 1.291 / Efficiency: 43% / LogL: -58936
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -47501.684
+Optimal log-likelihood: -47501.427
+Proportion of invariable sites: 0.014
+Gamma shape alpha: 1.634
+Parameters optimization took 1 rounds (0.168 sec)
+Time for fast ML tree search: 1.861 seconds
+
+NOTE: ModelFinder requires 59 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 521 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            48927.396    135 98124.793    98220.170    98699.319
+  2  LG+I          48684.725    136 97641.450    97738.491    98220.232
+  3  LG+G4         47551.089    136 95374.178    95471.220    95952.960
+  4  LG+I+G4       47501.441    137 95276.883    95375.609    95859.920
+  5  LG+R2         47834.828    137 95943.656    96042.382    96526.694
+  6  LG+R3         47568.360    139 95414.720    95516.872    96006.269
+  7  LG+R4         47492.659    141 95267.319    95372.976    95867.379
+  8  LG+R5         47441.958    143 95169.916    95279.158    95778.488
+  9  LG+R6         47427.948    145 95145.897    95258.804    95762.981
+ 10  LG+R7         47426.980    147 95147.960    95264.614    95773.555
+ 14  LG+I+R2       47722.428    138 95720.856    95821.285    96308.149
+ 15  LG+I+R3       47515.155    140 95310.310    95414.205    95906.115
+ 16  LG+I+R4       47464.016    142 95212.032    95319.471    95816.348
+ 17  LG+I+R5       47447.376    144 95182.753    95293.817    95795.581
+ 18  LG+I+R6       47431.153    146 95154.307    95269.077    95775.646
+ 19  LG+I+R7       47430.081    148 95156.161    95274.720    95786.012
+ 31  LG+F+R6       47036.758    164 94401.517    94553.539    95099.460
+ 53  WAG+R6        47464.214    145 95218.428    95331.335    95835.512
+ 75  WAG+F+R6      47166.262    164 94660.523    94812.546    95358.466
+ 97  JTT+R6        47760.603    145 95811.205    95924.112    96428.289
+119  JTT+F+R6      47558.985    164 95445.969    95597.992    96143.912
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+141  Q.pfam+R6     47257.134    145 94804.269    94917.175    95421.353
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+163  Q.pfam+F+R6   47030.466    164 94388.932    94540.954    95086.875
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+185  Q.bird+R6     48604.690    145 97499.379    97612.286    98116.463
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+207  Q.bird+F+R6   48315.214    164 96958.427    97110.450    97656.370
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+229  Q.mammal+R6   48319.805    145 96929.609    97042.516    97546.693
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+251  Q.mammal+F+R6 48017.345    164 96362.690    96514.712    97060.633
+273  Q.insect+R6   48049.924    145 96389.849    96502.755    97006.932
+295  Q.insect+F+R6 47359.778    164 95047.556    95199.578    95745.499
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+317  Q.plant+R6    48082.710    145 96455.419    96568.326    97072.503
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+339  Q.plant+F+R6  47665.669    164 95659.338    95811.360    96357.281
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+361  Q.yeast+R6    48164.648    145 96619.296    96732.203    97236.380
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+383  Q.yeast+F+R6  47202.264    164 94732.528    94884.551    95430.471
+405  JTTDCMut+R6   47770.467    145 95830.935    95943.842    96448.019
+427  JTTDCMut+F+R6 47561.241    164 95450.483    95602.505    96148.426
+449  DCMut+R6      48186.937    145 96663.874    96776.780    97280.957
+471  DCMut+F+R6    47756.484    164 95840.967    95992.990    96538.910
+493  VT+R6         47522.172    145 95334.344    95447.250    95951.427
+515  VT+F+R6       47225.056    164 94778.112    94930.134    95476.055
+537  PMB+R6        47664.282    145 95618.564    95731.471    96235.648
+559  PMB+F+R6      47391.353    164 95110.706    95262.728    95808.649
+581  Blosum62+R6   47712.503    145 95715.005    95827.912    96332.089
+603  Blosum62+F+R6 47337.008    164 95002.017    95154.039    95699.960
+625  Dayhoff+R6    48185.784    145 96661.569    96774.476    97278.653
+647  Dayhoff+F+R6  47756.112    164 95840.224    95992.246    96538.167
+669  mtREV+R6      50250.667    145 100791.334   100904.241   101408.418
+691  mtREV+F+R6    48046.390    164 96420.779    96572.801    97118.722
+713  mtART+R6      51227.818    145 102745.636   102858.543   103362.720
+735  mtART+F+R6    48733.192    164 97794.383    97946.406    98492.326
+757  mtZOA+R6      49613.561    145 99517.122    99630.029    100134.206
+779  mtZOA+F+R6    48081.653    164 96491.305    96643.328    97189.248
+801  mtMet+R6      50910.193    145 102110.386   102223.293   102727.470
+823  mtMet+F+R6    48096.288    164 96520.576    96672.599    97218.519
+845  mtVer+R6      50740.761    145 101771.522   101884.429   102388.606
+867  mtVer+F+R6    48552.348    164 97432.696    97584.718    98130.639
+889  mtInv+R6      51453.519    145 103197.038   103309.945   103814.122
+911  mtInv+F+R6    47806.832    164 95941.664    96093.687    96639.607
+933  mtMAM+R6      51110.436    145 102510.872   102623.779   103127.956
+955  mtMAM+F+R6    48932.528    164 98193.056    98345.079    98890.999
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+977  FLAVI+R6      49604.000    145 99498.001    99610.908    100115.085
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+999  FLAVI+F+R6    49143.132    164 98614.264    98766.287    99312.207
+1021  HIVb+R6       48738.692    145 97767.385    97880.291    98384.468
+1043  HIVb+F+R6     48288.702    164 96905.405    97057.427    97603.348
+1065  HIVw+R6       51201.422    145 102692.843   102805.750   103309.927
+1087  HIVw+F+R6     49512.611    164 99353.222    99505.244    100051.165
+1109  FLU+R6        48967.797    145 98225.595    98338.501    98842.678
+1131  FLU+F+R6      47910.566    164 96149.132    96301.154    96847.075
+1153  rtREV+R6      48089.788    145 96469.576    96582.483    97086.660
+1175  rtREV+F+R6    47246.831    164 94821.662    94973.685    95519.605
+1197  cpREV+R6      47974.452    145 96238.905    96351.812    96855.989
+1219  cpREV+F+R6    47460.100    164 95248.201    95400.223    95946.144
+Akaike Information Criterion:           Q.pfam+F+R6
+Corrected Akaike Information Criterion: Q.pfam+F+R6
+Bayesian Information Criterion:         Q.pfam+F+R6
+Best-fit model: Q.pfam+F+R6 chosen according to BIC
+
+All model information printed to .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.model.gz
+CPU time for ModelFinder: 914.516 seconds (0h:15m:14s)
+Wall-clock time for ModelFinder: 503.459 seconds (0h:8m:23s)
+Generating 1000 samples for ultrafast bootstrap (seed: 354087)...
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+
+NOTE: 36 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -47041.079
+2. Current log-likelihood: -47028.662
+3. Current log-likelihood: -47028.388
+Optimal log-likelihood: -47028.321
+Site proportion and rates:  (0.034,0.032) (0.076,0.222) (0.217,0.477) (0.276,0.836) (0.303,1.365) (0.093,2.511)
+Parameters optimization took 3 rounds (2.061 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.39271 secs using 191% CPU
+Computing ML distances took 0.394035 sec (of wall-clock time) 0.750000 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000837 secs
+Computing RapidNJ tree took 0.001328 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -47057.137
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 2.492 second
+Computing log-likelihood of 98 initial trees ... 5.875 seconds
+Current best score: -47028.321
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -47008.888
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -47000.349
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -46967.455
+Iteration 10 / LogL: -46996.705 / Time: 0h:8m:52s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 14: -46967.211
+Iteration 20 / LogL: -46980.748 / Time: 0h:9m:6s
+Finish initializing candidate tree set (20)
+Current best tree score: -46967.211 / CPU time: 40.358
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -46967.409 / Time: 0h:9m:18s (0h:2m:39s left)
+Iteration 40 / LogL: -46969.403 / Time: 0h:9m:32s (0h:2m:10s left)
+Iteration 50 / LogL: -46969.660 / Time: 0h:9m:44s (0h:1m:45s left)
+Log-likelihood cutoff on original alignment: -47020.381
+Iteration 60 / LogL: -46976.600 / Time: 0h:9m:57s (0h:1m:25s left)
+
+******************************************************
+CHECKPOINT: Resuming analysis from .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.ckp.gz
+
+IQ-TREE multicore version 2.4.0 for Windows 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    LAPTOP-UCHHDFAC (AVX2, FMA3, 15 GB RAM)
+Command: C:\tmp\beep-tools-installed\iqtree\iqtree-2.4.0-Windows\bin\iqtree2.exe -s .\tami_project\data\processed\msa\TamI\TamI_tree_msa.faa -st AA -m MFP -alrt 1000 -B 1000 -T AUTO -ntmax 8 -pre .\tami_project\data\processed\tree\TamI\TamI_pilot_supported
+Seed:    277663 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Aug 04 22:44:55 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+WARNING: Command-line argument `-pre` differs from checkpoint `-redo`
+WARNING: Command-line argument `.\tami_project\data\processed\tree\TamI\TamI_pilot_supported` differs from checkpoint `-pre`
+WARNING: Command-line differs from checkpoint!
+Reading alignment file .\tami_project\data\processed\msa\TamI\TamI_tree_msa.faa ... Fasta format detected
+Reading fasta file: done in 0.0007731 secs
+Alignment most likely contains protein sequences
+Alignment has 69 sequences with 521 columns, 519 distinct patterns
+454 parsimony-informative, 54 singleton sites, 13 constant sites
+                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001266 secs
+   1  TamI_REF_ADC79647.1   21.11%    passed     94.03%
+   2  P33271.1              22.26%    passed     85.60%
+   3  O87605.1              20.15%    passed     44.27%
+   4  C4B644.1              22.65%    passed     81.38%
+   5  Q00441.2              22.84%    passed     81.94%
+   6  O31785.2              22.26%    failed      0.00%
+   7  D5E3H2.1              21.31%    failed      0.00%
+   8  O08469.1              21.50%    failed      0.00%
+   9  Q5J1R4.1              23.61%    passed      5.82%
+  10  Q59523.1              23.80%    passed      6.32%
+  11  Q83WF5.3              25.53%    passed     92.18%
+  12  O34374.1              24.57%    failed      0.00%
+  13  P53554.1              24.18%    failed      0.13%
+  14  P18327.2              22.65%    passed     29.82%
+  15  P18326.2              22.07%    passed     86.47%
+  16  Q825I8.2              22.84%    passed     70.57%
+  17  Q59831.3              21.88%    passed     96.43%
+  18  Q84HB6.1              21.31%    passed     17.92%
+  19  P27632.1              22.84%    failed      0.00%
+  20  P26911.1              20.92%    passed     55.26%
+  21  E0D207.1              20.92%    passed     52.65%
+  22  B2HG54.1              20.92%    passed     91.66%
+  23  P23296.1              26.87%    failed      2.03%
+  24  A8M6W1.1              24.18%    passed     12.93%
+  25  Q9FCA6.1              22.46%    passed     42.91%
+  26  Q9PGC5.1              22.84%    passed      9.76%
+  27  Q87AX5.1              22.84%    passed     10.42%
+  28  P46373.1              23.42%    passed     34.46%
+  29  Q9PGE6.1              23.22%    passed      8.23%
+  30  Q9ZHQ1.2              19.96%    passed     23.24%
+  31  P9WPL4.1              28.60%    passed     32.44%
+  32  P9WPL5.1              23.61%    passed     37.96%
+  33  Q8RN03.1              22.07%    passed     83.11%
+  34  Q87AV9.1              23.42%    passed     14.61%
+  35  E3VWI3.1              23.80%    passed     95.44%
+  36  A0R4Q6.1              23.03%    passed     28.68%
+  37  E3VWJ9.1              23.80%    passed     99.44%
+  38  P63722.1              16.70%    passed     41.19%
+  39  P9WPN4.1              22.46%    passed     15.39%
+  40  Q8RN05.1              25.34%    passed     62.13%
+  41  P55544.1              23.22%    passed     49.04%
+  42  Q59203.2              23.03%    passed     16.43%
+  43  P48635.3              24.18%    passed     53.01%
+  44  Q9KIZ4.1              19.77%    passed     38.34%
+  45  Q8RN04.1              25.14%    passed     69.82%
+  46  A0R4Y3.1              18.62%    passed     19.43%
+  47  Q06069.1              21.50%    failed      0.00%
+  48  Q9KZF5.1              21.88%    failed      2.83%
+  49  P55543.1              15.93%    failed      1.14%
+  50  P14762.1              21.50%    failed      0.00%
+  51  Q59204.1              17.85%    failed      3.17%
+  52  Q0S7M1.1              13.05%    failed      0.30%
+  53  P9WPP2.1              18.04%    passed     43.99%
+  54  P0A517.1              18.04%    passed     48.31%
+  55  P63708.1              22.84%    passed     16.46%
+  56  P9WPL6.1              23.22%    passed     27.22%
+  57  P9WPL7.1              23.22%    passed     30.30%
+  58  P63714.1              15.93%    passed     35.92%
+  59  A9FDB7.1              25.53%    passed     98.45%
+  60  P43492.2              16.89%    passed     57.37%
+  61  Q59723.1              22.07%    passed     39.53%
+  62  Q6N8N2.1              21.11%    passed     47.47%
+  63  P33006.1              19.00%    passed     14.17%
+  64  P9WPL0.1              19.77%    passed     58.03%
+  65  O34926.1              22.46%    failed      0.07%
+  66  B4XY99.1              23.03%    passed     11.85%
+  67  Q93MI2.1              19.39%    passed     23.05%
+  68  Q9ZAU3.1              20.35%    passed     20.74%
+  69  Q59971.1              19.00%    passed     22.96%
+****  TOTAL                 21.83%  14 sequences failed composition chi2 test (p-value<5%; df=19)
+
+NOTE: Restoring information from model checkpoint file .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.model.gz
+
+CHECKPOINT: Initial tree restored
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+13 trees examined
+Threads: 1 / Time: 8.208 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -59472
+Threads: 2 / Time: 5.444 sec / Speedup: 1.508 / Efficiency: 75% / LogL: -59472
+Threads: 3 / Time: 4.334 sec / Speedup: 1.894 / Efficiency: 63% / LogL: -59472
+Threads: 4 / Time: 3.715 sec / Speedup: 2.210 / Efficiency: 55% / LogL: -59472
+Threads: 5 / Time: 3.924 sec / Speedup: 2.092 / Efficiency: 42% / LogL: -59472
+BEST NUMBER OF THREADS: 4
+
+Perform fast likelihood tree search using LG+I+G model...
+CHECKPOINT: Tree restored, LogL: -47525.043
+NOTE: ModelFinder requires 59 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 521 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            48927.396    135 98124.793    98220.170    98699.319
+  2  LG+I          48684.725    136 97641.450    97738.491    98220.232
+  3  LG+G4         47551.089    136 95374.178    95471.220    95952.960
+  4  LG+I+G4       47501.441    137 95276.883    95375.609    95859.920
+  5  LG+R2         47834.828    137 95943.656    96042.382    96526.694
+  6  LG+R3         47568.360    139 95414.720    95516.872    96006.269
+  7  LG+R4         47492.659    141 95267.319    95372.976    95867.379
+  8  LG+R5         47441.958    143 95169.916    95279.158    95778.488
+  9  LG+R6         47427.948    145 95145.897    95258.804    95762.981
+ 10  LG+R7         47426.980    147 95147.960    95264.614    95773.555
+ 14  LG+I+R2       47722.428    138 95720.856    95821.285    96308.149
+ 15  LG+I+R3       47515.155    140 95310.310    95414.205    95906.115
+ 16  LG+I+R4       47464.016    142 95212.031    95319.471    95816.348
+ 17  LG+I+R5       47447.376    144 95182.753    95293.817    95795.581
+ 18  LG+I+R6       47431.153    146 95154.307    95269.077    95775.646
+ 19  LG+I+R7       47430.081    148 95156.161    95274.720    95786.012
+ 31  LG+F+R6       47036.758    164 94401.517    94553.539    95099.460
+ 53  WAG+R6        47464.214    145 95218.428    95331.335    95835.512
+ 75  WAG+F+R6      47166.262    164 94660.523    94812.546    95358.466
+ 97  JTT+R6        47760.603    145 95811.205    95924.112    96428.289
+119  JTT+F+R6      47558.985    164 95445.969    95597.992    96143.912
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+141  Q.pfam+R6     47257.134    145 94804.269    94917.175    95421.353
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+163  Q.pfam+F+R6   47030.466    164 94388.932    94540.954    95086.875
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+185  Q.bird+R6     48604.690    145 97499.379    97612.286    98116.463
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+207  Q.bird+F+R6   48315.214    164 96958.427    97110.450    97656.370
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+229  Q.mammal+R6   48319.805    145 96929.609    97042.516    97546.693
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+251  Q.mammal+F+R6 48017.345    164 96362.690    96514.712    97060.633
+273  Q.insect+R6   48049.924    145 96389.849    96502.755    97006.932
+295  Q.insect+F+R6 47359.778    164 95047.556    95199.578    95745.499
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+317  Q.plant+R6    48082.710    145 96455.419    96568.326    97072.503
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+339  Q.plant+F+R6  47665.669    164 95659.338    95811.360    96357.281
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+361  Q.yeast+R6    48164.648    145 96619.296    96732.203    97236.380
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+383  Q.yeast+F+R6  47202.264    164 94732.528    94884.551    95430.471
+405  JTTDCMut+R6   47770.467    145 95830.935    95943.842    96448.019
+427  JTTDCMut+F+R6 47561.241    164 95450.483    95602.505    96148.426
+449  DCMut+R6      48186.937    145 96663.874    96776.780    97280.957
+471  DCMut+F+R6    47756.484    164 95840.967    95992.990    96538.910
+493  VT+R6         47522.172    145 95334.344    95447.250    95951.427
+515  VT+F+R6       47225.056    164 94778.112    94930.134    95476.055
+537  PMB+R6        47664.282    145 95618.564    95731.471    96235.648
+559  PMB+F+R6      47391.353    164 95110.706    95262.728    95808.649
+581  Blosum62+R6   47712.503    145 95715.005    95827.912    96332.089
+603  Blosum62+F+R6 47337.008    164 95002.017    95154.039    95699.960
+625  Dayhoff+R6    48185.784    145 96661.569    96774.476    97278.653
+647  Dayhoff+F+R6  47756.112    164 95840.224    95992.246    96538.167
+669  mtREV+R6      50250.667    145 100791.334   100904.241   101408.418
+691  mtREV+F+R6    48046.390    164 96420.779    96572.801    97118.722
+713  mtART+R6      51227.818    145 102745.636   102858.543   103362.720
+735  mtART+F+R6    48733.192    164 97794.383    97946.406    98492.326
+757  mtZOA+R6      49613.561    145 99517.122    99630.029    100134.206
+779  mtZOA+F+R6    48081.653    164 96491.305    96643.328    97189.248
+801  mtMet+R6      50910.193    145 102110.386   102223.293   102727.470
+823  mtMet+F+R6    48096.288    164 96520.576    96672.599    97218.519
+845  mtVer+R6      50740.761    145 101771.522   101884.429   102388.606
+867  mtVer+F+R6    48552.348    164 97432.696    97584.718    98130.639
+889  mtInv+R6      51453.519    145 103197.038   103309.945   103814.122
+911  mtInv+F+R6    47806.832    164 95941.664    96093.687    96639.607
+933  mtMAM+R6      51110.436    145 102510.872   102623.779   103127.956
+955  mtMAM+F+R6    48932.528    164 98193.056    98345.079    98890.999
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+977  FLAVI+R6      49604.000    145 99498.001    99610.908    100115.085
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+999  FLAVI+F+R6    49143.132    164 98614.264    98766.287    99312.207
+1021  HIVb+R6       48738.692    145 97767.385    97880.291    98384.468
+1043  HIVb+F+R6     48288.702    164 96905.405    97057.427    97603.348
+1065  HIVw+R6       51201.422    145 102692.843   102805.750   103309.927
+1087  HIVw+F+R6     49512.611    164 99353.222    99505.244    100051.165
+1109  FLU+R6        48967.797    145 98225.595    98338.501    98842.678
+1131  FLU+F+R6      47910.566    164 96149.132    96301.154    96847.075
+1153  rtREV+R6      48089.788    145 96469.576    96582.483    97086.660
+1175  rtREV+F+R6    47246.831    164 94821.662    94973.685    95519.605
+1197  cpREV+R6      47974.452    145 96238.905    96351.812    96855.989
+1219  cpREV+F+R6    47460.100    164 95248.201    95400.223    95946.144
+Akaike Information Criterion:           Q.pfam+F+R6
+Corrected Akaike Information Criterion: Q.pfam+F+R6
+Bayesian Information Criterion:         Q.pfam+F+R6
+Best-fit model: Q.pfam+F+R6 chosen according to BIC
+
+All model information printed to .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.model.gz
+CPU time for ModelFinder: 63.047 seconds (0h:1m:3s)
+Wall-clock time for ModelFinder: 26.115 seconds (0h:0m:26s)
+Generating 1000 samples for ultrafast bootstrap (seed: 277663)...
+CHECKPOINT: 1000 UFBoot trees and 0 UFBootSplits restored
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+
+NOTE: 36 MB RAM (0 GB) is required!
+CHECKPOINT: Model parameters restored, LogL: -46967.211
+Wrote distance file to... 
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+CHECKPOINT: Candidate tree set restored, best LogL: -46967.211
+Finish initializing candidate tree set (20)
+Current best tree score: -46967.211 / CPU time: 0.010
+Number of iterations: 35
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 40 / LogL: -46970.135 / Time: 0h:0m:31s (0h:0m:10s left)
+Iteration 50 / LogL: -46967.755 / Time: 0h:0m:41s (0h:0m:20s left)
+Log-likelihood cutoff on original alignment: -47007.830
+Iteration 60 / LogL: -46971.572 / Time: 0h:0m:52s (0h:0m:23s left)
+Iteration 70 / LogL: -46968.489 / Time: 0h:1m:0s (0h:0m:22s left)
+Iteration 80 / LogL: -46969.387 / Time: 0h:1m:12s (0h:0m:19s left)
+Iteration 90 / LogL: -46968.066 / Time: 0h:1m:25s (0h:0m:15s left)
+Iteration 100 / LogL: -46968.967 / Time: 0h:1m:37s (0h:0m:10s left)
+Log-likelihood cutoff on original alignment: -47007.830
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+Iteration 110 / LogL: -46967.790 / Time: 0h:1m:48s (0h:1m:7s left)
+TREE SEARCH COMPLETED AFTER 115 ITERATIONS / Time: 0h:1m:54s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -46967.211
+
+******************************************************
+CHECKPOINT: Resuming analysis from .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.ckp.gz
+
+IQ-TREE multicore version 2.4.0 for Windows 64-bit built Feb  7 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    LAPTOP-UCHHDFAC (AVX2, FMA3, 15 GB RAM)
+Command: C:\tmp\beep-tools-installed\iqtree\iqtree-2.4.0-Windows\bin\iqtree2.exe -s .\tami_project\data\processed\msa\TamI\TamI_tree_msa.faa -st AA -m MFP -alrt 1000 -B 1000 -T AUTO -ntmax 8 -pre .\tami_project\data\processed\tree\TamI\TamI_pilot_supported
+Seed:    530996 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Aug 04 22:46:50 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file .\tami_project\data\processed\msa\TamI\TamI_tree_msa.faa ... Fasta format detected
+Reading fasta file: done in 0.0015444 secs
+Alignment most likely contains protein sequences
+Alignment has 69 sequences with 521 columns, 519 distinct patterns
+454 parsimony-informative, 54 singleton sites, 13 constant sites
+                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0014824 secs
+   1  TamI_REF_ADC79647.1   21.11%    passed     94.03%
+   2  P33271.1              22.26%    passed     85.60%
+   3  O87605.1              20.15%    passed     44.27%
+   4  C4B644.1              22.65%    passed     81.38%
+   5  Q00441.2              22.84%    passed     81.94%
+   6  O31785.2              22.26%    failed      0.00%
+   7  D5E3H2.1              21.31%    failed      0.00%
+   8  O08469.1              21.50%    failed      0.00%
+   9  Q5J1R4.1              23.61%    passed      5.82%
+  10  Q59523.1              23.80%    passed      6.32%
+  11  Q83WF5.3              25.53%    passed     92.18%
+  12  O34374.1              24.57%    failed      0.00%
+  13  P53554.1              24.18%    failed      0.13%
+  14  P18327.2              22.65%    passed     29.82%
+  15  P18326.2              22.07%    passed     86.47%
+  16  Q825I8.2              22.84%    passed     70.57%
+  17  Q59831.3              21.88%    passed     96.43%
+  18  Q84HB6.1              21.31%    passed     17.92%
+  19  P27632.1              22.84%    failed      0.00%
+  20  P26911.1              20.92%    passed     55.26%
+  21  E0D207.1              20.92%    passed     52.65%
+  22  B2HG54.1              20.92%    passed     91.66%
+  23  P23296.1              26.87%    failed      2.03%
+  24  A8M6W1.1              24.18%    passed     12.93%
+  25  Q9FCA6.1              22.46%    passed     42.91%
+  26  Q9PGC5.1              22.84%    passed      9.76%
+  27  Q87AX5.1              22.84%    passed     10.42%
+  28  P46373.1              23.42%    passed     34.46%
+  29  Q9PGE6.1              23.22%    passed      8.23%
+  30  Q9ZHQ1.2              19.96%    passed     23.24%
+  31  P9WPL4.1              28.60%    passed     32.44%
+  32  P9WPL5.1              23.61%    passed     37.96%
+  33  Q8RN03.1              22.07%    passed     83.11%
+  34  Q87AV9.1              23.42%    passed     14.61%
+  35  E3VWI3.1              23.80%    passed     95.44%
+  36  A0R4Q6.1              23.03%    passed     28.68%
+  37  E3VWJ9.1              23.80%    passed     99.44%
+  38  P63722.1              16.70%    passed     41.19%
+  39  P9WPN4.1              22.46%    passed     15.39%
+  40  Q8RN05.1              25.34%    passed     62.13%
+  41  P55544.1              23.22%    passed     49.04%
+  42  Q59203.2              23.03%    passed     16.43%
+  43  P48635.3              24.18%    passed     53.01%
+  44  Q9KIZ4.1              19.77%    passed     38.34%
+  45  Q8RN04.1              25.14%    passed     69.82%
+  46  A0R4Y3.1              18.62%    passed     19.43%
+  47  Q06069.1              21.50%    failed      0.00%
+  48  Q9KZF5.1              21.88%    failed      2.83%
+  49  P55543.1              15.93%    failed      1.14%
+  50  P14762.1              21.50%    failed      0.00%
+  51  Q59204.1              17.85%    failed      3.17%
+  52  Q0S7M1.1              13.05%    failed      0.30%
+  53  P9WPP2.1              18.04%    passed     43.99%
+  54  P0A517.1              18.04%    passed     48.31%
+  55  P63708.1              22.84%    passed     16.46%
+  56  P9WPL6.1              23.22%    passed     27.22%
+  57  P9WPL7.1              23.22%    passed     30.30%
+  58  P63714.1              15.93%    passed     35.92%
+  59  A9FDB7.1              25.53%    passed     98.45%
+  60  P43492.2              16.89%    passed     57.37%
+  61  Q59723.1              22.07%    passed     39.53%
+  62  Q6N8N2.1              21.11%    passed     47.47%
+  63  P33006.1              19.00%    passed     14.17%
+  64  P9WPL0.1              19.77%    passed     58.03%
+  65  O34926.1              22.46%    failed      0.07%
+  66  B4XY99.1              23.03%    passed     11.85%
+  67  Q93MI2.1              19.39%    passed     23.05%
+  68  Q9ZAU3.1              20.35%    passed     20.74%
+  69  Q59971.1              19.00%    passed     22.96%
+****  TOTAL                 21.83%  14 sequences failed composition chi2 test (p-value<5%; df=19)
+
+NOTE: Restoring information from model checkpoint file .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.model.gz
+
+CHECKPOINT: Initial tree restored
+Measuring multi-threading efficiency up to 8 CPU cores
+Increase to 10 rounds for branch lengths
+2. Current log-likelihood: -46967.199
+Optimal log-likelihood: -46967.188
+Site proportion and rates:  (0.035,0.031) (0.074,0.220) (0.215,0.470) (0.296,0.840) (0.297,1.394) (0.084,2.622)
+Parameters optimization took 2 rounds (1.355 sec)
+BEST SCORE FOUND : -46967.188
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.543 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.splits.nex
+Total tree length: 56.810
+
+Total number of iterations: 115
+CPU time used for tree search: 306.969 sec (0h:5m:6s)
+Wall-clock time used for tree search: 88.418 sec (0h:1m:28s)
+Total CPU time used: 377.422 sec (0h:6m:17s)
+Total wall-clock time used: 116.949 sec (0h:1m:56s)
+
+Computing bootstrap consensus tree...
+Reading input file .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.splits.nex...
+69 taxa and 381 splits.
+Consensus tree written to .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.contree
+Reading input trees file .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.contree
+Log-likelihood of consensus tree: -46967.188
+
+Analysis results written to: 
+  IQ-TREE report:                .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.iqtree
+  Maximum-likelihood tree:       .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.treefile
+  Likelihood distances:          .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.splits.nex
+  Consensus tree:                .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.contree
+  Screen log file:               .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.log
+
+Date and Time: Tue Aug 04 22:46:53 2026
+12 trees examined
+Threads: 1 / Time: 8.026 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -57783
+Threads: 2 / Time: 4.602 sec / Speedup: 1.744 / Efficiency: 87% / LogL: -57783
+Threads: 3 / Time: 3.934 sec / Speedup: 2.040 / Efficiency: 68% / LogL: -57783
+Threads: 4 / Time: 3.609 sec / Speedup: 2.224 / Efficiency: 56% / LogL: -57783
+Threads: 5 / Time: 3.210 sec / Speedup: 2.501 / Efficiency: 50% / LogL: -57783
+Threads: 6 / Time: 2.848 sec / Speedup: 2.818 / Efficiency: 47% / LogL: -57783
+BEST NUMBER OF THREADS: 5
+
+Perform fast likelihood tree search using LG+I+G model...
+CHECKPOINT: Tree restored, LogL: -47525.043
+NOTE: ModelFinder requires 59 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 521 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            48927.396    135 98124.793    98220.170    98699.319
+  2  LG+I          48684.725    136 97641.450    97738.491    98220.232
+  3  LG+G4         47551.089    136 95374.178    95471.220    95952.960
+  4  LG+I+G4       47501.441    137 95276.883    95375.609    95859.920
+  5  LG+R2         47834.828    137 95943.656    96042.382    96526.694
+  6  LG+R3         47568.360    139 95414.720    95516.872    96006.269
+  7  LG+R4         47492.659    141 95267.319    95372.976    95867.379
+  8  LG+R5         47441.958    143 95169.916    95279.158    95778.488
+  9  LG+R6         47427.948    145 95145.897    95258.804    95762.981
+ 10  LG+R7         47426.980    147 95147.960    95264.614    95773.555
+ 14  LG+I+R2       47722.428    138 95720.856    95821.285    96308.149
+ 15  LG+I+R3       47515.155    140 95310.310    95414.205    95906.115
+ 16  LG+I+R4       47464.016    142 95212.031    95319.471    95816.348
+ 17  LG+I+R5       47447.376    144 95182.753    95293.817    95795.581
+ 18  LG+I+R6       47431.153    146 95154.307    95269.077    95775.646
+ 19  LG+I+R7       47430.081    148 95156.161    95274.720    95786.012
+ 31  LG+F+R6       47036.758    164 94401.517    94553.539    95099.460
+ 53  WAG+R6        47464.214    145 95218.428    95331.335    95835.512
+ 75  WAG+F+R6      47166.262    164 94660.523    94812.546    95358.466
+ 97  JTT+R6        47760.603    145 95811.205    95924.112    96428.289
+119  JTT+F+R6      47558.985    164 95445.969    95597.992    96143.912
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+141  Q.pfam+R6     47257.134    145 94804.269    94917.175    95421.353
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+163  Q.pfam+F+R6   47030.466    164 94388.932    94540.954    95086.875
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+185  Q.bird+R6     48604.690    145 97499.379    97612.286    98116.463
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+207  Q.bird+F+R6   48315.214    164 96958.427    97110.450    97656.370
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+229  Q.mammal+R6   48319.805    145 96929.609    97042.516    97546.693
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+251  Q.mammal+F+R6 48017.345    164 96362.690    96514.712    97060.633
+273  Q.insect+R6   48049.924    145 96389.849    96502.755    97006.932
+295  Q.insect+F+R6 47359.778    164 95047.556    95199.578    95745.499
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+317  Q.plant+R6    48082.710    145 96455.419    96568.326    97072.503
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+339  Q.plant+F+R6  47665.669    164 95659.338    95811.360    96357.281
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+361  Q.yeast+R6    48164.648    145 96619.296    96732.203    97236.380
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+383  Q.yeast+F+R6  47202.264    164 94732.528    94884.551    95430.471
+405  JTTDCMut+R6   47770.467    145 95830.935    95943.842    96448.019
+427  JTTDCMut+F+R6 47561.241    164 95450.483    95602.505    96148.426
+449  DCMut+R6      48186.937    145 96663.874    96776.780    97280.957
+471  DCMut+F+R6    47756.484    164 95840.967    95992.990    96538.910
+493  VT+R6         47522.172    145 95334.344    95447.250    95951.427
+515  VT+F+R6       47225.056    164 94778.112    94930.134    95476.055
+537  PMB+R6        47664.282    145 95618.564    95731.471    96235.648
+559  PMB+F+R6      47391.353    164 95110.706    95262.728    95808.649
+581  Blosum62+R6   47712.503    145 95715.005    95827.912    96332.089
+603  Blosum62+F+R6 47337.008    164 95002.017    95154.039    95699.960
+625  Dayhoff+R6    48185.784    145 96661.569    96774.476    97278.653
+647  Dayhoff+F+R6  47756.112    164 95840.224    95992.246    96538.167
+669  mtREV+R6      50250.667    145 100791.334   100904.241   101408.418
+691  mtREV+F+R6    48046.390    164 96420.779    96572.801    97118.722
+713  mtART+R6      51227.818    145 102745.636   102858.543   103362.720
+735  mtART+F+R6    48733.192    164 97794.383    97946.406    98492.326
+757  mtZOA+R6      49613.561    145 99517.122    99630.029    100134.206
+779  mtZOA+F+R6    48081.653    164 96491.305    96643.328    97189.248
+801  mtMet+R6      50910.193    145 102110.386   102223.293   102727.470
+823  mtMet+F+R6    48096.288    164 96520.576    96672.599    97218.519
+845  mtVer+R6      50740.761    145 101771.522   101884.429   102388.606
+867  mtVer+F+R6    48552.348    164 97432.696    97584.718    98130.639
+889  mtInv+R6      51453.519    145 103197.038   103309.945   103814.122
+911  mtInv+F+R6    47806.832    164 95941.664    96093.687    96639.607
+933  mtMAM+R6      51110.436    145 102510.872   102623.779   103127.956
+955  mtMAM+F+R6    48932.528    164 98193.056    98345.079    98890.999
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+977  FLAVI+R6      49604.000    145 99498.001    99610.908    100115.085
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+999  FLAVI+F+R6    49143.132    164 98614.264    98766.287    99312.207
+1021  HIVb+R6       48738.692    145 97767.385    97880.291    98384.468
+1043  HIVb+F+R6     48288.702    164 96905.405    97057.427    97603.348
+1065  HIVw+R6       51201.422    145 102692.843   102805.750   103309.927
+1087  HIVw+F+R6     49512.611    164 99353.222    99505.244    100051.165
+1109  FLU+R6        48967.797    145 98225.595    98338.501    98842.678
+1131  FLU+F+R6      47910.566    164 96149.132    96301.154    96847.075
+1153  rtREV+R6      48089.788    145 96469.576    96582.483    97086.660
+1175  rtREV+F+R6    47246.831    164 94821.662    94973.685    95519.605
+1197  cpREV+R6      47974.452    145 96238.905    96351.812    96855.989
+1219  cpREV+F+R6    47460.100    164 95248.201    95400.223    95946.144
+Akaike Information Criterion:           Q.pfam+F+R6
+Corrected Akaike Information Criterion: Q.pfam+F+R6
+Bayesian Information Criterion:         Q.pfam+F+R6
+Best-fit model: Q.pfam+F+R6 chosen according to BIC
+
+All model information printed to .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.model.gz
+CPU time for ModelFinder: 71.188 seconds (0h:1m:11s)
+Wall-clock time for ModelFinder: 26.450 seconds (0h:0m:26s)
+Generating 1000 samples for ultrafast bootstrap (seed: 530996)...
+CHECKPOINT: 1000 UFBoot trees and 1 UFBootSplits restored
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+
+NOTE: 36 MB RAM (0 GB) is required!
+CHECKPOINT: Model parameters restored, LogL: -46967.211
+Wrote distance file to... 
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+CHECKPOINT: Candidate tree set restored, best LogL: -46967.211
+Finish initializing candidate tree set (20)
+Current best tree score: -46967.211 / CPU time: 0.000
+Number of iterations: 92
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 100 / LogL: -46969.474 / Time: 0h:0m:33s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -47006.301
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+Iteration 110 / LogL: -46971.695 / Time: 0h:0m:43s (0h:0m:13s left)
+TREE SEARCH COMPLETED AFTER 115 ITERATIONS / Time: 0h:0m:47s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -46967.211
+2. Current log-likelihood: -46967.199
+Optimal log-likelihood: -46967.188
+Site proportion and rates:  (0.035,0.031) (0.074,0.220) (0.215,0.470) (0.296,0.840) (0.297,1.394) (0.084,2.622)
+Parameters optimization took 2 rounds (0.914 sec)
+BEST SCORE FOUND : -46967.188
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.408 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.splits.nex
+Total tree length: 56.810
+
+Total number of iterations: 115
+CPU time used for tree search: 95.891 sec (0h:1m:35s)
+Wall-clock time used for tree search: 21.372 sec (0h:0m:21s)
+Total CPU time used: 174.250 sec (0h:2m:54s)
+Total wall-clock time used: 49.482 sec (0h:0m:49s)
+
+Computing bootstrap consensus tree...
+Reading input file .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.splits.nex...
+69 taxa and 386 splits.
+Consensus tree written to .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.contree
+Reading input trees file .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.contree
+Log-likelihood of consensus tree: -46967.188
+
+Analysis results written to: 
+  IQ-TREE report:                .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.iqtree
+  Maximum-likelihood tree:       .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.treefile
+  Likelihood distances:          .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.splits.nex
+  Consensus tree:                .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.contree
+  Screen log file:               .\tami_project\data\processed\tree\TamI\TamI_pilot_supported.log
+
+Date and Time: Tue Aug 04 22:47:40 2026

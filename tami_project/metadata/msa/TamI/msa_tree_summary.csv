@@ -1,0 +1,2 @@
+System_ID,Reference_sequence_status,Homolog_set_status,MSA_status,Tree_status,Sequence_count_raw,Sequence_count_filtered,Full_MSA_length,Tree_MSA_length,Tree_model,mean_column_gap_fraction,columns_gap_ge_0_5,tree_trim_threshold,tree_qc_status,treefile,pilot_note
+TamI,confirmed,pilot_filtered,qc_passed,qc_passed,68,69,654,521,Q.pfam+F+R6,0.373266,250,0.971,pass,C:/Users/31441/Desktop/work/BEEP/tami_project/data/processed/tree/TamI/TamI_pilot_supported.treefile,Pilot sequence count meets the manual's recommended 50-sequence target.

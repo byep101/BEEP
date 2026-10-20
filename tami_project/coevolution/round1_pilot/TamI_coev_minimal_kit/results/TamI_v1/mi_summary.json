@@ -1,0 +1,49 @@
+{
+  "L_model": 384,
+  "MIp_pairs_sha256": "4e7a4e6245d4ad65e78f014c682106e50c0c843e31062540c5379d218b487047",
+  "MIp_residue_ranks_sha256": "3fea644bb6fd72f3edf73cb34065f355939f6420b259446b4632ce9564840462",
+  "MIp_top20_pairs_sha256": "87e55da767d1d965985515a65e27f46fe7364068e59d5f5c8646a56a7177b738",
+  "N": 69,
+  "apc_scope": "all model column pairs; diagonal excluded",
+  "constant_site_count": 7,
+  "eligible_pair_count": 69074,
+  "eligible_rule": "both sites variable and absolute reference-position separation >= 6",
+  "expected_pair_count": 73536,
+  "finite_scores": true,
+  "focus_alignment_sha256": "ed43a914d3f5b74538094450dc66524043e2c2a75fadcccc1a1586b720f858a4",
+  "gap_treatment": "pairwise missing; gaps and non-standard residues excluded, counts renormalized",
+  "known_site_MIp": {
+    "101": {
+      "best_pair_rank": 126,
+      "best_partner_position": 255,
+      "max_score": 0.2258363226015616,
+      "residue_rank": 156,
+      "residue_top20": false,
+      "retained": true
+    },
+    "244": {
+      "best_pair_rank": 19,
+      "best_partner_position": 255,
+      "max_score": 0.2835955821997733,
+      "residue_rank": 35,
+      "residue_top20": false,
+      "retained": true
+    },
+    "295": {
+      "best_pair_rank": 23,
+      "best_partner_position": 252,
+      "max_score": 0.2769247149973675,
+      "residue_rank": 41,
+      "residue_top20": false,
+      "retained": true
+    }
+  },
+  "mi_log_base": "natural",
+  "minimum_reference_separation": 6,
+  "overall_mean_MI": 0.5134145376774013,
+  "pair_count": 73536,
+  "pseudocount": 0,
+  "variable_site_count": 377,
+  "weights_sha256": "29ab94bd89bf69af3704b1d38dad9c7d78a7c3d5ee723027f28bc128297bea99",
+  "workflow": "TamI MIp/DCA pilot v1.0 - MIp/APC"
+}

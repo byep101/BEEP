@@ -1,0 +1,36 @@
+{
+  "method": "six-group UPGMA cut on project-defined pairwise model-sequence distances; medoid representative per group; TamI reference fixed in its group",
+  "tree_interpretation": "distance-based query diversification aid, not a calibrated phylogeny",
+  "credible_pool_definition": "TamI reference plus final new model sequences with supplied cytochrome P450 annotation; all already passed TamI-reference numeric and final three-anchor QC",
+  "credible_pool_N": 164,
+  "excluded_from_query_pool_N": 0,
+  "representative_N": 6,
+  "representative_accessions": [
+    "ADC79647.1",
+    "WP_364843215.1",
+    "WP_433263681.1",
+    "GDY32794.1",
+    "WP_133850432.1",
+    "HXP54575.1"
+  ],
+  "query_fasta_sha256": "18b25eb77bd6d7fc079a46998b25ef18ce458df317a21dd76aedc0064e42f8b8",
+  "downstream_acceptance_rule": "auxiliary-query hit is only a discovery candidate; recompute identity, query coverage, length, sequence quality and P450 motif status against TamI reference before intake; remove known accessions and exact sequences",
+  "fixed_TamI_reference_thresholds": {
+    "identity_percent_inclusive": [
+      25,
+      95
+    ],
+    "query_span_coverage_min": 0.7,
+    "reported_or_recomputed_query_coverage_min": 0.7,
+    "length_ratio_inclusive": [
+      0.75,
+      1.25
+    ],
+    "nonstandard_fraction_max": 0.01,
+    "three_anchor_review": [
+      "E287",
+      "R290",
+      "C359"
+    ]
+  }
+}

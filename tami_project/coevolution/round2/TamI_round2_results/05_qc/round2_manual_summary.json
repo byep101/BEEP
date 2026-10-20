@@ -1,0 +1,113 @@
+{
+  "scope": "homolog expansion, full-length MSA, project-defined weights and Neff only",
+  "manual_input": {
+    "downloaded_N": 100,
+    "numeric_pass_N": 63,
+    "identity_gt_95_excluded_N": 37
+  },
+  "primary": {
+    "input_N": 87,
+    "model_N": 84,
+    "model_L": 411,
+    "Neff": 18.57228076394459,
+    "Neff_over_L": 0.04518803105582626,
+    "motif_anchor_fraction": 1.0,
+    "weight_details": {
+      "N": 84,
+      "Neff": 18.57228076394459,
+      "weight_min": 0.016666666666666666,
+      "weight_median": 0.02,
+      "weight_max": 1.0,
+      "by_origin": {
+        "reference": {
+          "N": 1,
+          "weight_sum": 0.02702702702702703,
+          "neighbor_min": 37,
+          "neighbor_max": 37
+        },
+        "curated_legacy": {
+          "N": 23,
+          "weight_sum": 17.0,
+          "neighbor_min": 1,
+          "neighbor_max": 4
+        },
+        "manual_RefSeq": {
+          "N": 60,
+          "weight_sum": 1.5452537369175485,
+          "neighbor_min": 4,
+          "neighbor_max": 60
+        }
+      },
+      "excluded_status_counts": {
+        "excluded_exact_focus_duplicate": 3
+      },
+      "excluded_sequence_ids": [
+        "WP_364525319.1",
+        "WP_382670764.1",
+        "WP_388324696.1"
+      ]
+    }
+  },
+  "close_refseq_sensitivity": {
+    "input_N": 64,
+    "model_N": 61,
+    "model_L": 411,
+    "Neff": 1.5722807639445757,
+    "Neff_over_L": 0.0038255006422009143,
+    "weight_details": {
+      "N": 61,
+      "Neff": 1.5722807639445757,
+      "weight_min": 0.016666666666666666,
+      "weight_median": 0.019230769230769232,
+      "weight_max": 0.25,
+      "by_origin": {
+        "reference": {
+          "N": 1,
+          "weight_sum": 0.02702702702702703,
+          "neighbor_min": 37,
+          "neighbor_max": 37
+        },
+        "curated_legacy": {
+          "N": 0,
+          "weight_sum": 0,
+          "neighbor_min": null,
+          "neighbor_max": null
+        },
+        "manual_RefSeq": {
+          "N": 60,
+          "weight_sum": 1.5452537369175485,
+          "neighbor_min": 4,
+          "neighbor_max": 60
+        }
+      },
+      "excluded_status_counts": {
+        "excluded_exact_focus_duplicate": 3
+      },
+      "excluded_sequence_ids": [
+        "WP_364525319.1",
+        "WP_382670764.1",
+        "WP_388324696.1"
+      ]
+    }
+  },
+  "frozen_v1": {
+    "N": 69,
+    "L": 384,
+    "Neff": 57.333333333333336,
+    "Neff_over_L": 0.14930555555555555
+  },
+  "curation_only_control": {
+    "N": 24,
+    "L": 382,
+    "Neff": 18.0,
+    "Neff_over_L": 0.04712041884816754
+  },
+  "primary_Neff_increment_over_curation_control": 0.5722807639445904,
+  "primary_Neff_over_L_change_vs_frozen_v1_percent": -69.734528037028,
+  "primary_Neff_over_L_change_vs_curation_control_percent": -4.100956314857617,
+  "planning_target_0.3_met": false,
+  "manual_stop_condition_met": true,
+  "stop_reason": "Neff/L did not improve relative to frozen V1; new close homologs are strongly redundant at theta=0.8",
+  "MIp_DCA_structure_run": false,
+  "functional_limit": "Supplied annotations are generic P450 labels; TamI orthology and BGC context remain unverified"
+}

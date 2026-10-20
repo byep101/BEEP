@@ -1,0 +1,14 @@
+{
+  "treefile": "C:/Users/31441/Desktop/work/BEEP/tami_project/data/processed/tree/TamI/TamI_pilot_supported.treefile",
+  "reference_present": true,
+  "observed_leaf_count": 69,
+  "expected_leaf_count": 69,
+  "leaf_count_matches": true,
+  "branch_length_count": 135,
+  "median_branch_length": 0.22723961,
+  "maximum_branch_length": 1.9157581,
+  "maximum_to_median_ratio": 8.431,
+  "gross_extreme_branch_flag": false,
+  "gross_extreme_branch_rule": "maximum branch length > 20x median branch length",
+  "status": "pass"
+}

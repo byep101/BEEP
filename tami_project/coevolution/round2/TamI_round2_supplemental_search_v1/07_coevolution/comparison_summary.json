@@ -1,0 +1,58 @@
+{
+  "status": "scores_generated_optimization_review",
+  "N": 457,
+  "L_model": 401,
+  "Neff": 190.19749270403068,
+  "Neff_L": 0.4743079618554381,
+  "comparisons": [
+    {
+      "requested_k": 20,
+      "actual_k": 20,
+      "overlap_pairs": 4,
+      "jaccard": 0.1111111111111111,
+      "interpretation": "descriptive only; ties cut by coordinate"
+    },
+    {
+      "requested_k": 50,
+      "actual_k": 50,
+      "overlap_pairs": 10,
+      "jaccard": 0.1111111111111111,
+      "interpretation": "descriptive only; ties cut by coordinate"
+    }
+  ],
+  "residue_score_definition": "maximum eligible pair score for each site; descriptive heuristic",
+  "benchmark": [
+    {
+      "residue": "L101",
+      "reference_position": 101,
+      "model_column": "91",
+      "status": "scored",
+      "MIp_rank": 253,
+      "DCA_CN_rank": 363,
+      "MIp_top20": 0,
+      "DCA_top20": 0
+    },
+    {
+      "residue": "L244",
+      "reference_position": 244,
+      "model_column": "234",
+      "status": "scored",
+      "MIp_rank": 238,
+      "DCA_CN_rank": 157,
+      "MIp_top20": 0,
+      "DCA_top20": 0
+    },
+    {
+      "residue": "L295",
+      "reference_position": 295,
+      "model_column": "285",
+      "status": "scored",
+      "MIp_rank": 105,
+      "DCA_CN_rank": 73,
+      "MIp_top20": 0,
+      "DCA_top20": 0
+    }
+  ],
+  "biological_conclusion": "not established",
+  "dca_optimization_status": "MINIMUMSTEP"
+}

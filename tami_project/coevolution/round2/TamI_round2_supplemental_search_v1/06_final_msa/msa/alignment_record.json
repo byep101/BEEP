@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/home/byep101/projects/tami_dca/TamI_round2/tools/prefix/usr/bin/mafft",
+    "--auto",
+    "--thread",
+    "4",
+    "/mnt/c/Users/31441/Desktop/work/BEEP/TamI_round2_supplemental_search_v1/05_clusterednr_tami_qc/combined_round2_uniref_clusterednr_provisional.faa"
+  ],
+  "started_utc": "2026-10-20T12:30:10.069149+00:00",
+  "input_sha256": "427c47a313c41a9d60d9e0e2f6e792a74210dee7b9d413669d0d65343200ddbc",
+  "curation_note": "/mnt/c/Users/31441/Desktop/work/BEEP/TamI_round2_supplemental_search_v1/05_clusterednr_tami_qc/curation_note.txt",
+  "curation_note_sha256": "d4f7c37b95823536a444ea586daddbcb2d820a1c36710e7bbc499b1b5f40ad52",
+  "strategy_changed_from_v1": true,
+  "baseline_full_length_restored": true,
+  "functional_scope_changed_by_user": true
+}

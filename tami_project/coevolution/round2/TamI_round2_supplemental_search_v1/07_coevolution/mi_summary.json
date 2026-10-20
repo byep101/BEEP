@@ -1,0 +1,13 @@
+{
+  "status": "computed_not_validated",
+  "pair_count": 80200,
+  "eligible_pairs": 75137,
+  "frequency_estimator": "weighted empirical, no pseudocount, pairwise delete missing",
+  "log_base": "e",
+  "apc": "off-diagonal row means, diagonal excluded; compute before sequence-distance filtering",
+  "min_reference_separation": 6,
+  "alignment_sha256": "b687d12fe4b602ca1827c9bab9dafa160ce9b8ad902499cd0be109c76057e676",
+  "weights_sha256": "4feaf011dafef183a2167af764b46c9149edbb1e2da58f836b87010c2978f68d",
+  "pairs_sha256": "e8d24a9de4259143c56ecdb99d524859088e77e1c26208c6bec3936d67d2900b",
+  "site_entropy_sha256": "4790d28586dcfa5d6229d21e19d3c5b6bcff699b6ee70a861df3a616106c32da"
+}

@@ -1,0 +1,5 @@
+sequence_id	decision	focus_coverage	retained_focus_representatives	reason
+WP_364525319.1	excluded_exact_focus_duplicate	1.0	WP_382696941.1	exact sequence duplicate after projection to TamI reference non-gap positions
+WP_382670764.1	excluded_exact_focus_duplicate	1.0	WP_427736678.1	exact sequence duplicate after projection to TamI reference non-gap positions
+WP_388324696.1	excluded_exact_focus_duplicate	1.0	WP_342668605.1	exact sequence duplicate after projection to TamI reference non-gap positions
+WP_427759588.1	excluded_exact_focus_duplicate	1.0	WP_405444257.1	exact sequence duplicate after projection to TamI reference non-gap positions

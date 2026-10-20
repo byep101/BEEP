@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-10-20T07:56:51.747914+00:00",
+  "candidate_clusters": 147,
+  "TamI_reference_alignments": 147,
+  "existing_round2_full_length_sequences": 191,
+  "retained_new_unique_sequences": 119,
+  "provisional_merged_sequences": 310,
+  "decision_counts": {
+    "exclude": 28,
+    "retain_provisional_homolog": 119
+  },
+  "exclusion_reason_counts_nonexclusive": {
+    "identity_outside_fixed_25_95": 1,
+    "exact_full_length_duplicate_of:WP_399198366.1": 1,
+    "exact_full_length_duplicate_of:MCS7476990.1": 1,
+    "exact_full_length_duplicate_of:WP_414101621.1": 1,
+    "exact_full_length_duplicate_of:WP_093588975.1": 1,
+    "exact_full_length_duplicate_of:WP_249954137.1": 1,
+    "exact_full_length_duplicate_of:WP_365629522.1": 1,
+    "exact_full_length_duplicate_of:WP_015102406.1": 1,
+    "exact_full_length_duplicate_of:WP_090101131.1": 1,
+    "exact_full_length_duplicate_of:WP_315927223.1": 1,
+    "exact_full_length_duplicate_of:WP_330177334.1": 1,
+    "exact_full_length_duplicate_of:WP_065919826.1": 1,
+    "exact_full_length_duplicate_of:WP_433198984.1": 1,
+    "exact_full_length_duplicate_of:WP_018220966.1": 1,
+    "exact_full_length_duplicate_of:WP_394381835.1": 1,
+    "exact_full_length_duplicate_of:WP_189152308.1": 1,
+    "exact_full_length_duplicate_of:WP_069568927.1": 1,
+    "exact_full_length_duplicate_of:WP_309797879.1": 1,
+    "length_ratio_outside_fixed_0.75_1.25": 1,
+    "exact_full_length_duplicate_of:WP_069568939.1": 1,
+    "exact_full_length_duplicate_of:GDY32794.1": 1,
+    "exact_full_length_duplicate_of:WP_253778384.1": 1,
+    "exact_full_length_duplicate_of:WP_133850432.1": 1,
+    "exact_full_length_duplicate_of:WP_141996894.1": 1,
+    "exact_full_length_duplicate_of:WP_015104229.1": 1,
+    "exact_full_length_duplicate_of:MBW4720084.1": 1,
+    "exact_full_length_duplicate_of:WP_433263681.1": 1,
+    "exact_full_length_duplicate_of:WP_121008350.1": 1
+  },
+  "retained_identity_percent_range": [
+    48.02,
+    80.049
+  ],
+  "retained_qcovs_percent_range": [
+    93.0,
+    99.0
+  ],
+  "fixed_qc": {
+    "TamI_reference_evalue_max": 1e-20,
+    "identity_percent_inclusive": [
+      25,
+      95
+    ],
+    "query_span_coverage_min": 0.7,
+    "qcovs_percent_min": 70,
+    "length_ratio_inclusive": [
+      0.75,
+      1.25
+    ],
+    "nonstandard_fraction_max": 0.01,
+    "exact_full_length_deduplication": true,
+    "thresholds_changed": false
+  },
+  "input_sha256": {
+    "uniref_candidates": "5e3a077f14e2a3cfdc36b98edc3c657637adeb85df5bfab29a3015487dafc573",
+    "TamI_reference_blast": "bdc522f074de8968c8fcf51734df2cf5d6b5d16253b2d051720ab77d68a65bb5",
+    "existing_round2_input": "bf96bbbcbaae78588de9eb6fba88f258a45df8ad03d39b9d7e7f8b935455345a",
+    "known_excluded_baseline": "ddb1127680e4349b4523a23b5c3588a6c9ae4a02739a26c34e6126890272de42"
+  },
+  "output_sha256": {
+    "audit": "f1e6bf8665ea8c8b04f4456fb862d450276cbfdbbabeea54e722f5cc9ec088dd",
+    "retained_fasta": "b5822b69370dc9e2ed88f6281c99fc31cf146fac84b0293f22a4240cba69d152",
+    "provisional_merged_fasta": "4ff75b7d3d489514bb0f226200e9d3d7b55730688085e70fa092836eace89564"
+  },
+  "downstream_status": "Provisional intake only. Do not run final MSA/weights until the representative-query ClusteredNR branch is supplied and processed."
+}

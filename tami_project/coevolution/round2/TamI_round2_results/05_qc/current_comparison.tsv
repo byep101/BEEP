@@ -1,0 +1,4 @@
+dataset	N	L	Neff	Neff_over_L	status
+V1_frozen	69	384	57.333333333333336	0.14930555555555555	historical broad P450 set
+V1_curation_only_control	29	387	23.0	0.059431524547803614	same inherited alignment; 40 exclusions; NOT round2 expansion
+Round2_expanded					not computed; no completed new sequence intake

@@ -1,0 +1,5 @@
+dataset	input_N	model_N	model_L	Neff	Neff_over_L	interpretation
+V1_frozen	69	69	384	57.333333333333336	0.14930555555555555	historical broad-P450 baseline
+V1_TamI_focused_curation_control	24	24	382	18.0	0.04712041884816754	45 explicit other-function records removed; inherited alignment
+R2_primary	87	84	411	18.57228076394459	0.04518803105582626	curated legacy plus 63 numeric-pass manual RefSeq homologs
+R2_close_RefSeq_sensitivity	64	61	411	1.5722807639445757	0.0038255006422009143	reference plus 63 numeric-pass manual RefSeq homologs

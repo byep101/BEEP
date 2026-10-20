@@ -1,0 +1,20 @@
+{
+  "stage": "MSA and Neff completed",
+  "QC_pass": false,
+  "stop_reasons": [
+    "Neff/L did not improve versus frozen v1"
+  ],
+  "N_model": 84,
+  "L_model": 411,
+  "Neff": 18.57228076394459,
+  "Neff_over_L": 0.04518803105582626,
+  "planning_target_0.3_met": false,
+  "three_motif_anchor_fraction": 1.0,
+  "motif_review_threshold": "0.7 operational review trigger, not a biological reliability threshold",
+  "scope_change_confounds_direct_comparison": true,
+  "orthology_and_BGC_not_proven": true,
+  "MIp_DCA_run": false,
+  "analysis_id": "TamI_round2",
+  "input_fasta": "/home/byep101/projects/tami_dca/TamI_round2/02_intake/manual_intake_v1/combined_curated_provisional_v1.faa",
+  "input_sha256": "4c339ede5de4a7685d1dda5cfc53f425553a27426146bfcb664dd9b8a529771f"
+}

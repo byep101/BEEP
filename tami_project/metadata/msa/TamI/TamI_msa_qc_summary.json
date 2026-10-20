@@ -1,0 +1,10 @@
+{
+  "alignment": ".\\tami_project\\data\\processed\\msa\\TamI\\TamI_full_msa.faa",
+  "sequence_count": 69,
+  "alignment_length": 654,
+  "columns_gap_ge_0_5": 250,
+  "columns_gap_ge_0_8": 221,
+  "mean_column_gap_fraction": 0.373266,
+  "sequences_gap_ge_0_5": 0,
+  "sha256": "af2cb39fe1415cb426c21f6147040b2eb9893a09a288aa05e85e870b8355cced"
+}

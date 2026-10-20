@@ -1,0 +1,7 @@
+Expanded TamI round-2 curated-v2 note
+This version starts from combined_curated_expanded_v1.faa and preserves all fixed numeric thresholds.
+Post-MSA conserved-motif review excluded exactly two incomplete/domain-truncated records: WP_453160342.1 and MDT7786182.1.
+WP_453160342.1 is labeled partial in the supplied header and lacks C359 in the reference projection.
+MDT7786182.1 lacks C359 and the entire projected heme window.
+All other 189 provisional-input rows in the first alignment retained the three operational anchors E287/R290/C359.
+TamI orthology and BGC context remain unverified.

@@ -1,0 +1,18 @@
+{
+  "N_original": 69,
+  "initial_explicit_exclusions": 40,
+  "additional_explicit_exclusions": 5,
+  "N_excluded": 45,
+  "N_retained_including_reference": 24,
+  "retained_nonreference_orthology_status": "unresolved provisional homologs",
+  "additional_evidence": {
+    "E0D207": "GfsF: FD-891/FD-892 biosynthesis and oxidation",
+    "P18327": "CYP105B1/SU2: sulfonylurea herbicide metabolism",
+    "P33006": "CYP108: alpha-terpineol hydroxylation",
+    "P43492": "CYP116/ThcB: thiocarbamate herbicide degradation",
+    "Q59831": "CYP105A3: ML-236B carboxylate hydroxylation to pravastatin"
+  },
+  "annotation_snapshot": "/home/byep101/projects/tami_dca/TamI_round2/05_qc/baseline_uniprot_review/uniprot_annotations.tsv",
+  "previous_version_retained": "baseline_curated_v1",
+  "created_utc": "2026-10-19T10:50:48.701008+00:00"
+}

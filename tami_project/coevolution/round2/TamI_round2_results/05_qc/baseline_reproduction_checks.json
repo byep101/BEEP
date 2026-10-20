@@ -1,0 +1,15 @@
+{
+  "N_equal": true,
+  "L_equal": true,
+  "Neff_equal": true,
+  "reference_hash_equal": true,
+  "model_fasta_byte_identical": true,
+  "weights_byte_identical": true,
+  "unchanged_source:/home/byep101/projects/tami_dca/TamI_v1/focus_all.faa": true,
+  "unchanged_source:/home/byep101/projects/tami_dca/TamI_v1/focus_cov70.faa": true,
+  "unchanged_source:/home/byep101/projects/tami_dca/TamI_v1/input_qc.json": true,
+  "unchanged_source:/home/byep101/projects/tami_dca/TamI_v1/weights.txt": true,
+  "unchanged_source:/home/byep101/projects/tami_dca/TamI_v1/column_map.tsv": true,
+  "unchanged_source:/home/byep101/projects/tami_dca/TamI_v1/MIp_pairs.csv": true,
+  "unchanged_source:/home/byep101/projects/tami_dca/TamI_v1/dca/DCA_pairs.csv": true
+}

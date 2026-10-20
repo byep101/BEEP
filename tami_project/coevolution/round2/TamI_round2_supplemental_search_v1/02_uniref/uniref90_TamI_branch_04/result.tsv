@@ -1,0 +1,51 @@
+Hit	DB	Accession	Description	Organism	Length	Score(Bits)	Identities(%)	Positives(%)	E()
+1	UR90	UniRef90_A0A4D4JB58	Cytochrome P450 n=1 Tax=Gandjariella thermophila TaxID=1931992 RepID=A0A4D4JB58_9PSEU	Gandjariella thermophila	410	2092	100.0	100.0	0.0
+2	UR90	UniRef90_A0AAE3GKX3	Cytochrome P450 n=1 Tax=Goodfellowiella coeruleoviolacea TaxID=334858 RepID=A0AAE3GKX3_9PSEU	Goodfellowiella coeruleoviolacea	405	1445	70.2	80.6	0.0
+3	UR90	UniRef90_UPI0018F21360	cytochrome P450 family protein n=1 Tax=Umezawaea beigongshangensis TaxID=2780383 RepID=UPI0018F21360	Umezawaea beigongshangensis	407	1355	64.3	78.4	0.0
+4	UR90	UniRef90_A0A4R6SAW7	Cytochrome P450 n=1 Tax=Labedaea rhizosphaerae TaxID=598644 RepID=A0A4R6SAW7_LABRH	Labedaea rhizosphaerae	403	1328	64.7	79.1	4.5e-180
+5	UR90	UniRef90_A0A1I1AF36	Cytochrome P450 n=2 Tax=Amycolatopsis TaxID=1813 RepID=A0A1I1AF36_9PSEU	Amycolatopsis	411	1325	65.4	78.6	1.7e-179
+6	UR90	UniRef90_A0ABV9RUP8	Cytochrome P450 n=1 Tax=Actinophytocola glycyrrhizae TaxID=2044873 RepID=A0ABV9RUP8_9PSEU	Actinophytocola glycyrrhizae	403	1316	63.8	78.3	3e-178
+7	UR90	UniRef90_A0A2T0LX50	Cytochrome P450 n=1 Tax=Prauserella shujinwangii TaxID=1453103 RepID=A0A2T0LX50_9PSEU	Prauserella shujinwangii	407	1311	65.1	77.3	2e-177
+8	UR90	UniRef90_A0A5B2X675	Cytochrome P450 n=1 Tax=Solihabitans fulvus TaxID=1892852 RepID=A0A5B2X675_9PSEU	Solihabitans fulvus	411	1308	64.0	77.3	6.6e-177
+9	UR90	UniRef90_A0A1I5XX50	Cytochrome P450 n=1 Tax=Amycolatopsis arida TaxID=587909 RepID=A0A1I5XX50_9PSEU	Amycolatopsis arida	414	1305	65.2	76.7	2.1e-176
+10	UR90	UniRef90_UPI0018F249FC	cytochrome P450 family protein n=1 Tax=Qaidamihabitans albus TaxID=2795733 RepID=UPI0018F249FC	Qaidamihabitans albus	408	1303	65.2	77.4	3.4e-176
+11	UR90	UniRef90_A0A542DGG6	Cytochrome P450 n=1 Tax=Amycolatopsis cihanbeyliensis TaxID=1128664 RepID=A0A542DGG6_AMYCI	Amycolatopsis cihanbeyliensis	404	1301	63.5	77.3	5.9e-176
+12	UR90	UniRef90_UPI000362A095	cytochrome P450 family protein n=1 Tax=Actinopolymorpha alba TaxID=533267 RepID=UPI000362A095	Actinopolymorpha alba	406	1287	62.8	79.3	8.5e-174
+13	UR90	UniRef90_UPI0032D8F481	cytochrome P450 family protein n=2 Tax=unclassified Actinopolymorpha TaxID=2627063 RepID=UPI0032D8F481	unclassified Actinopolymorpha	418	1288	63.6	74.9	9.2e-174
+14	UR90	UniRef90_A0A558A1T0	Cytochrome P450 n=1 Tax=Amycolatopsis acidiphila TaxID=715473 RepID=A0A558A1T0_9PSEU	Amycolatopsis acidiphila	400	1286	64.1	78.0	9.8e-174
+15	UR90	UniRef90_UPI001C5DBD2A	cytochrome P450 family protein n=1 Tax=Saccharothrix obliqua TaxID=2861747 RepID=UPI001C5DBD2A	Saccharothrix obliqua	408	1285	62.2	76.6	1.8e-173
+16	UR90	UniRef90_H5WWC2	Cytochrome P450 n=2 Tax=Saccharomonospora TaxID=1851 RepID=H5WWC2_9PSEU	Saccharomonospora	405	1279	64.6	77.0	1.3e-172
+17	UR90	UniRef90_A0A2T0T9Z0	Cytochrome P450 n=2 Tax=Umezawaea TaxID=583360 RepID=A0A2T0T9Z0_9PSEU	Umezawaea	408	1279	63.1	75.3	1.5e-172
+18	UR90	UniRef90_A0A1G6KDP2	Cytochrome P450 n=1 Tax=Actinokineospora iranica TaxID=1271860 RepID=A0A1G6KDP2_9PSEU	Actinokineospora iranica	411	1279	62.7	76.0	1.7e-172
+19	UR90	UniRef90_A0A8H9J4M2	Cytochrome P450 n=2 Tax=Amycolatopsis bartoniae TaxID=941986 RepID=A0A8H9J4M2_9PSEU	Amycolatopsis bartoniae	473	1283	63.4	77.0	3.6e-172
+20	UR90	UniRef90_A0ABX1SI42	Cytochrome P450 n=1 Tax=Pseudonocardia acidicola TaxID=2724939 RepID=A0ABX1SI42_9PSEU	Pseudonocardia acidicola	409	1273	62.9	75.4	1.3e-171
+21	UR90	UniRef90_A0A558B1C5	Cytochrome P450 n=2 Tax=Amycolatopsis TaxID=1813 RepID=A0A558B1C5_9PSEU	Amycolatopsis	401	1269	62.9	76.4	3.9e-171
+22	UR90	UniRef90_A0A1H1XV59	Cytochrome P450 n=3 Tax=Actinopolymorpha TaxID=117156 RepID=A0A1H1XV59_9ACTN	Actinopolymorpha	425	1271	62.3	76.5	4.5e-171
+23	UR90	UniRef90_UPI0012EA289D	cytochrome P450 family protein n=1 Tax=Actinokineospora pegani TaxID=2654637 RepID=UPI0012EA289D	Actinokineospora pegani	406	1266	61.3	76.2	1.3e-170
+24	UR90	UniRef90_UPI001F4E74DA	cytochrome P450 family protein n=2 Tax=unclassified Streptomyces TaxID=2593676 RepID=UPI001F4E74DA	unclassified Streptomyces	406	1264	60.9	77.0	2.7e-170
+25	UR90	UniRef90_UPI00332B5A5B	cytochrome P450 family protein n=1 Tax=unclassified Streptomyces TaxID=2593676 RepID=UPI00332B5A5B	unclassified Streptomyces	406	1263	61.1	78.5	3.8e-170
+26	UR90	UniRef90_A0A263CZH3	Cytochrome P450 n=1 Tax=Amycolatopsis antarctica TaxID=1854586 RepID=A0A263CZH3_9PSEU	Amycolatopsis antarctica	399	1262	62.6	76.8	4.2e-170
+27	UR90	UniRef90_A0A076N332	Cytochrome P450 n=12 Tax=Amycolatopsis TaxID=1813 RepID=A0A076N332_AMYME	Amycolatopsis	406	1259	61.7	75.7	1.5e-169
+28	UR90	UniRef90_A0A5Q0H8M7	Cytochrome P450 n=1 Tax=Saccharothrix syringae TaxID=103733 RepID=A0A5Q0H8M7_SACSY	Saccharothrix syringae	411	1259	59.2	75.4	1.8e-169
+29	UR90	UniRef90_A0ABP8RXB4	Cytochrome P450 n=1 Tax=Pseudonocardia xishanensis TaxID=630995 RepID=A0ABP8RXB4_9PSEU	Pseudonocardia xishanensis	411	1259	62.3	74.5	1.8e-169
+30	UR90	UniRef90_A0A4R7UXW0	Cytochrome P450 n=1 Tax=Actinophytocola oryzae TaxID=502181 RepID=A0A4R7UXW0_9PSEU	Actinophytocola oryzae	408	1256	62.0	77.5	4.7e-169
+31	UR90	UniRef90_UPI0003730A61	cytochrome P450 family protein n=1 Tax=Actinokineospora enzanensis TaxID=155975 RepID=UPI0003730A61	Actinokineospora enzanensis	403	1255	61.0	77.2	5.6e-169
+32	UR90	UniRef90_K0KC00	Cytochrome P450, 107B1 family n=1 Tax=Saccharothrix espanaensis (strain ATCC 51144 / DSM 44229 / JCM 9112 / NBRC 15066 / NRRL 15764) TaxID=1179773 RepID=K0KC00_SACES	Saccharothrix espanaensis (strain ATCC 51144 / DSM 44229 / JCM 9112 / NBRC 15066 / NRRL 15764)	411	1254	61.9	75.9	1e-168
+33	UR90	UniRef90_A0A4R2JJF2	Cytochrome P450 n=1 Tax=Actinocrispum wychmicini TaxID=1213861 RepID=A0A4R2JJF2_9PSEU	Actinocrispum wychmicini	399	1252	61.8	76.6	1.4e-168
+34	UR90	UniRef90_UPI003D8AEFF5	cytochrome P450 family protein n=1 Tax=Actinosynnema sp. CS-041913 TaxID=3239917 RepID=UPI003D8AEFF5	Actinosynnema sp. CS-041913	408	1244	60.4	74.6	3.1e-167
+35	UR90	UniRef90_A0A3E0I030	Cytochrome P450 n=1 Tax=Kutzneria buriramensis TaxID=1045776 RepID=A0A3E0I030_9PSEU	Kutzneria buriramensis	404	1243	60.5	73.7	3.8e-167
+36	UR90	UniRef90_A0A3D9V0Q9	Cytochrome P450 n=1 Tax=Thermasporomyces composti TaxID=696763 RepID=A0A3D9V0Q9_THECX	Thermasporomyces composti	408	1243	63.0	75.2	4.4e-167
+37	UR90	UniRef90_UPI00310179C0	cytochrome P450 family protein n=1 Tax=Pseudonocardia sp. T1-2H TaxID=3128899 RepID=UPI00310179C0	Pseudonocardia sp. T1-2H	413	1243	60.7	74.1	5.2e-167
+38	UR90	UniRef90_UPI003D89D513	cytochrome P450 family protein n=1 Tax=Nonomuraea sp. CA-141351 TaxID=3239996 RepID=UPI003D89D513	Nonomuraea sp. CA-141351	405	1241	61.3	75.4	8e-167
+39	UR90	UniRef90_A0A918LEF1	Cytochrome P450 n=2 Tax=Actinokineospora TaxID=39845 RepID=A0A918LEF1_9PSEU	Actinokineospora	405	1241	63.0	75.5	8e-167
+40	UR90	UniRef90_A0A495XJG2	Cytochrome P450 n=3 Tax=Saccharothrix TaxID=2071 RepID=A0A495XJG2_9PSEU	Saccharothrix	408	1241	62.7	76.2	8.8e-167
+41	UR90	UniRef90_UPI003FA42FFE	cytochrome P450 family protein n=1 Tax=Amycolatopsis sp. NBC_01480 TaxID=2903562 RepID=UPI003FA42FFE	Amycolatopsis sp. NBC_01480	400	1240	62.5	77.1	9.5e-167
+42	UR90	UniRef90_A0A495WAK6	Cytochrome P450 n=1 Tax=Saccharothrix australiensis TaxID=2072 RepID=A0A495WAK6_9PSEU	Saccharothrix australiensis	408	1240	60.0	74.6	1.3e-166
+43	UR90	UniRef90_A0A132MMN3	Peroxidase n=2 Tax=Carbonactinospora thermoautotrophica TaxID=1469144 RepID=A0A132MMN3_9ACTN	Carbonactinospora thermoautotrophica	415	1239	60.6	74.2	2.3e-166
+44	UR90	UniRef90_A0A1H0MSS5	Cytochrome P450 n=2 Tax=Actinokineospora TaxID=39845 RepID=A0A1H0MSS5_9PSEU	Actinokineospora	404	1236	61.8	77.7	4.4e-166
+45	UR90	UniRef90_UPI00051704ED	cytochrome P450 family protein n=1 Tax=Streptomyces TaxID=1883 RepID=UPI00051704ED	Streptomyces	410	1236	60.7	75.3	5.4e-166
+46	UR90	UniRef90_A0A853B6D4	Cytochrome P450 n=1 Tax=Amycolatopsis endophytica TaxID=860233 RepID=A0A853B6D4_9PSEU	Amycolatopsis endophytica	406	1234	60.4	75.4	9.5e-166
+47	UR90	UniRef90_W5WGW2	Cytochrome P450 n=2 Tax=Kutzneria TaxID=43356 RepID=W5WGW2_9PSEU	Kutzneria	403	1233	60.8	75.4	1.2e-165
+48	UR90	UniRef90_A0ABW0ESS5	Cytochrome P450 n=1 Tax=Actinokineospora guangxiensis TaxID=1490288 RepID=A0ABW0ESS5_9PSEU	Actinokineospora guangxiensis	403	1232	62.7	74.4	1.7e-165
+49	UR90	UniRef90_A0A9X2VLQ8	Cytochrome P450 n=1 Tax=Umezawaea endophytica TaxID=1654476 RepID=A0A9X2VLQ8_9PSEU	Umezawaea endophytica	409	1232	61.2	74.6	2.1e-165
+50	UR90	UniRef90_A0A918AKJ4	Cytochrome P450 n=1 Tax=Saccharothrix coeruleofusca TaxID=33919 RepID=A0A918AKJ4_9PSEU	Saccharothrix coeruleofusca	408	1230	60.5	75.2	4.1e-165

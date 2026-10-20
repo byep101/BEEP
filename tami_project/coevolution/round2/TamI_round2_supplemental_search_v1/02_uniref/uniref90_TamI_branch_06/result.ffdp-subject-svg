@@ -1,0 +1,1016 @@
+<?xml version='1.0'?>
+<svg contentScriptType="text/ecmascript" width="924" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" id="svg2" height="2205" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	
+ <defs id="definitions">
+    
+  <symbol id="colorscaleBox" preserveAspectRatio="xMidYMid meet">
+      
+   <rect x="50" width="650" height="10" y="15"/>
+      
+   <text x="1" fill="black" font-size="11" y="25" font-family="sans-serif">E-value</text>
+      
+   <line y2="26" stroke-width="1" x1="50" x2="700" stroke="black" y1="26"/>
+      
+   <line y2="28" stroke-width="1" x1="50" x2="50" stroke="black" y1="26"/>
+      
+   <text x="50" font-size="10" y="38" text-anchor="middle" fill="black" font-family="sans-serif" id="gradientStart">2.7E-171</text>
+      
+   <line y2="28" stroke-width="1" x1="212" x2="212" stroke="black" y1="26"/>
+      
+   <text x="212" font-size="10" y="38" text-anchor="middle" fill="black" font-family="sans-serif" id="gradientStep1">1.207E-159</text>
+      
+   <line y2="28" stroke-width="1" x1="374" x2="374" stroke="black" y1="26"/>
+      
+   <text x="374" font-size="10" y="38" text-anchor="middle" fill="black" font-family="sans-serif" id="gradientStep2">8.075E-154</text>
+      
+   <line y2="28" stroke-width="1" x1="536" x2="536" stroke="black" y1="26"/>
+      
+   <text x="536" font-size="10" y="38" text-anchor="middle" fill="black" font-family="sans-serif" id="gradientStep3">6.603E-151</text>
+      
+   <line y2="28" stroke-width="1" x1="698" x2="698" stroke="black" y1="26"/>
+      
+   <text x="698" font-size="10" y="38" text-anchor="middle" fill="black" font-family="sans-serif" id="gradientEnd">5.4E-148</text>
+      
+   <text x="350" fill="black" font-size="10" y="60" font-family="sans-serif" text-anchor="middle">European Bioinformatics Institute 2006-2020. EBI is an Outstation of the European Molecular Biology Laboratory.</text>
+    
+  </symbol>
+    
+  <linearGradient xlink:actuate="onLoad" xlink:type="simple" id="colorscale" xlink:show="other" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+   <stop stop-color="rgb(255,64,64)" offset="0%"/>
+        
+   <stop stop-color="rgb(255,255,64)" offset="25%"/>
+        
+   <stop stop-color="rgb(64,255,64)" offset="50%"/>
+        
+   <stop stop-color="rgb(64,255,255)" offset="75%"/>
+        
+   <stop stop-color="rgb(64,64,255)" offset="100%"/>
+    
+  </linearGradient>
+    
+  <pattern x="0" y="0" width="8" xmlns:xlink="http://www.w3.org/1999/xlink" patternUnits="userSpaceOnUse" xlink:type="simple" xlink:actuate="onLoad" height="8" id="zebra" preserveAspectRatio="xMidYMid meet" xlink:show="other">
+      
+   <rect fill="white" x="0" width="8" height="8" y="0"/>
+      
+   <line y2="8" x1="0" x2="4" stroke="black" y1="0"/>
+      
+   <line y2="8" x1="4" x2="8" stroke="black" y1="0"/>
+    
+  </pattern>
+    
+  <svg contentScriptType="text/ecmascript" width="125" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" height="45" id="subjectSequenceBox" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+		
+   <rect x="5" y="0" fill="white" width="110" rx="2" ry="2" height="13" stroke="grey"/>
+		
+   <rect x="15" y="13" fill="white" width="100" rx="2" ry="2" height="11" stroke="grey"/>
+		
+   <svg x="116" contentScriptType="text/ecmascript" y="4" width="8" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" height="10" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+			
+    <path fill="grey" opacity="0.8" d="M1 0 L6 3 L1 6 Z"/>
+		
+   </svg>
+		
+   <text x="18" fill="grey" font-size="9" y="22" font-family="sans-serif">Acc:</text>
+    
+  </svg>
+  
+ </defs>
+	
+ <rect x="1" y="0" fill="white" width="922" opacity="1" id="border" height="2204" stroke="rgb(94,158,158)" stroke-width="2"/>
+	
+ <g id="info">
+		
+  <text x="919" font-size="10" id="startTimeInfo" y="13" font-family="sans-serif" text-anchor="end">Mon, Oct 19, 2026 at 18:19:15</text>
+		
+  <text x="919" font-size="10" id="endTimeInfo" y="23" font-family="sans-serif" text-anchor="end">Mon, Oct 19, 2026 at 18:26:58</text>
+		
+  <text x="5" font-size="11" id="programInfo" y="13" font-weight="bold" font-family="sans-serif">blastp (version: BLASTP 2.16.0+)</text>
+		
+  <text x="5" font-size="10" id="databaseInfo" y="26" font-family="sans-serif">Database: uniref90</text>
+		
+  <svg x="0" contentScriptType="text/ecmascript" y="29" width="919" xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" contentStyleType="text/css" height="20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" version="1.0">
+			
+   <text x="5" font-size="10" id="sequenceName" y="8" font-family="sans-serif">Sequence: TamI_branch_06|HXP54575.1</text>
+		
+  </svg>
+		
+  <text x="5" font-size="10" id="sequenceInfo" y="48" font-family="sans-serif">Length: 396</text>
+	
+ </g>
+
+	
+ <g id="content">
+  <g id="title">
+			
+   <text x="457" font-size="12" y="65" text-anchor="middle" fill="black" font-family="sans-serif" font-weight="bold">
+				Fast Family and Domain Prediction
+			</text>
+			
+   <text x="457" fill="black" font-size="10" y="77" font-family="sans-serif" text-anchor="middle">
+				(Subject Sequence View)
+			</text>
+			
+   <text x="125" font-size="10" y="87" fill="black" font-family="sans-serif" font-style="italic" font-weight="bold">
+				MATCH
+			</text>
+		
+  </g>
+  <use x="0" y="90" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="100" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABV1UWM6</text>
+  <text x="39" fill="black" font-size="9" y="112" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="100" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=6 Tax=Streptomycetacea...</text>
+  <line y2="97" stroke-width="2" x1="125" x2="670" stroke="black" y1="97"/>
+  <line y2="100" stroke-width="2" x1="125" x2="125" stroke="black" y1="94"/>
+  <line y2="100" stroke-width="2" x1="670" x2="670" stroke="black" y1="94"/>
+  <text x="125" fill="black" font-size="10" y="110" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="110" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">406</text>
+  <text font-size="8" x="257" y="108"><![CDATA[100]]></text>
+  <line y1="97" y2="99" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="97" y2="99" x1="393" x2="393" stroke="black" stroke-width="1"/>
+  <line y1="97" y2="99" x1="527" x2="527" stroke="black" stroke-width="1"/>
+  <line y1="97" y2="99" x1="661" x2="661" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="141" y="92" fill-opacity="0.5" fill="rgb(255,64,64)" width="527" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="141" y="92" fill-opacity="0" width="527" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(255,64,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="130" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="140" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABV8THK5</text>
+  <text x="39" fill="black" font-size="9" y="152" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="140" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Streptomyces and...</text>
+  <line y2="137" stroke-width="2" x1="125" x2="670" stroke="black" y1="137"/>
+  <line y2="140" stroke-width="2" x1="125" x2="125" stroke="black" y1="134"/>
+  <line y2="140" stroke-width="2" x1="670" x2="670" stroke="black" y1="134"/>
+  <text x="125" fill="black" font-size="10" y="150" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="150" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">396</text>
+  <text font-size="8" x="260" y="148"><![CDATA[100]]></text>
+  <line y1="137" y2="139" x1="262" x2="262" stroke="black" stroke-width="1"/>
+  <line y1="137" y2="139" x1="400" x2="400" stroke="black" stroke-width="1"/>
+  <line y1="137" y2="139" x1="537" x2="537" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="127" y="132" fill-opacity="0.5" fill="rgb(255,104,64)" width="541" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="127" y="132" fill-opacity="0" width="541" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(255,104,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="170" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="180" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI00094041AF</text>
+  <text x="39" fill="black" font-size="9" y="192" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="180" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=S...</text>
+  <line y2="177" stroke-width="2" x1="125" x2="670" stroke="black" y1="177"/>
+  <line y2="180" stroke-width="2" x1="125" x2="125" stroke="black" y1="174"/>
+  <line y2="180" stroke-width="2" x1="670" x2="670" stroke="black" y1="174"/>
+  <text x="125" fill="black" font-size="10" y="190" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="190" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">399</text>
+  <text font-size="8" x="259" y="188"><![CDATA[100]]></text>
+  <line y1="177" y2="179" x1="261" x2="261" stroke="black" stroke-width="1"/>
+  <line y1="177" y2="179" x1="398" x2="398" stroke="black" stroke-width="1"/>
+  <line y1="177" y2="179" x1="534" x2="534" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="131" y="172" fill-opacity="0.5" fill="rgb(255,122,64)" width="537" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="131" y="172" fill-opacity="0" width="537" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(255,122,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="210" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="220" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI003BAF33CF</text>
+  <text x="39" fill="black" font-size="9" y="232" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="220" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=2 Tax=T...</text>
+  <line y2="217" stroke-width="2" x1="125" x2="670" stroke="black" y1="217"/>
+  <line y2="220" stroke-width="2" x1="125" x2="125" stroke="black" y1="214"/>
+  <line y2="220" stroke-width="2" x1="670" x2="670" stroke="black" y1="214"/>
+  <text x="125" fill="black" font-size="10" y="230" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="230" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">397</text>
+  <text font-size="8" x="260" y="228"><![CDATA[100]]></text>
+  <line y1="217" y2="219" x1="262" x2="262" stroke="black" stroke-width="1"/>
+  <line y1="217" y2="219" x1="399" x2="399" stroke="black" stroke-width="1"/>
+  <line y1="217" y2="219" x1="536" x2="536" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="135" y="212" fill-opacity="0.5" fill="rgb(255,146,64)" width="533" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="135" y="212" fill-opacity="0" width="533" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(255,146,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="250" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="260" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI001EF5A03B</text>
+  <text x="39" fill="black" font-size="9" y="272" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="260" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=3 Tax=u...</text>
+  <line y2="257" stroke-width="2" x1="125" x2="670" stroke="black" y1="257"/>
+  <line y2="260" stroke-width="2" x1="125" x2="125" stroke="black" y1="254"/>
+  <line y2="260" stroke-width="2" x1="670" x2="670" stroke="black" y1="254"/>
+  <text x="125" fill="black" font-size="10" y="270" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="270" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">406</text>
+  <text font-size="8" x="257" y="268"><![CDATA[100]]></text>
+  <line y1="257" y2="259" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="257" y2="259" x1="393" x2="393" stroke="black" stroke-width="1"/>
+  <line y1="257" y2="259" x1="527" x2="527" stroke="black" stroke-width="1"/>
+  <line y1="257" y2="259" x1="661" x2="661" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="138" y="252" fill-opacity="0.5" fill="rgb(255,161,64)" width="530" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="138" y="252" fill-opacity="0" width="530" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(255,161,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="290" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="300" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A6P2BNS8</text>
+  <text x="39" fill="black" font-size="9" y="312" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="300" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=2 Tax=Trebonia kvetii ...</text>
+  <line y2="297" stroke-width="2" x1="125" x2="670" stroke="black" y1="297"/>
+  <line y2="300" stroke-width="2" x1="125" x2="125" stroke="black" y1="294"/>
+  <line y2="300" stroke-width="2" x1="670" x2="670" stroke="black" y1="294"/>
+  <text x="125" fill="black" font-size="10" y="310" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="310" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">379</text>
+  <text font-size="8" x="266" y="308"><![CDATA[100]]></text>
+  <line y1="297" y2="299" x1="268" x2="268" stroke="black" stroke-width="1"/>
+  <line y1="297" y2="299" x1="412" x2="412" stroke="black" stroke-width="1"/>
+  <line y1="297" y2="299" x1="556" x2="556" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="126" y="292" fill-opacity="0.5" fill="rgb(255,172,64)" width="544" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="126" y="292" fill-opacity="0" width="544" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(255,172,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="330" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="340" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A3D9V0Q9</text>
+  <text x="39" fill="black" font-size="9" y="352" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="340" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Thermasporomyces...</text>
+  <line y2="337" stroke-width="2" x1="125" x2="670" stroke="black" y1="337"/>
+  <line y2="340" stroke-width="2" x1="125" x2="125" stroke="black" y1="334"/>
+  <line y2="340" stroke-width="2" x1="670" x2="670" stroke="black" y1="334"/>
+  <text x="125" fill="black" font-size="10" y="350" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="350" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">408</text>
+  <text font-size="8" x="256" y="348"><![CDATA[100]]></text>
+  <line y1="337" y2="339" x1="258" x2="258" stroke="black" stroke-width="1"/>
+  <line y1="337" y2="339" x1="392" x2="392" stroke="black" stroke-width="1"/>
+  <line y1="337" y2="339" x1="525" x2="525" stroke="black" stroke-width="1"/>
+  <line y1="337" y2="339" x1="659" x2="659" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="137" y="332" fill-opacity="0.5" fill="rgb(255,184,64)" width="533" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="137" y="332" fill-opacity="0" width="533" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(255,184,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="370" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="380" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABU6CN99</text>
+  <text x="39" fill="black" font-size="9" y="392" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="380" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Streptomyces kun...</text>
+  <line y2="377" stroke-width="2" x1="125" x2="670" stroke="black" y1="377"/>
+  <line y2="380" stroke-width="2" x1="125" x2="125" stroke="black" y1="374"/>
+  <line y2="380" stroke-width="2" x1="670" x2="670" stroke="black" y1="374"/>
+  <text x="125" fill="black" font-size="10" y="390" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="390" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">405</text>
+  <text font-size="8" x="257" y="388"><![CDATA[100]]></text>
+  <line y1="377" y2="379" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="377" y2="379" x1="394" x2="394" stroke="black" stroke-width="1"/>
+  <line y1="377" y2="379" x1="528" x2="528" stroke="black" stroke-width="1"/>
+  <line y1="377" y2="379" x1="663" x2="663" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="131" y="372" fill-opacity="0.5" fill="rgb(255,186,64)" width="537" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="131" y="372" fill-opacity="0" width="537" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(255,186,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="410" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="420" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABP8F0S3</text>
+  <text x="39" fill="black" font-size="9" y="432" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="420" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=2 Tax=Streptomyces Tax...</text>
+  <line y2="417" stroke-width="2" x1="125" x2="670" stroke="black" y1="417"/>
+  <line y2="420" stroke-width="2" x1="125" x2="125" stroke="black" y1="414"/>
+  <line y2="420" stroke-width="2" x1="670" x2="670" stroke="black" y1="414"/>
+  <text x="125" fill="black" font-size="10" y="430" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="430" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">381</text>
+  <text font-size="8" x="266" y="428"><![CDATA[100]]></text>
+  <line y1="417" y2="419" x1="268" x2="268" stroke="black" stroke-width="1"/>
+  <line y1="417" y2="419" x1="411" x2="411" stroke="black" stroke-width="1"/>
+  <line y1="417" y2="419" x1="554" x2="554" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="126" y="412" fill-opacity="0.5" fill="rgb(255,240,64)" width="542" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="126" y="412" fill-opacity="0" width="542" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(255,240,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="450" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="460" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABV9RUP8</text>
+  <text x="39" fill="black" font-size="9" y="472" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="460" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Actinophytocola ...</text>
+  <line y2="457" stroke-width="2" x1="125" x2="670" stroke="black" y1="457"/>
+  <line y2="460" stroke-width="2" x1="125" x2="125" stroke="black" y1="454"/>
+  <line y2="460" stroke-width="2" x1="670" x2="670" stroke="black" y1="454"/>
+  <text x="125" fill="black" font-size="10" y="470" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="470" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">403</text>
+  <text font-size="8" x="258" y="468"><![CDATA[100]]></text>
+  <line y1="457" y2="459" x1="260" x2="260" stroke="black" stroke-width="1"/>
+  <line y1="457" y2="459" x1="395" x2="395" stroke="black" stroke-width="1"/>
+  <line y1="457" y2="459" x1="530" x2="530" stroke="black" stroke-width="1"/>
+  <line y1="457" y2="459" x1="665" x2="665" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="126" y="452" fill-opacity="0.5" fill="rgb(255,250,64)" width="542" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="126" y="452" fill-opacity="0" width="542" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(255,250,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="490" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="500" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI0032D8F481</text>
+  <text x="39" fill="black" font-size="9" y="512" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="500" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=2 Tax=u...</text>
+  <line y2="497" stroke-width="2" x1="125" x2="670" stroke="black" y1="497"/>
+  <line y2="500" stroke-width="2" x1="125" x2="125" stroke="black" y1="494"/>
+  <line y2="500" stroke-width="2" x1="670" x2="670" stroke="black" y1="494"/>
+  <text x="125" fill="black" font-size="10" y="510" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="510" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">418</text>
+  <text font-size="8" x="253" y="508"><![CDATA[100]]></text>
+  <line y1="497" y2="499" x1="255" x2="255" stroke="black" stroke-width="1"/>
+  <line y1="497" y2="499" x1="385" x2="385" stroke="black" stroke-width="1"/>
+  <line y1="497" y2="499" x1="516" x2="516" stroke="black" stroke-width="1"/>
+  <line y1="497" y2="499" x1="646" x2="646" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="140" y="492" fill-opacity="0.5" fill="rgb(233,255,64)" width="530" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="140" y="492" fill-opacity="0" width="530" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(233,255,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="530" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="540" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABU0EX95</text>
+  <text x="39" fill="black" font-size="9" y="552" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="540" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=2 Tax=Amycolatopsis th...</text>
+  <line y2="537" stroke-width="2" x1="125" x2="670" stroke="black" y1="537"/>
+  <line y2="540" stroke-width="2" x1="125" x2="125" stroke="black" y1="534"/>
+  <line y2="540" stroke-width="2" x1="670" x2="670" stroke="black" y1="534"/>
+  <text x="125" fill="black" font-size="10" y="550" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="550" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">418</text>
+  <text font-size="8" x="253" y="548"><![CDATA[100]]></text>
+  <line y1="537" y2="539" x1="255" x2="255" stroke="black" stroke-width="1"/>
+  <line y1="537" y2="539" x1="385" x2="385" stroke="black" stroke-width="1"/>
+  <line y1="537" y2="539" x1="516" x2="516" stroke="black" stroke-width="1"/>
+  <line y1="537" y2="539" x1="646" x2="646" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="152" y="532" fill-opacity="0.5" fill="rgb(123,255,64)" width="516" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="152" y="532" fill-opacity="0" width="516" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(123,255,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="570" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="580" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI00386AC22D</text>
+  <text x="39" fill="black" font-size="9" y="592" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="580" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=S...</text>
+  <line y2="577" stroke-width="2" x1="125" x2="670" stroke="black" y1="577"/>
+  <line y2="580" stroke-width="2" x1="125" x2="125" stroke="black" y1="574"/>
+  <line y2="580" stroke-width="2" x1="670" x2="670" stroke="black" y1="574"/>
+  <text x="125" fill="black" font-size="10" y="590" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="590" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">405</text>
+  <text font-size="8" x="257" y="588"><![CDATA[100]]></text>
+  <line y1="577" y2="579" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="577" y2="579" x1="394" x2="394" stroke="black" stroke-width="1"/>
+  <line y1="577" y2="579" x1="528" x2="528" stroke="black" stroke-width="1"/>
+  <line y1="577" y2="579" x1="663" x2="663" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="137" y="572" fill-opacity="0.5" fill="rgb(105,255,64)" width="531" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="137" y="572" fill-opacity="0" width="531" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(105,255,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="610" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="620" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI0018F249FC</text>
+  <text x="39" fill="black" font-size="9" y="632" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="620" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=Q...</text>
+  <line y2="617" stroke-width="2" x1="125" x2="670" stroke="black" y1="617"/>
+  <line y2="620" stroke-width="2" x1="125" x2="125" stroke="black" y1="614"/>
+  <line y2="620" stroke-width="2" x1="670" x2="670" stroke="black" y1="614"/>
+  <text x="125" fill="black" font-size="10" y="630" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="630" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">408</text>
+  <text font-size="8" x="256" y="628"><![CDATA[100]]></text>
+  <line y1="617" y2="619" x1="258" x2="258" stroke="black" stroke-width="1"/>
+  <line y1="617" y2="619" x1="392" x2="392" stroke="black" stroke-width="1"/>
+  <line y1="617" y2="619" x1="525" x2="525" stroke="black" stroke-width="1"/>
+  <line y1="617" y2="619" x1="659" x2="659" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="141" y="612" fill-opacity="0.5" fill="rgb(78,255,64)" width="526" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="141" y="612" fill-opacity="0" width="526" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(78,255,64)" stroke-width="2"/>
+  </g>
+  <use x="0" y="650" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="660" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A1G6KEQ5</text>
+  <text x="39" fill="black" font-size="9" y="672" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="660" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Actinokineospora...</text>
+  <line y2="657" stroke-width="2" x1="125" x2="670" stroke="black" y1="657"/>
+  <line y2="660" stroke-width="2" x1="125" x2="125" stroke="black" y1="654"/>
+  <line y2="660" stroke-width="2" x1="670" x2="670" stroke="black" y1="654"/>
+  <text x="125" fill="black" font-size="10" y="670" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="670" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">403</text>
+  <text font-size="8" x="258" y="668"><![CDATA[100]]></text>
+  <line y1="657" y2="659" x1="260" x2="260" stroke="black" stroke-width="1"/>
+  <line y1="657" y2="659" x1="395" x2="395" stroke="black" stroke-width="1"/>
+  <line y1="657" y2="659" x1="530" x2="530" stroke="black" stroke-width="1"/>
+  <line y1="657" y2="659" x1="665" x2="665" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="129" y="652" fill-opacity="0.5" fill="rgb(64,255,90)" width="536" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="129" y="652" fill-opacity="0" width="536" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,90)" stroke-width="2"/>
+  </g>
+  <use x="0" y="690" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="700" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A4D4JB58</text>
+  <text x="39" fill="black" font-size="9" y="712" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="700" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Gandjariella the...</text>
+  <line y2="697" stroke-width="2" x1="125" x2="670" stroke="black" y1="697"/>
+  <line y2="700" stroke-width="2" x1="125" x2="125" stroke="black" y1="694"/>
+  <line y2="700" stroke-width="2" x1="670" x2="670" stroke="black" y1="694"/>
+  <text x="125" fill="black" font-size="10" y="710" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="710" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">410</text>
+  <text font-size="8" x="255" y="708"><![CDATA[100]]></text>
+  <line y1="697" y2="699" x1="257" x2="257" stroke="black" stroke-width="1"/>
+  <line y1="697" y2="699" x1="390" x2="390" stroke="black" stroke-width="1"/>
+  <line y1="697" y2="699" x1="523" x2="523" stroke="black" stroke-width="1"/>
+  <line y1="697" y2="699" x1="656" x2="656" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="146" y="692" fill-opacity="0.5" fill="rgb(64,255,97)" width="514" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="146" y="692" fill-opacity="0" width="514" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,97)" stroke-width="2"/>
+  </g>
+  <use x="0" y="730" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="740" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABP5DPF1</text>
+  <text x="39" fill="black" font-size="9" y="752" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="740" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=2 Tax=Amycolatopsis Ta...</text>
+  <line y2="737" stroke-width="2" x1="125" x2="670" stroke="black" y1="737"/>
+  <line y2="740" stroke-width="2" x1="125" x2="125" stroke="black" y1="734"/>
+  <line y2="740" stroke-width="2" x1="670" x2="670" stroke="black" y1="734"/>
+  <text x="125" fill="black" font-size="10" y="750" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="750" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">402</text>
+  <text font-size="8" x="258" y="748"><![CDATA[100]]></text>
+  <line y1="737" y2="739" x1="260" x2="260" stroke="black" stroke-width="1"/>
+  <line y1="737" y2="739" x1="396" x2="396" stroke="black" stroke-width="1"/>
+  <line y1="737" y2="739" x1="531" x2="531" stroke="black" stroke-width="1"/>
+  <line y1="737" y2="739" x1="667" x2="667" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="127" y="732" fill-opacity="0.5" fill="rgb(64,255,158)" width="541" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="127" y="732" fill-opacity="0" width="541" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,158)" stroke-width="2"/>
+  </g>
+  <use x="0" y="770" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="780" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI000362A095</text>
+  <text x="39" fill="black" font-size="9" y="792" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="780" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=A...</text>
+  <line y2="777" stroke-width="2" x1="125" x2="670" stroke="black" y1="777"/>
+  <line y2="780" stroke-width="2" x1="125" x2="125" stroke="black" y1="774"/>
+  <line y2="780" stroke-width="2" x1="670" x2="670" stroke="black" y1="774"/>
+  <text x="125" fill="black" font-size="10" y="790" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="790" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">406</text>
+  <text font-size="8" x="257" y="788"><![CDATA[100]]></text>
+  <line y1="777" y2="779" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="777" y2="779" x1="393" x2="393" stroke="black" stroke-width="1"/>
+  <line y1="777" y2="779" x1="527" x2="527" stroke="black" stroke-width="1"/>
+  <line y1="777" y2="779" x1="661" x2="661" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="141" y="772" fill-opacity="0.5" fill="rgb(64,255,183)" width="527" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="141" y="772" fill-opacity="0" width="527" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,183)" stroke-width="2"/>
+  </g>
+  <use x="0" y="810" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="820" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A8H9J4M2</text>
+  <text x="39" fill="black" font-size="9" y="832" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="820" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=2 Tax=Amycolatopsis ba...</text>
+  <line y2="817" stroke-width="2" x1="125" x2="670" stroke="black" y1="817"/>
+  <line y2="820" stroke-width="2" x1="125" x2="125" stroke="black" y1="814"/>
+  <line y2="820" stroke-width="2" x1="670" x2="670" stroke="black" y1="814"/>
+  <text x="125" fill="black" font-size="10" y="830" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="830" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">473</text>
+  <text font-size="8" x="238" y="828"><![CDATA[100]]></text>
+  <line y1="817" y2="819" x1="240" x2="240" stroke="black" stroke-width="1"/>
+  <line y1="817" y2="819" x1="355" x2="355" stroke="black" stroke-width="1"/>
+  <line y1="817" y2="819" x1="470" x2="470" stroke="black" stroke-width="1"/>
+  <line y1="817" y2="819" x1="585" x2="585" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="219" y="812" fill-opacity="0.5" fill="rgb(64,255,188)" width="449" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="219" y="812" fill-opacity="0" width="449" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,188)" stroke-width="2"/>
+  </g>
+  <use x="0" y="850" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="860" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A1H1XV59</text>
+  <text x="39" fill="black" font-size="9" y="872" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="860" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=3 Tax=Actinopolymorpha...</text>
+  <line y2="857" stroke-width="2" x1="125" x2="670" stroke="black" y1="857"/>
+  <line y2="860" stroke-width="2" x1="125" x2="125" stroke="black" y1="854"/>
+  <line y2="860" stroke-width="2" x1="670" x2="670" stroke="black" y1="854"/>
+  <text x="125" fill="black" font-size="10" y="870" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="870" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">425</text>
+  <text font-size="8" x="251" y="868"><![CDATA[100]]></text>
+  <line y1="857" y2="859" x1="253" x2="253" stroke="black" stroke-width="1"/>
+  <line y1="857" y2="859" x1="381" x2="381" stroke="black" stroke-width="1"/>
+  <line y1="857" y2="859" x1="509" x2="509" stroke="black" stroke-width="1"/>
+  <line y1="857" y2="859" x1="637" x2="637" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="162" y="852" fill-opacity="0.5" fill="rgb(64,255,191)" width="508" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="162" y="852" fill-opacity="0" width="508" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,191)" stroke-width="2"/>
+  </g>
+  <use x="0" y="890" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="900" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI001C9822E8</text>
+  <text x="39" fill="black" font-size="9" y="912" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="900" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=M...</text>
+  <line y2="897" stroke-width="2" x1="125" x2="670" stroke="black" y1="897"/>
+  <line y2="900" stroke-width="2" x1="125" x2="125" stroke="black" y1="894"/>
+  <line y2="900" stroke-width="2" x1="670" x2="670" stroke="black" y1="894"/>
+  <text x="125" fill="black" font-size="10" y="910" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="910" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">433</text>
+  <text font-size="8" x="248" y="908"><![CDATA[100]]></text>
+  <line y1="897" y2="899" x1="250" x2="250" stroke="black" stroke-width="1"/>
+  <line y1="897" y2="899" x1="376" x2="376" stroke="black" stroke-width="1"/>
+  <line y1="897" y2="899" x1="502" x2="502" stroke="black" stroke-width="1"/>
+  <line y1="897" y2="899" x1="628" x2="628" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="142" y="892" fill-opacity="0.5" fill="rgb(64,255,199)" width="501" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="142" y="892" fill-opacity="0" width="501" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,199)" stroke-width="2"/>
+  </g>
+  <use x="0" y="930" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="940" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0AAE3GKX3</text>
+  <text x="39" fill="black" font-size="9" y="952" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="940" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Goodfellowiella ...</text>
+  <line y2="937" stroke-width="2" x1="125" x2="670" stroke="black" y1="937"/>
+  <line y2="940" stroke-width="2" x1="125" x2="125" stroke="black" y1="934"/>
+  <line y2="940" stroke-width="2" x1="670" x2="670" stroke="black" y1="934"/>
+  <text x="125" fill="black" font-size="10" y="950" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="950" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">405</text>
+  <text font-size="8" x="257" y="948"><![CDATA[100]]></text>
+  <line y1="937" y2="939" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="937" y2="939" x1="394" x2="394" stroke="black" stroke-width="1"/>
+  <line y1="937" y2="939" x1="528" x2="528" stroke="black" stroke-width="1"/>
+  <line y1="937" y2="939" x1="663" x2="663" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="141" y="932" fill-opacity="0.5" fill="rgb(64,255,211)" width="529" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="141" y="932" fill-opacity="0" width="529" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,211)" stroke-width="2"/>
+  </g>
+  <use x="0" y="970" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="980" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A076N332</text>
+  <text x="39" fill="black" font-size="9" y="992" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="980" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=12 Tax=Amycolatopsis T...</text>
+  <line y2="977" stroke-width="2" x1="125" x2="670" stroke="black" y1="977"/>
+  <line y2="980" stroke-width="2" x1="125" x2="125" stroke="black" y1="974"/>
+  <line y2="980" stroke-width="2" x1="670" x2="670" stroke="black" y1="974"/>
+  <text x="125" fill="black" font-size="10" y="990" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="990" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">406</text>
+  <text font-size="8" x="257" y="988"><![CDATA[100]]></text>
+  <line y1="977" y2="979" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="977" y2="979" x1="393" x2="393" stroke="black" stroke-width="1"/>
+  <line y1="977" y2="979" x1="527" x2="527" stroke="black" stroke-width="1"/>
+  <line y1="977" y2="979" x1="661" x2="661" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="137" y="972" fill-opacity="0.5" fill="rgb(64,255,213)" width="528" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="137" y="972" fill-opacity="0" width="528" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,213)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1010" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1020" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A542DGG6</text>
+  <text x="39" fill="black" font-size="9" y="1032" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1020" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Amycolatopsis ci...</text>
+  <line y2="1017" stroke-width="2" x1="125" x2="670" stroke="black" y1="1017"/>
+  <line y2="1020" stroke-width="2" x1="125" x2="125" stroke="black" y1="1014"/>
+  <line y2="1020" stroke-width="2" x1="670" x2="670" stroke="black" y1="1014"/>
+  <text x="125" fill="black" font-size="10" y="1030" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1030" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">404</text>
+  <text font-size="8" x="257" y="1028"><![CDATA[100]]></text>
+  <line y1="1017" y2="1019" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="1017" y2="1019" x1="394" x2="394" stroke="black" stroke-width="1"/>
+  <line y1="1017" y2="1019" x1="529" x2="529" stroke="black" stroke-width="1"/>
+  <line y1="1017" y2="1019" x1="664" x2="664" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="143" y="1012" fill-opacity="0.5" fill="rgb(64,255,221)" width="522" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="143" y="1012" fill-opacity="0" width="522" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,221)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1050" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1060" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A927RGH4</text>
+  <text x="39" fill="black" font-size="9" y="1072" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1060" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Actinopolymorpha...</text>
+  <line y2="1057" stroke-width="2" x1="125" x2="670" stroke="black" y1="1057"/>
+  <line y2="1060" stroke-width="2" x1="125" x2="125" stroke="black" y1="1054"/>
+  <line y2="1060" stroke-width="2" x1="670" x2="670" stroke="black" y1="1054"/>
+  <text x="125" fill="black" font-size="10" y="1070" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1070" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">409</text>
+  <text font-size="8" x="256" y="1068"><![CDATA[100]]></text>
+  <line y1="1057" y2="1059" x1="258" x2="258" stroke="black" stroke-width="1"/>
+  <line y1="1057" y2="1059" x1="391" x2="391" stroke="black" stroke-width="1"/>
+  <line y1="1057" y2="1059" x1="524" x2="524" stroke="black" stroke-width="1"/>
+  <line y1="1057" y2="1059" x1="658" x2="658" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="131" y="1052" fill-opacity="0.5" fill="rgb(64,255,235)" width="537" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="131" y="1052" fill-opacity="0" width="537" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,235)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1090" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1100" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI002D03FDEB</text>
+  <text x="39" fill="black" font-size="9" y="1112" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="1100" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=P...</text>
+  <line y2="1097" stroke-width="2" x1="125" x2="670" stroke="black" y1="1097"/>
+  <line y2="1100" stroke-width="2" x1="125" x2="125" stroke="black" y1="1094"/>
+  <line y2="1100" stroke-width="2" x1="670" x2="670" stroke="black" y1="1094"/>
+  <text x="125" fill="black" font-size="10" y="1110" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1110" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">412</text>
+  <text font-size="8" x="255" y="1108"><![CDATA[100]]></text>
+  <line y1="1097" y2="1099" x1="257" x2="257" stroke="black" stroke-width="1"/>
+  <line y1="1097" y2="1099" x1="389" x2="389" stroke="black" stroke-width="1"/>
+  <line y1="1097" y2="1099" x1="521" x2="521" stroke="black" stroke-width="1"/>
+  <line y1="1097" y2="1099" x1="654" x2="654" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="143" y="1092" fill-opacity="0.5" fill="rgb(64,255,248)" width="525" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="143" y="1092" fill-opacity="0" width="525" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,255,248)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1130" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1140" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABP9NVV8</text>
+  <text x="39" fill="black" font-size="9" y="1152" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1140" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Pseudonocardia a...</text>
+  <line y2="1137" stroke-width="2" x1="125" x2="670" stroke="black" y1="1137"/>
+  <line y2="1140" stroke-width="2" x1="125" x2="125" stroke="black" y1="1134"/>
+  <line y2="1140" stroke-width="2" x1="670" x2="670" stroke="black" y1="1134"/>
+  <text x="125" fill="black" font-size="10" y="1150" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1150" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">393</text>
+  <text font-size="8" x="261" y="1148"><![CDATA[100]]></text>
+  <line y1="1137" y2="1139" x1="263" x2="263" stroke="black" stroke-width="1"/>
+  <line y1="1137" y2="1139" x1="402" x2="402" stroke="black" stroke-width="1"/>
+  <line y1="1137" y2="1139" x1="541" x2="541" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="126" y="1132" fill-opacity="0.5" fill="rgb(64,251,255)" width="544" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="126" y="1132" fill-opacity="0" width="544" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,251,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1170" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1180" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABP4A4X2</text>
+  <text x="39" fill="black" font-size="9" y="1192" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1180" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=2 Tax=Pseudonocardia z...</text>
+  <line y2="1177" stroke-width="2" x1="125" x2="670" stroke="black" y1="1177"/>
+  <line y2="1180" stroke-width="2" x1="125" x2="125" stroke="black" y1="1174"/>
+  <line y2="1180" stroke-width="2" x1="670" x2="670" stroke="black" y1="1174"/>
+  <text x="125" fill="black" font-size="10" y="1190" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1190" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">447</text>
+  <text font-size="8" x="244" y="1188"><![CDATA[100]]></text>
+  <line y1="1177" y2="1179" x1="246" x2="246" stroke="black" stroke-width="1"/>
+  <line y1="1177" y2="1179" x1="368" x2="368" stroke="black" stroke-width="1"/>
+  <line y1="1177" y2="1179" x1="490" x2="490" stroke="black" stroke-width="1"/>
+  <line y1="1177" y2="1179" x1="612" x2="612" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="190" y="1172" fill-opacity="0.5" fill="rgb(64,248,255)" width="480" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="190" y="1172" fill-opacity="0" width="480" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,248,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1210" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1220" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A2T0LX50</text>
+  <text x="39" fill="black" font-size="9" y="1232" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1220" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Prauserella shuj...</text>
+  <line y2="1217" stroke-width="2" x1="125" x2="670" stroke="black" y1="1217"/>
+  <line y2="1220" stroke-width="2" x1="125" x2="125" stroke="black" y1="1214"/>
+  <line y2="1220" stroke-width="2" x1="670" x2="670" stroke="black" y1="1214"/>
+  <text x="125" fill="black" font-size="10" y="1230" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1230" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">407</text>
+  <text font-size="8" x="256" y="1228"><![CDATA[100]]></text>
+  <line y1="1217" y2="1219" x1="258" x2="258" stroke="black" stroke-width="1"/>
+  <line y1="1217" y2="1219" x1="392" x2="392" stroke="black" stroke-width="1"/>
+  <line y1="1217" y2="1219" x1="526" x2="526" stroke="black" stroke-width="1"/>
+  <line y1="1217" y2="1219" x1="660" x2="660" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="139" y="1212" fill-opacity="0.5" fill="rgb(64,226,255)" width="525" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="139" y="1212" fill-opacity="0" width="525" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,226,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1250" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1260" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_H5WWC2</text>
+  <text x="39" fill="black" font-size="9" y="1272" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1260" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=2 Tax=Saccharomonospor...</text>
+  <line y2="1257" stroke-width="2" x1="125" x2="670" stroke="black" y1="1257"/>
+  <line y2="1260" stroke-width="2" x1="125" x2="125" stroke="black" y1="1254"/>
+  <line y2="1260" stroke-width="2" x1="670" x2="670" stroke="black" y1="1254"/>
+  <text x="125" fill="black" font-size="10" y="1270" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1270" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">405</text>
+  <text font-size="8" x="257" y="1268"><![CDATA[100]]></text>
+  <line y1="1257" y2="1259" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="1257" y2="1259" x1="394" x2="394" stroke="black" stroke-width="1"/>
+  <line y1="1257" y2="1259" x1="528" x2="528" stroke="black" stroke-width="1"/>
+  <line y1="1257" y2="1259" x1="663" x2="663" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="138" y="1252" fill-opacity="0.5" fill="rgb(64,209,255)" width="530" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="138" y="1252" fill-opacity="0" width="530" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,209,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1290" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1300" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A5B2X675</text>
+  <text x="39" fill="black" font-size="9" y="1312" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1300" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Solihabitans ful...</text>
+  <line y2="1297" stroke-width="2" x1="125" x2="670" stroke="black" y1="1297"/>
+  <line y2="1300" stroke-width="2" x1="125" x2="125" stroke="black" y1="1294"/>
+  <line y2="1300" stroke-width="2" x1="670" x2="670" stroke="black" y1="1294"/>
+  <text x="125" fill="black" font-size="10" y="1310" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1310" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">411</text>
+  <text font-size="8" x="255" y="1308"><![CDATA[100]]></text>
+  <line y1="1297" y2="1299" x1="257" x2="257" stroke="black" stroke-width="1"/>
+  <line y1="1297" y2="1299" x1="390" x2="390" stroke="black" stroke-width="1"/>
+  <line y1="1297" y2="1299" x1="522" x2="522" stroke="black" stroke-width="1"/>
+  <line y1="1297" y2="1299" x1="655" x2="655" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="138" y="1292" fill-opacity="0.5" fill="rgb(64,193,255)" width="525" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="138" y="1292" fill-opacity="0" width="525" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,193,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1330" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1340" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A4R6SAW7</text>
+  <text x="39" fill="black" font-size="9" y="1352" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1340" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Labedaea rhizosp...</text>
+  <line y2="1337" stroke-width="2" x1="125" x2="670" stroke="black" y1="1337"/>
+  <line y2="1340" stroke-width="2" x1="125" x2="125" stroke="black" y1="1334"/>
+  <line y2="1340" stroke-width="2" x1="670" x2="670" stroke="black" y1="1334"/>
+  <text x="125" fill="black" font-size="10" y="1350" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1350" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">403</text>
+  <text font-size="8" x="258" y="1348"><![CDATA[100]]></text>
+  <line y1="1337" y2="1339" x1="260" x2="260" stroke="black" stroke-width="1"/>
+  <line y1="1337" y2="1339" x1="395" x2="395" stroke="black" stroke-width="1"/>
+  <line y1="1337" y2="1339" x1="530" x2="530" stroke="black" stroke-width="1"/>
+  <line y1="1337" y2="1339" x1="665" x2="665" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="126" y="1332" fill-opacity="0.5" fill="rgb(64,191,255)" width="541" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="126" y="1332" fill-opacity="0" width="541" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,191,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1370" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1380" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A4R7UXW0</text>
+  <text x="39" fill="black" font-size="9" y="1392" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1380" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Actinophytocola ...</text>
+  <line y2="1377" stroke-width="2" x1="125" x2="670" stroke="black" y1="1377"/>
+  <line y2="1380" stroke-width="2" x1="125" x2="125" stroke="black" y1="1374"/>
+  <line y2="1380" stroke-width="2" x1="670" x2="670" stroke="black" y1="1374"/>
+  <text x="125" fill="black" font-size="10" y="1390" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1390" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">408</text>
+  <text font-size="8" x="256" y="1388"><![CDATA[100]]></text>
+  <line y1="1377" y2="1379" x1="258" x2="258" stroke="black" stroke-width="1"/>
+  <line y1="1377" y2="1379" x1="392" x2="392" stroke="black" stroke-width="1"/>
+  <line y1="1377" y2="1379" x1="525" x2="525" stroke="black" stroke-width="1"/>
+  <line y1="1377" y2="1379" x1="659" x2="659" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="138" y="1372" fill-opacity="0.5" fill="rgb(64,186,255)" width="517" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="138" y="1372" fill-opacity="0" width="517" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,186,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1410" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1420" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI003EEC5CC7</text>
+  <text x="39" fill="black" font-size="9" y="1432" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="1420" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=u...</text>
+  <line y2="1417" stroke-width="2" x1="125" x2="670" stroke="black" y1="1417"/>
+  <line y2="1420" stroke-width="2" x1="125" x2="125" stroke="black" y1="1414"/>
+  <line y2="1420" stroke-width="2" x1="670" x2="670" stroke="black" y1="1414"/>
+  <text x="125" fill="black" font-size="10" y="1430" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1430" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">414</text>
+  <text font-size="8" x="254" y="1428"><![CDATA[100]]></text>
+  <line y1="1417" y2="1419" x1="256" x2="256" stroke="black" stroke-width="1"/>
+  <line y1="1417" y2="1419" x1="388" x2="388" stroke="black" stroke-width="1"/>
+  <line y1="1417" y2="1419" x1="519" x2="519" stroke="black" stroke-width="1"/>
+  <line y1="1417" y2="1419" x1="651" x2="651" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="147" y="1412" fill-opacity="0.5" fill="rgb(64,180,255)" width="520" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="147" y="1412" fill-opacity="0" width="520" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,180,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1450" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1460" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI0021E4C3C2</text>
+  <text x="39" fill="black" font-size="9" y="1472" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="1460" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=G...</text>
+  <line y2="1457" stroke-width="2" x1="125" x2="670" stroke="black" y1="1457"/>
+  <line y2="1460" stroke-width="2" x1="125" x2="125" stroke="black" y1="1454"/>
+  <line y2="1460" stroke-width="2" x1="670" x2="670" stroke="black" y1="1454"/>
+  <text x="125" fill="black" font-size="10" y="1470" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1470" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">404</text>
+  <text font-size="8" x="257" y="1468"><![CDATA[100]]></text>
+  <line y1="1457" y2="1459" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="1457" y2="1459" x1="394" x2="394" stroke="black" stroke-width="1"/>
+  <line y1="1457" y2="1459" x1="529" x2="529" stroke="black" stroke-width="1"/>
+  <line y1="1457" y2="1459" x1="664" x2="664" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="138" y="1452" fill-opacity="0.5" fill="rgb(64,150,255)" width="530" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="138" y="1452" fill-opacity="0" width="530" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,150,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1490" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1500" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABP5IJ83</text>
+  <text x="39" fill="black" font-size="9" y="1512" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1500" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Streptomyces alb...</text>
+  <line y2="1497" stroke-width="2" x1="125" x2="670" stroke="black" y1="1497"/>
+  <line y2="1500" stroke-width="2" x1="125" x2="125" stroke="black" y1="1494"/>
+  <line y2="1500" stroke-width="2" x1="670" x2="670" stroke="black" y1="1494"/>
+  <text x="125" fill="black" font-size="10" y="1510" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1510" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">458</text>
+  <text font-size="8" x="241" y="1508"><![CDATA[100]]></text>
+  <line y1="1497" y2="1499" x1="243" x2="243" stroke="black" stroke-width="1"/>
+  <line y1="1497" y2="1499" x1="362" x2="362" stroke="black" stroke-width="1"/>
+  <line y1="1497" y2="1499" x1="481" x2="481" stroke="black" stroke-width="1"/>
+  <line y1="1497" y2="1499" x1="600" x2="600" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="197" y="1492" fill-opacity="0.5" fill="rgb(64,148,255)" width="469" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="197" y="1492" fill-opacity="0" width="469" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,148,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1530" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1540" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI00037D23B9</text>
+  <text x="39" fill="black" font-size="9" y="1552" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="1540" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=2 Tax=S...</text>
+  <line y2="1537" stroke-width="2" x1="125" x2="670" stroke="black" y1="1537"/>
+  <line y2="1540" stroke-width="2" x1="125" x2="125" stroke="black" y1="1534"/>
+  <line y2="1540" stroke-width="2" x1="670" x2="670" stroke="black" y1="1534"/>
+  <text x="125" fill="black" font-size="10" y="1550" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1550" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">404</text>
+  <text font-size="8" x="257" y="1548"><![CDATA[100]]></text>
+  <line y1="1537" y2="1539" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="1537" y2="1539" x1="394" x2="394" stroke="black" stroke-width="1"/>
+  <line y1="1537" y2="1539" x1="529" x2="529" stroke="black" stroke-width="1"/>
+  <line y1="1537" y2="1539" x1="664" x2="664" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="133" y="1532" fill-opacity="0.5" fill="rgb(64,130,255)" width="531" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="133" y="1532" fill-opacity="0" width="531" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,130,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1570" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1580" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A543DKZ0</text>
+  <text x="39" fill="black" font-size="9" y="1592" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1580" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Pseudonocardia k...</text>
+  <line y2="1577" stroke-width="2" x1="125" x2="670" stroke="black" y1="1577"/>
+  <line y2="1580" stroke-width="2" x1="125" x2="125" stroke="black" y1="1574"/>
+  <line y2="1580" stroke-width="2" x1="670" x2="670" stroke="black" y1="1574"/>
+  <text x="125" fill="black" font-size="10" y="1590" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1590" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">404</text>
+  <text font-size="8" x="257" y="1588"><![CDATA[100]]></text>
+  <line y1="1577" y2="1579" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="1577" y2="1579" x1="394" x2="394" stroke="black" stroke-width="1"/>
+  <line y1="1577" y2="1579" x1="529" x2="529" stroke="black" stroke-width="1"/>
+  <line y1="1577" y2="1579" x1="664" x2="664" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="126" y="1572" fill-opacity="0.5" fill="rgb(64,130,255)" width="529" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="126" y="1572" fill-opacity="0" width="529" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,130,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1610" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1620" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI00081B7861</text>
+  <text x="39" fill="black" font-size="9" y="1632" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="1620" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=u...</text>
+  <line y2="1617" stroke-width="2" x1="125" x2="670" stroke="black" y1="1617"/>
+  <line y2="1620" stroke-width="2" x1="125" x2="125" stroke="black" y1="1614"/>
+  <line y2="1620" stroke-width="2" x1="670" x2="670" stroke="black" y1="1614"/>
+  <text x="125" fill="black" font-size="10" y="1630" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1630" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">396</text>
+  <text font-size="8" x="260" y="1628"><![CDATA[100]]></text>
+  <line y1="1617" y2="1619" x1="262" x2="262" stroke="black" stroke-width="1"/>
+  <line y1="1617" y2="1619" x1="400" x2="400" stroke="black" stroke-width="1"/>
+  <line y1="1617" y2="1619" x1="537" x2="537" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="142" y="1612" fill-opacity="0.5" fill="rgb(64,128,255)" width="526" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="142" y="1612" fill-opacity="0" width="526" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,128,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1650" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1660" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A285EHL6</text>
+  <text x="39" fill="black" font-size="9" y="1672" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1660" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Geodermatophilus...</text>
+  <line y2="1657" stroke-width="2" x1="125" x2="670" stroke="black" y1="1657"/>
+  <line y2="1660" stroke-width="2" x1="125" x2="125" stroke="black" y1="1654"/>
+  <line y2="1660" stroke-width="2" x1="670" x2="670" stroke="black" y1="1654"/>
+  <text x="125" fill="black" font-size="10" y="1670" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1670" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">421</text>
+  <text font-size="8" x="252" y="1668"><![CDATA[100]]></text>
+  <line y1="1657" y2="1659" x1="254" x2="254" stroke="black" stroke-width="1"/>
+  <line y1="1657" y2="1659" x1="383" x2="383" stroke="black" stroke-width="1"/>
+  <line y1="1657" y2="1659" x1="513" x2="513" stroke="black" stroke-width="1"/>
+  <line y1="1657" y2="1659" x1="642" x2="642" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="143" y="1652" fill-opacity="0.5" fill="rgb(64,114,255)" width="515" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="143" y="1652" fill-opacity="0" width="515" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,114,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1690" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1700" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A545AVN0</text>
+  <text x="39" fill="black" font-size="9" y="1712" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1700" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Cryptosporangium...</text>
+  <line y2="1697" stroke-width="2" x1="125" x2="670" stroke="black" y1="1697"/>
+  <line y2="1700" stroke-width="2" x1="125" x2="125" stroke="black" y1="1694"/>
+  <line y2="1700" stroke-width="2" x1="670" x2="670" stroke="black" y1="1694"/>
+  <text x="125" fill="black" font-size="10" y="1710" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1710" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">402</text>
+  <text font-size="8" x="258" y="1708"><![CDATA[100]]></text>
+  <line y1="1697" y2="1699" x1="260" x2="260" stroke="black" stroke-width="1"/>
+  <line y1="1697" y2="1699" x1="396" x2="396" stroke="black" stroke-width="1"/>
+  <line y1="1697" y2="1699" x1="531" x2="531" stroke="black" stroke-width="1"/>
+  <line y1="1697" y2="1699" x1="667" x2="667" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="137" y="1692" fill-opacity="0.5" fill="rgb(64,112,255)" width="531" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="137" y="1692" fill-opacity="0" width="531" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,112,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1730" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1740" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI0018F21360</text>
+  <text x="39" fill="black" font-size="9" y="1752" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="1740" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=U...</text>
+  <line y2="1737" stroke-width="2" x1="125" x2="670" stroke="black" y1="1737"/>
+  <line y2="1740" stroke-width="2" x1="125" x2="125" stroke="black" y1="1734"/>
+  <line y2="1740" stroke-width="2" x1="670" x2="670" stroke="black" y1="1734"/>
+  <text x="125" fill="black" font-size="10" y="1750" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1750" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">407</text>
+  <text font-size="8" x="256" y="1748"><![CDATA[100]]></text>
+  <line y1="1737" y2="1739" x1="258" x2="258" stroke="black" stroke-width="1"/>
+  <line y1="1737" y2="1739" x1="392" x2="392" stroke="black" stroke-width="1"/>
+  <line y1="1737" y2="1739" x1="526" x2="526" stroke="black" stroke-width="1"/>
+  <line y1="1737" y2="1739" x1="660" x2="660" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="137" y="1732" fill-opacity="0.5" fill="rgb(64,107,255)" width="533" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="137" y="1732" fill-opacity="0" width="533" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,107,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1770" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1780" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A1I1AF36</text>
+  <text x="39" fill="black" font-size="9" y="1792" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1780" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=2 Tax=Amycolatopsis Ta...</text>
+  <line y2="1777" stroke-width="2" x1="125" x2="670" stroke="black" y1="1777"/>
+  <line y2="1780" stroke-width="2" x1="125" x2="125" stroke="black" y1="1774"/>
+  <line y2="1780" stroke-width="2" x1="670" x2="670" stroke="black" y1="1774"/>
+  <text x="125" fill="black" font-size="10" y="1790" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1790" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">411</text>
+  <text font-size="8" x="255" y="1788"><![CDATA[100]]></text>
+  <line y1="1777" y2="1779" x1="257" x2="257" stroke="black" stroke-width="1"/>
+  <line y1="1777" y2="1779" x1="390" x2="390" stroke="black" stroke-width="1"/>
+  <line y1="1777" y2="1779" x1="522" x2="522" stroke="black" stroke-width="1"/>
+  <line y1="1777" y2="1779" x1="655" x2="655" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="155" y="1772" fill-opacity="0.5" fill="rgb(64,94,255)" width="513" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="155" y="1772" fill-opacity="0" width="513" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,94,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1810" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1820" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A852ZQQ0</text>
+  <text x="39" fill="black" font-size="9" y="1832" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1820" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Actinopolymorpha...</text>
+  <line y2="1817" stroke-width="2" x1="125" x2="670" stroke="black" y1="1817"/>
+  <line y2="1820" stroke-width="2" x1="125" x2="125" stroke="black" y1="1814"/>
+  <line y2="1820" stroke-width="2" x1="670" x2="670" stroke="black" y1="1814"/>
+  <text x="125" fill="black" font-size="10" y="1830" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1830" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">436</text>
+  <text font-size="8" x="248" y="1828"><![CDATA[100]]></text>
+  <line y1="1817" y2="1819" x1="250" x2="250" stroke="black" stroke-width="1"/>
+  <line y1="1817" y2="1819" x1="375" x2="375" stroke="black" stroke-width="1"/>
+  <line y1="1817" y2="1819" x1="500" x2="500" stroke="black" stroke-width="1"/>
+  <line y1="1817" y2="1819" x1="625" x2="625" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="162" y="1812" fill-opacity="0.5" fill="rgb(64,89,255)" width="506" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="162" y="1812" fill-opacity="0" width="506" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,89,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1850" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1860" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0ABN2MRN6</text>
+  <text x="39" fill="black" font-size="9" y="1872" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1860" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Pseudonocardia a...</text>
+  <line y2="1857" stroke-width="2" x1="125" x2="670" stroke="black" y1="1857"/>
+  <line y2="1860" stroke-width="2" x1="125" x2="125" stroke="black" y1="1854"/>
+  <line y2="1860" stroke-width="2" x1="670" x2="670" stroke="black" y1="1854"/>
+  <text x="125" fill="black" font-size="10" y="1870" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1870" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">396</text>
+  <text font-size="8" x="260" y="1868"><![CDATA[100]]></text>
+  <line y1="1857" y2="1859" x1="262" x2="262" stroke="black" stroke-width="1"/>
+  <line y1="1857" y2="1859" x1="400" x2="400" stroke="black" stroke-width="1"/>
+  <line y1="1857" y2="1859" x1="537" x2="537" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="129" y="1852" fill-opacity="0.5" fill="rgb(64,88,255)" width="541" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="129" y="1852" fill-opacity="0" width="541" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,88,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1890" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1900" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A221W110</text>
+  <text x="39" fill="black" font-size="9" y="1912" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1900" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 107B1 n=2 Tax=Actinoallo...</text>
+  <line y2="1897" stroke-width="2" x1="125" x2="670" stroke="black" y1="1897"/>
+  <line y2="1900" stroke-width="2" x1="125" x2="125" stroke="black" y1="1894"/>
+  <line y2="1900" stroke-width="2" x1="670" x2="670" stroke="black" y1="1894"/>
+  <text x="125" fill="black" font-size="10" y="1910" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1910" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">401</text>
+  <text font-size="8" x="258" y="1908"><![CDATA[100]]></text>
+  <line y1="1897" y2="1899" x1="260" x2="260" stroke="black" stroke-width="1"/>
+  <line y1="1897" y2="1899" x1="396" x2="396" stroke="black" stroke-width="1"/>
+  <line y1="1897" y2="1899" x1="532" x2="532" stroke="black" stroke-width="1"/>
+  <line y1="1897" y2="1899" x1="668" x2="668" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="133" y="1892" fill-opacity="0.5" fill="rgb(64,84,255)" width="534" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="133" y="1892" fill-opacity="0" width="534" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,84,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1930" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1940" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A542DQN9</text>
+  <text x="39" fill="black" font-size="9" y="1952" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="1940" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=2 Tax=Amycolatopsis ci...</text>
+  <line y2="1937" stroke-width="2" x1="125" x2="670" stroke="black" y1="1937"/>
+  <line y2="1940" stroke-width="2" x1="125" x2="125" stroke="black" y1="1934"/>
+  <line y2="1940" stroke-width="2" x1="670" x2="670" stroke="black" y1="1934"/>
+  <text x="125" fill="black" font-size="10" y="1950" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1950" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">404</text>
+  <text font-size="8" x="257" y="1948"><![CDATA[100]]></text>
+  <line y1="1937" y2="1939" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="1937" y2="1939" x1="394" x2="394" stroke="black" stroke-width="1"/>
+  <line y1="1937" y2="1939" x1="529" x2="529" stroke="black" stroke-width="1"/>
+  <line y1="1937" y2="1939" x1="664" x2="664" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="137" y="1932" fill-opacity="0.5" fill="rgb(64,71,255)" width="530" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="137" y="1932" fill-opacity="0" width="530" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,71,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="1970" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="1980" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_UPI00195B6469</text>
+  <text x="39" fill="black" font-size="9" y="1992" font-family="sans-serif">cytochrome</text>
+  <text x="680" font-size="11" y="1980" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">cytochrome P450 family protein n=1 Tax=A...</text>
+  <line y2="1977" stroke-width="2" x1="125" x2="670" stroke="black" y1="1977"/>
+  <line y2="1980" stroke-width="2" x1="125" x2="125" stroke="black" y1="1974"/>
+  <line y2="1980" stroke-width="2" x1="670" x2="670" stroke="black" y1="1974"/>
+  <text x="125" fill="black" font-size="10" y="1990" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="1990" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">405</text>
+  <text font-size="8" x="257" y="1988"><![CDATA[100]]></text>
+  <line y1="1977" y2="1979" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="1977" y2="1979" x1="394" x2="394" stroke="black" stroke-width="1"/>
+  <line y1="1977" y2="1979" x1="528" x2="528" stroke="black" stroke-width="1"/>
+  <line y1="1977" y2="1979" x1="663" x2="663" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="137" y="1972" fill-opacity="0.5" fill="rgb(64,70,255)" width="527" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="137" y="1972" fill-opacity="0" width="527" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,70,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="2010" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="2020" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A853B6D4</text>
+  <text x="39" fill="black" font-size="9" y="2032" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="2020" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Amycolatopsis en...</text>
+  <line y2="2017" stroke-width="2" x1="125" x2="670" stroke="black" y1="2017"/>
+  <line y2="2020" stroke-width="2" x1="125" x2="125" stroke="black" y1="2014"/>
+  <line y2="2020" stroke-width="2" x1="670" x2="670" stroke="black" y1="2014"/>
+  <text x="125" fill="black" font-size="10" y="2030" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="2030" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">406</text>
+  <text font-size="8" x="257" y="2028"><![CDATA[100]]></text>
+  <line y1="2017" y2="2019" x1="259" x2="259" stroke="black" stroke-width="1"/>
+  <line y1="2017" y2="2019" x1="393" x2="393" stroke="black" stroke-width="1"/>
+  <line y1="2017" y2="2019" x1="527" x2="527" stroke="black" stroke-width="1"/>
+  <line y1="2017" y2="2019" x1="661" x2="661" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="138" y="2012" fill-opacity="0.5" fill="rgb(64,69,255)" width="530" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="138" y="2012" fill-opacity="0" width="530" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,69,255)" stroke-width="2"/>
+  </g>
+  <use x="0" y="2050" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#subjectSequenceBox" xlink:type="simple" xlink:actuate="onLoad" xlink:show="embed"/>
+  <text x="9" font-size="11" y="2060" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="118">UniRef90_A0A1G6KDP2</text>
+  <text x="39" fill="black" font-size="9" y="2072" font-family="sans-serif">Cytochrome</text>
+  <text x="680" font-size="11" y="2060" fill="black" font-family="sans-serif" lengthAdjust="spacingAndGlyphs" textLength="242">Cytochrome P450 n=1 Tax=Actinokineospora...</text>
+  <line y2="2057" stroke-width="2" x1="125" x2="670" stroke="black" y1="2057"/>
+  <line y2="2060" stroke-width="2" x1="125" x2="125" stroke="black" y1="2054"/>
+  <line y2="2060" stroke-width="2" x1="670" x2="670" stroke="black" y1="2054"/>
+  <text x="125" fill="black" font-size="10" y="2070" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="670" font-size="10" y="2070" text-anchor="end" fill="black" font-family="sans-serif" id="subjectLength">411</text>
+  <text font-size="8" x="255" y="2068"><![CDATA[100]]></text>
+  <line y1="2057" y2="2059" x1="257" x2="257" stroke="black" stroke-width="1"/>
+  <line y1="2057" y2="2059" x1="390" x2="390" stroke="black" stroke-width="1"/>
+  <line y1="2057" y2="2059" x1="522" x2="522" stroke="black" stroke-width="1"/>
+  <line y1="2057" y2="2059" x1="655" x2="655" stroke="black" stroke-width="1"/>
+  <g>
+   <rect x="146" y="2052" fill-opacity="0.5" fill="rgb(64,64,255)" width="524" rx="3" ry="3" height="30" id="alnOverlay"/>
+   <rect x="146" y="2052" fill-opacity="0" width="524" rx="3" ry="3" height="30" id="alnBorder" stroke="rgb(64,64,255)" stroke-width="2"/>
+  </g>
+ </g>
+	
+	
+ <use x="112" y="2135" fill="url(#colorscale)" width="824" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#colorscaleBox" xlink:type="simple" xlink:actuate="onLoad" height="70" id="bottom" xlink:show="embed"/>
+
+</svg>
