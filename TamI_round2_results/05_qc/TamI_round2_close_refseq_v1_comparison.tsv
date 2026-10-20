@@ -1,4 +1,0 @@
-﻿dataset	N	L	Neff	Neff_over_L	scope
-v1_frozen	69	384	57.333333333333336	0.14930555555555555	historical broad P450 baseline
-v1_curation_only_control	24	382	18.0	0.04712041884816754	45 explicit other-function annotations removed; inherited alignment
-round2_curated	61	411	1.5722807639445757	0.0038255006422009143	reviewed provisional homologs; not confirmed TamI orthologs

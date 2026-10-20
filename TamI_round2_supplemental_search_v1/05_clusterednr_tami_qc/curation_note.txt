@@ -1,1 +1,0 @@
-Representative-query ClusteredNR candidates were all re-aligned to TamI reference ADC79647.1 and screened with the frozen thresholds. Auxiliary-query metrics were retained only as discovery provenance. Previously rejected post-MSA motif failures were explicitly blocked from re-entry.

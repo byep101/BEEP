@@ -1,5 +1,0 @@
-dataset	input_or_model_N	model_L	Neff	Neff_over_L	notes
-v1_frozen_broad_scope	69	384	57.333333333333336	0.14930555555555555	historical broad P450 baseline; includes explicit other-function proteins
-curated_legacy_control	24	382	18.0	0.04712041884816754	TamI-focused legacy set only
-previous_round2_60_new	84	411	18.57228076394459	0.04518803105582626	reference + 23 curated legacy + 60 new model sequences
-expanded_final_curated_v2	187	411	33.07600028797749	0.08047688634544402	reference + 23 curated legacy + 163 new model sequences

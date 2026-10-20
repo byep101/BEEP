@@ -1,6 +1,6 @@
 ﻿# BEEP To-Do
 
-最終更新日: 2026-08-04
+最終更新日: 2026-10-20
 
 ## Phase 0: リポジトリ整理
 
@@ -48,9 +48,12 @@
 - [x] full-length MSA と tree-building 用 smart-gap trimmed MSA を作成する。
 - [ ] catalytic-domain MSA を追加する。
 - [x] pilot MSA quality metrics を記録する: sequence count、gap fraction、coverage、conserved P450 motif alignment、reference residue mapping。
-- [ ] 最終共進化用セットを拡張した後に Neff を算出する。
-- [ ] 最初の軽量 baseline として MIp/APC を実行する。
-- [ ] MSA quality が許容範囲に入った後、DCA または EVcouplings を実行する。
+- [x] TamI: 最終共進化用セットを拡張した後に Neff を算出する。457 配列 × 401 位置、Neff=190.20、Neff/L=0.474（目標 0.3 達成）。2026-10-20。
+- [x] TamI: 最初の軽量 baseline として MIp/APC を実行する。80,200 pair。2026-10-20。
+- [x] TamI: DCA (plmc) を実行する。80,200 pair。最適化状態は `MINIMUMSTEP`（未収束扱い、`scores_generated_optimization_review`）。2026-10-20。
+- [ ] TamI: DCA の最適化状態を構造マッピング・BGC 証拠と併せて再確認する。MIp/DCA の top20 重複は 4/20、top50 は 10/50。
+- [ ] TxtC: 拡張 homolog set の構築、Neff 算出、MIp/DCA を実行する（TamI と同じ手順を適用）。
+- [ ] TamI: 新規追加配列の TamI orthology と BGC 近傍を確認する（現状は P450 注釈、数値 QC、motif のみ）。
 - [x] pilot 解析コマンドと parameter を、再実行可能な script、config、IQ-TREE log に保存する。
 
 ## Phase 5: 構造マッピング
@@ -63,12 +66,12 @@
 ## Phase 6: 候補残基ランキング
 
 - [ ] DCA/MIp rank、structure priority、literature support、uncertainty penalty を含む初期 FDetR scoring table を設計する。
-- [ ] TamI の既知残基を用いて、ranking が既知の機能残基または pocket residue を回収できるか確認する。
+- [ ] TamI の既知残基を用いて、ranking が既知の機能残基または pocket residue を回収できるか確認する。暫定: Leu101/Leu244/Leu295 は MIp/DCA とも residue top20 に入らない（MIp rank 253/238/105、DCA rank 363/157/73）。
 - [ ] TxtC を用いて、dynamic/conformational-switching residue を過剰解釈せずに扱えるか確認する。
 - [ ] 最初の candidate-residue report を Markdown 形式で作成する。
 
 ## 現在の優先事項
 
-1. TamI の MSA/coevolution MVP を開始する。
+1. TamI: MSA/MIp/DCA は完了（`tami_project/coevolution/`）。次は 6XA2/6XA3 への構造マッピングと DCA 最適化状態の再確認。
 2. TxtC では Q8VS75/PDB numbering と AAW49320.1 BGC anchor の二列 mapping を維持して解析する。
 3. RosC と MpaDE_MpaD は、Issues_to_check に残した source split、chain ID、domain boundary を解消してから構造マッピングへ進める。

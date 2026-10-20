@@ -1,5 +1,0 @@
-Manual review note
-All 100 supplied FASTA headers describe cytochrome P450 family proteins from Streptomyces.
-The supplied files contain no BGC neighborhood or experimentally validated function field.
-Records passing the manual's identity, query coverage, length, ambiguity, and duplicate rules are retained as provisional high-similarity homologs.
-They are not claimed to be confirmed TamI orthologs. The close-only set is analyzed separately to expose sensitivity to unresolved legacy membership.

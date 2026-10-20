@@ -4,11 +4,17 @@ BEEP (BGC-Heme Enzyme Evolution Project) は、生合成遺伝子クラスター
 
 本プロジェクトの目的は、BGC レベルの代謝経路情報、P450 配列の共進化シグナル、三次元構造情報、文献証拠を統合し、機能決定残基 Functional Determinant Residues (FDetR) を推定するための再利用可能な解析基盤を構築することである。
 
-最終更新日: 2026-08-04
+最終更新日: 2026-10-20
+
+## 現在の進捗
+
+- データセット標準化 (TamI, TxtC, RosC, MpaDE_MpaD): v0.1 完了。
+- TamI 共進化解析 (round 2): MSA 拡張、Neff、MIp/APC、DCA まで完了（`tami_project/coevolution/`）。最終 MSA は 457 配列 × 401 位置、Neff=190.20、Neff/L=0.474。DCA は `MINIMUMSTEP` で未収束扱い。既知 Leu 位点 (101/244/295) は residue top20 外。詳細は `tami_project/coevolution/TamI_round2_supplemental_search_v1/README_FINAL.md`。
+- 次段階: TamI の構造マッピング (6XA2/6XA3)、TxtC 側の homolog 拡張と共進化解析、候補残基ランキング。
 
 ## 現在の範囲
 
-現段階では、benchmark データセットの標準化を優先する。まず、出典、ファイル、ハッシュ、配列対応、構造対応を追跡できるローカルデータパッケージを作成し、その後に MSA、MIp/DCA/EVcouplings、構造マッピング、候補残基ランキングへ進む。
+benchmark データセットの標準化は v0.1 まで完了し、現在は TamI の共進化解析結果を構造・BGC 証拠と統合する段階にある。データ整理では、出典、ファイル、ハッシュ、配列対応、構造対応を追跡できるローカルデータパッケージを作成し、その後に MSA、MIp/DCA/EVcouplings、構造マッピング、候補残基ランキングへ進む。
 
 現在の core dataset v0.1 統合版に入っている benchmark 系は以下の通り。
 
@@ -43,14 +49,17 @@ BEEP/
     literature_notes/
     manuals/
     reports/
+  tami_project/
+    data/ metadata/ literature_notes/ manuals/ reports/
+    coevolution/           # TamI 共進化解析（索引: coevolution/README.md）
+      round1_pilot/        # round 1: 最小キット MIp pilot（pilot MSA/系統樹は metadata/msa/TamI 等）
+      round2/              # round 2: 拡張 MSA、Neff、MIp/DCA
+        TamI_round2_manual_input/ ... TamI_round2_execution/
+        TamI_round2_supplemental_search_v1/   # 最終結果
   txtc_project/
-    data/
-      raw/
-      processed/
-    metadata/
-    literature_notes/
-    manuals/
-    reports/
+    (同上)
+  rosc_project/, mpade_mpad_project/
+  config/, scripts/, tests/, reports/
   backup/
 ```
 
@@ -61,7 +70,8 @@ BEEP/
 - `metadata/`: コアデータ表、ダウンロードログ、検証チェックリスト、配列対応表。
 - `literature_notes/`: 文献証拠、反応機構、benchmark residue の整理。
 - `manuals/`: データ整理の操作手順書。
-- `reports/`: 進捗報告、会議資料、解析レポート。
+- `reports/`: 進捗報告、会議資料、解析レポート（TamI round 2 Neff レポートを含む）。
+- `coevolution/`: 共進化解析の入力・結果・実行スクリプト（現在は TamI のみ）。
 
 ## データセットの状態
 
@@ -144,3 +154,5 @@ MpaDE_MpaD は `metadata/core_bgc_p450_dataset_v0.1_master.csv` の v0.1 統合�
 TamI と TxtC について、reference 確認、local Swiss-Prot/Bacteria homolog 検索、filter、MAFFT full-length MSA、残基・P450 motif QC、smart-gap tree MSA、IQ-TREE ModelFinder + SH-aLRT 1000 + UFBoot 1000 を実行した。結果と制約は `reports/TamI_TxtC_MSA_tree_workflow_v0.1.md`、共通 parameter は `config/p450_phylo_pilot_v0.1.json`、集計値は各 system の `metadata/msa/<System>/msa_tree_summary.csv` に記録している。
 
 TamI は reference を含む 69 配列、TxtC は 44 配列である。TxtC は手順書の pilot 推奨 50 配列を下回るため、最終共進化解析へ進む前により広いデータベースで homolog set を拡張する。
+
+TamI は上記 pilot の後、round 2 で homolog set を拡張し、2026-10-20 に最終 MSA と MIp/DCA を完了した（`tami_project/coevolution/`）。上記 69 配列は pilot 時点の値である。

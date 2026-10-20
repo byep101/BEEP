@@ -1,5 +1,0 @@
-Expanded TamI round-2 intake curation note
-Scope choice carried forward from the user: retain the curated TamI-focused legacy set (reference plus 23 unresolved/generic homologs), excluding 45 legacy proteins with explicit alternative functions.
-New candidates were screened with the unchanged manual thresholds: identity 25-95% inclusive, query span coverage >=0.70, reported qcovs >=70%, length ratio 0.75-1.25, nonstandard amino acids <=1%, and exact full-length sequence deduplication.
-RefSeq takes precedence for accessions present in both downloads. Same-accession sequences were required to be identical across sources.
-Supplied new headers are generic cytochrome P450 or hypothetical-protein descriptions; no explicit alternative physiological function is asserted. TamI orthology and BGC context remain unverified.

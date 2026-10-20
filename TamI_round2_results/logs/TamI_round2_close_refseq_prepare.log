@@ -1,7 +1,0 @@
-{
-  "input_rows": 64,
-  "model_rows": 61,
-  "model_length": 411,
-  "neff": 1.5722807639445757,
-  "neff_over_model_length": 0.0038255006422009143
-}
