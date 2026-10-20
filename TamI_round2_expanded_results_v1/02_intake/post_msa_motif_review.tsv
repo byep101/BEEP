@@ -1,0 +1,3 @@
+sequence_id	decision	reason	selected_source	pident	reported_qcovs_percent	query_span_coverage	fasta_length	annotation	organism	E287	R290	E305_manual_checkpoint	C359	ExxR_window	heme_window
+MDT7786182.1	exclude_after_post_msa_motif_review	C359_and_entire_heme_window_missing_in_reference_projection; truncated_or_domain_mismatched_sequence	clusteredNR_batch01	75.0	86.14	0.8038740920096852	333	hypothetical protein	Pseudonocardiales bacterium	E	R	E	-	ELLR	----------
+WP_453160342.1	exclude_after_post_msa_motif_review	supplied_header_marks_partial; C359_missing_in_reference_projection; incomplete_C_terminal_heme_region	RefSeq	80.447	88.55	0.864406779661017	398	cytochrome P450 family protein, partial	Streptomyces niveus	E	R	E	-	EFLR	FGHGIHH---

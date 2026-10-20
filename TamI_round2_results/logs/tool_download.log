@@ -1,0 +1,7 @@
+Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libmbedcrypto7 amd64 2.28.0-1build1 [204 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libmbedtls14 amd64 2.28.0-1build1 [82.7 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libmbedx509-1 amd64 2.28.0-1build1 [47.2 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/universe amd64 mafft amd64 7.490-1 [776 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy/universe amd64 ncbi-blast+ amd64 2.12.0+ds-3build1 [12.3 MB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy/universe amd64 ncbi-data all 6.1.20170106+dfsg1-9 [3519 kB]
+Fetched 16.9 MB in 5s (3648 kB/s)

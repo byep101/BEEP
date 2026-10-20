@@ -1,0 +1,39 @@
+{
+  "fasta_sha256": "b7617e9d8b7715f4115d83986b609ee9b8556c7fa5103fec22167c98a954a12a",
+  "hit_table_sha256": "b9bd339248540a785ef29a0e6c670050f6466deff50490dc29ca118150ae7d1e",
+  "fasta_records": 100,
+  "nonempty_hit_rows": 100,
+  "unique_hit_accessions": 100,
+  "fasta_only_accessions": [],
+  "hit_only_accessions": [],
+  "all_accessions_match_one_to_one": true,
+  "query_ids": [
+    "ADC79647.1"
+  ],
+  "query_coordinate_convention": "1-based inclusive",
+  "hit_table_format": [
+    "qseqid",
+    "saccver",
+    "pident",
+    "length",
+    "mismatch",
+    "gapopen",
+    "qstart",
+    "qend",
+    "sstart",
+    "send",
+    "evalue",
+    "bitscore",
+    "qcovs"
+  ],
+  "identity_min": 77.262,
+  "identity_max": 100.0,
+  "identity_gt_95_count": 37,
+  "identity_25_to_95_count": 63,
+  "sequence_length_min": 397,
+  "sequence_length_max": 460,
+  "exact_duplicate_sequence_groups": 0,
+  "numeric_pass_count": 63,
+  "numeric_exclude_count": 37,
+  "known_excluded_sequence_reference_loaded": true
+}

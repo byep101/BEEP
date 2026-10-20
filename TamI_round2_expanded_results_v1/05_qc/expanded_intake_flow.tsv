@@ -1,0 +1,7 @@
+stage	N	excluded_at_stage	notes
+raw source rows	500	0	250 RefSeq + 250 clusteredNR
+unique accessions	439	61	same-accession cross-source merge; RefSeq precedence
+fixed numeric QC pass	169	270	unchanged identity/coverage/length/ambiguity rules
+combined with curated legacy	193	0	169 new + 24 legacy/reference
+post-MSA motif-curated input	191	2	excluded WP_453160342.1 and MDT7786182.1
+final model after exact focus dedup	187	4	four exact focus duplicates

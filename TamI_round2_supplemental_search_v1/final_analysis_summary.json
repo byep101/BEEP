@@ -1,0 +1,180 @@
+{
+  "completed_utc": "2026-10-20T12:43:59.798850+00:00",
+  "status": "round2 supplemental MSA, weighting, MIp and DCA complete; DCA optimizer status requires review",
+  "representative_queries": 6,
+  "input": {
+    "existing_round2": 191,
+    "UniRef90_new_unique": 119,
+    "ClusteredNR_recovered_after_qcov_correction": 152,
+    "final_full_length_input": 462
+  },
+  "model": {
+    "N": 457,
+    "L": 401,
+    "Neff": 190.19749270403068,
+    "Neff_over_L": 0.4743079618554381,
+    "planning_target_0.3_met": true,
+    "exact_focus_duplicates_removed": 5,
+    "three_anchor_pass": "457/457 final model sequences",
+    "E305_distribution": {
+      "E": 353,
+      "R": 5,
+      "Q": 34,
+      "D": 31,
+      "T": 6,
+      "S": 2,
+      "H": 1,
+      "N": 1,
+      "A": 18,
+      "K": 2,
+      "V": 3,
+      "G": 1
+    },
+    "benchmark_positions_retained": [
+      101,
+      244,
+      295,
+      287,
+      290,
+      305,
+      359
+    ]
+  },
+  "field_semantics_correction": {
+    "branch01_downloaded_rows": 250,
+    "matched_local_alignments": 250,
+    "identity_matches_within_0.001": 250,
+    "downloaded_field13_matches_local_ppos_within_0.01": 250,
+    "downloaded_field13_matches_local_qcovs_within_0.01": 0,
+    "median_absolute_field13_minus_qcovs": 29.505000000000003,
+    "conclusion": "Downloaded column 13 is ppos (percent positives), not qcovs. Intake coverage must use recomputed TamI-reference BLAST qcovs.",
+    "thresholds_changed": false,
+    "source_files_changed": false
+  },
+  "MIp": {
+    "status": "computed_not_validated",
+    "pair_count": 80200,
+    "eligible_pairs": 75137,
+    "frequency_estimator": "weighted empirical, no pseudocount, pairwise delete missing",
+    "log_base": "e",
+    "apc": "off-diagonal row means, diagonal excluded; compute before sequence-distance filtering",
+    "min_reference_separation": 6,
+    "alignment_sha256": "b687d12fe4b602ca1827c9bab9dafa160ce9b8ad902499cd0be109c76057e676",
+    "weights_sha256": "4feaf011dafef183a2167af764b46c9149edbb1e2da58f836b87010c2978f68d",
+    "pairs_sha256": "e8d24a9de4259143c56ecdb99d524859088e77e1c26208c6bec3936d67d2900b",
+    "site_entropy_sha256": "4790d28586dcfa5d6229d21e19d3c5b6bcff699b6ee70a861df3a616106c32da"
+  },
+  "DCA": {
+    "outputs_validated": true,
+    "pair_count": 80200,
+    "optimization_status": "MINIMUMSTEP",
+    "optimizer_converged": false,
+    "plmc_effective_samples": 190.2,
+    "evcouplings_version": "0.3.0",
+    "params_sha256": "0b9eb9f5a6f255474024060527019e0a7ae546f0767bbca9761dbb6c2eb578a8",
+    "params_local_archive": "/home/byep101/projects/tami_dca/TamI_round2_supplemental_final/dca/TamI.params",
+    "params_copied_to_Windows_package": false
+  },
+  "comparison": {
+    "status": "scores_generated_optimization_review",
+    "N": 457,
+    "L_model": 401,
+    "Neff": 190.19749270403068,
+    "Neff_L": 0.4743079618554381,
+    "comparisons": [
+      {
+        "requested_k": 20,
+        "actual_k": 20,
+        "overlap_pairs": 4,
+        "jaccard": 0.1111111111111111,
+        "interpretation": "descriptive only; ties cut by coordinate"
+      },
+      {
+        "requested_k": 50,
+        "actual_k": 50,
+        "overlap_pairs": 10,
+        "jaccard": 0.1111111111111111,
+        "interpretation": "descriptive only; ties cut by coordinate"
+      }
+    ],
+    "residue_score_definition": "maximum eligible pair score for each site; descriptive heuristic",
+    "benchmark": [
+      {
+        "residue": "L101",
+        "reference_position": 101,
+        "model_column": "91",
+        "status": "scored",
+        "MIp_rank": 253,
+        "DCA_CN_rank": 363,
+        "MIp_top20": 0,
+        "DCA_top20": 0
+      },
+      {
+        "residue": "L244",
+        "reference_position": 244,
+        "model_column": "234",
+        "status": "scored",
+        "MIp_rank": 238,
+        "DCA_CN_rank": 157,
+        "MIp_top20": 0,
+        "DCA_top20": 0
+      },
+      {
+        "residue": "L295",
+        "reference_position": 295,
+        "model_column": "285",
+        "status": "scored",
+        "MIp_rank": 105,
+        "DCA_CN_rank": 73,
+        "MIp_top20": 0,
+        "DCA_top20": 0
+      }
+    ],
+    "biological_conclusion": "not established",
+    "dca_optimization_status": "MINIMUMSTEP"
+  },
+  "source_neff_contributions": [
+    {
+      "source_group": "curated_legacy",
+      "input_sequences": 24,
+      "model_sequences": 24,
+      "excluded_exact_focus_duplicates": 0,
+      "Neff_contribution_sum_weights": 17.03030303030303,
+      "fraction_of_total_Neff": 0.08954010270158584,
+      "mean_model_weight": 0.7095959595959597,
+      "median_model_weight": 1.0
+    },
+    {
+      "source_group": "round2_existing_new",
+      "input_sequences": 167,
+      "model_sequences": 163,
+      "excluded_exact_focus_duplicates": 4,
+      "Neff_contribution_sum_weights": 13.653415124359752,
+      "fraction_of_total_Neff": 0.07178546325847758,
+      "mean_model_weight": 0.08376328297153221,
+      "median_model_weight": 0.02631578947368421
+    },
+    {
+      "source_group": "UniRef90_supplement",
+      "input_sequences": 119,
+      "model_sequences": 119,
+      "excluded_exact_focus_duplicates": 0,
+      "Neff_contribution_sum_weights": 63.31853645412971,
+      "fraction_of_total_Neff": 0.33290941722696993,
+      "mean_model_weight": 0.5320885416313418,
+      "median_model_weight": 0.3333333333333333
+    },
+    {
+      "source_group": "ClusteredNR_qcov_correction",
+      "input_sequences": 152,
+      "model_sequences": 151,
+      "excluded_exact_focus_duplicates": 1,
+      "Neff_contribution_sum_weights": 96.1952380952381,
+      "fraction_of_total_Neff": 0.5057650168129663,
+      "mean_model_weight": 0.6370545569221066,
+      "median_model_weight": 0.5
+    }
+  ],
+  "source_thresholds_changed": false,
+  "orthology_and_BGC_context_established": false
+}

@@ -1,0 +1,351 @@
+{
+  "query_label": "TamI_branch_02",
+  "query_file": "/mnt/c/Users/31441/Desktop/work/BEEP/TamI_round2_supplemental_search_v1/00_queries/TamI_branch_02.faa",
+  "database": "uniref90",
+  "program": "blastp",
+  "stype": "protein",
+  "matrix": "BLOSUM62",
+  "evalue": 1e-50,
+  "filter": "F",
+  "max_hits": 50,
+  "email": "byep101@gmail.com",
+  "job_id": "ncbiblast-R20261019-193535-0921-42594129-p1m",
+  "submitted_utc": "2026-10-19T18:35:34.589414+00:00",
+  "final_status": "FINISHED",
+  "status_history": [
+    {
+      "elapsed_seconds": 1.457,
+      "status": "QUEUED"
+    },
+    {
+      "elapsed_seconds": 7.608,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 13.798,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 20.289,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 26.423,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 32.547,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 38.667,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 44.833,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 51.251,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 57.42,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 63.566,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 69.694,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 75.853,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 82.046,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 88.23,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 94.496,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 100.686,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 106.836,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 112.999,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 119.163,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 125.311,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 131.477,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 137.603,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 143.792,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 149.955,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 156.893,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 163.031,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 169.224,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 175.432,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 182.645,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 190.82,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 197.292,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 203.748,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 210.156,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 216.297,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 222.452,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 229.934,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 236.413,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 242.583,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 248.727,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 254.863,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 261.146,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 267.277,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 273.481,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 280.487,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 286.612,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 292.763,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 299.117,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 305.277,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 311.829,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 319.327,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 325.498,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 332.777,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 338.941,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 345.366,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 351.511,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 357.658,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 364.025,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 370.242,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 376.375,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 382.492,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 388.621,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 394.749,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 400.865,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 407.005,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 413.264,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 419.382,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 425.903,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 432.041,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 438.205,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 444.342,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 450.478,
+      "status": "RUNNING"
+    },
+    {
+      "elapsed_seconds": 456.608,
+      "status": "FINISHED"
+    }
+  ],
+  "result_types": [
+    "out",
+    "json",
+    "ids",
+    "accs",
+    "xml",
+    "tsv",
+    "error",
+    "sequence",
+    "visual-svg",
+    "complete-visual-svg",
+    "visual-png",
+    "complete-visual-png",
+    "visual-jpg",
+    "complete-visual-jpg",
+    "ffdp-query-svg",
+    "ffdp-query-png",
+    "ffdp-query-jpeg",
+    "ffdp-subject-svg",
+    "ffdp-subject-png",
+    "ffdp-subject-jpeg",
+    "submission",
+    "zip"
+  ],
+  "download_errors": [
+    {
+      "result_type": "visual-jpg",
+      "http_status": 500
+    },
+    {
+      "result_type": "complete-visual-jpg",
+      "http_status": 500
+    },
+    {
+      "result_type": "ffdp-query-jpeg",
+      "http_status": 500
+    },
+    {
+      "result_type": "ffdp-subject-jpeg",
+      "http_status": 500
+    }
+  ]
+}

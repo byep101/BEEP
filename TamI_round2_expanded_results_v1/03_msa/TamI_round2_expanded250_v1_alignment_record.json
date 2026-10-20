@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/home/byep101/projects/tami_dca/TamI_round2/tools/prefix/usr/bin/mafft",
+    "--localpair",
+    "--maxiterate",
+    "1000",
+    "--thread",
+    "4",
+    "/home/byep101/projects/tami_dca/TamI_round2/02_intake/expanded250_v1/combined_curated_expanded_v1.faa"
+  ],
+  "started_utc": "2026-10-19T17:53:36.642421+00:00",
+  "input_sha256": "e97cdb5321417713c956885b38bac91f560e90c2a69ed3bd9b32b99c4aec9570",
+  "curation_note": "/home/byep101/projects/tami_dca/TamI_round2/02_intake/expanded250_v1/curation_note.txt",
+  "curation_note_sha256": "a52aeb376b12401ad8e0baf688e7a642d2bb8cdbe5a1f97afcf13bfd87cb4aa4",
+  "strategy_changed_from_v1": false,
+  "baseline_full_length_restored": true,
+  "functional_scope_changed_by_user": true
+}

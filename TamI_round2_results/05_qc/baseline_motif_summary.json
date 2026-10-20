@@ -1,0 +1,10 @@
+{
+  "v1_frozen": {
+    "N": 69,
+    "all_three_anchor_matches": 69
+  },
+  "v1_curated_control": {
+    "N": 29,
+    "all_three_anchor_matches": 29
+  }
+}

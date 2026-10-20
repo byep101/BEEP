@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-10-19T16:10:29.032836+00:00",
+  "stage": "round2_MSA_Neff_completed_stopped_by_manual_rule",
+  "scope": "homolog intake, full-length MSA, project-defined sequence weights and Neff",
+  "manual_inputs_received": true,
+  "manual_input_N": 100,
+  "numeric_pass_N": 63,
+  "primary_input_N": 87,
+  "primary_model_N": 84,
+  "primary_model_L": 411,
+  "primary_Neff": 18.57228076394459,
+  "primary_Neff_over_L": 0.04518803105582626,
+  "stop_condition_met": true,
+  "stop_reason": "Neff/L did not improve relative to frozen V1; new close homologs are strongly redundant at theta=0.8",
+  "planning_target_0.3_met": false,
+  "reference_and_benchmark_QC_pass": true,
+  "motif_anchor_QC_pass": true,
+  "MIp_DCA_structure_run": false,
+  "functional_scope_limit": "Supplied annotations are generic P450 labels; TamI orthology and BGC context remain unverified",
+  "manual_followup_data": "GenBank genomic neighborhoods for the 63 numeric-pass accessions, preferably +/-10 genes or about +/-20 kb, with BGC membership review"
+}
