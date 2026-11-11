@@ -1,0 +1,17 @@
+{
+  "pair_count": 63190,
+  "expected_pairs": 63190,
+  "outputs_validated": true,
+  "optimizer_status_detected": "MAXIMUMITERATION",
+  "optimizer_converged": false,
+  "convergence_note": "conservative default; reviewer must read full plmc.log; score validity is not convergence",
+  "score": "APC-corrected Frobenius norm CN; do not apply APC again",
+  "smoke": true,
+  "input_hashes": {
+    "focus.faa": "2d87db8fb6231e2591c79bf4879b972d1e50b941b85fc2f810bb19670f842760",
+    "weights.txt": "57a6be789dd50af302aa68689b58635d00315f98ded07108f34590d9ccaebbfe",
+    "column_map.tsv": "030d7c95217be88a0d374b3f746d668ed94a055dd057772e1983ca462fded2d8"
+  },
+  "raw_sha256": "2db04e4eb4052292b46adce1a068c9eb789b2a4ec0298e66231eb0f6d689a353",
+  "pairs_sha256": "baf6c96d9c9170ea2ca7b88088b102cb757b5d4c15ef467c1662045a1bbe50ba"
+}

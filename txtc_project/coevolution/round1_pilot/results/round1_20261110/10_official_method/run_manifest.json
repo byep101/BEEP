@@ -1,0 +1,176 @@
+{
+  "run_date": "2026-11-10",
+  "timezone": "Asia/Tokyo",
+  "status": "scores_generated_optimization_review",
+  "authoritative_outputs": "10_official_method; other earlier stage directories are smoke, superseded or aborted",
+  "scope": "broad_P450_pilot; not a confirmed TxtC ortholog alignment or functional validation",
+  "sources": {
+    "prefilter_records": 6802,
+    "filtered_homologs_before_anchor_motif_curations": 4007,
+    "exact_unique_filtered_homologs": 4007,
+    "uniref90_cluster_membership_count": 21,
+    "ncbi_remote_blast": "prior query failed CPU quota; no NCBI hits included in this run",
+    "explicit_txtC_annotation_count_in_filtered_homologs": 1
+  },
+  "filters": {
+    "pident_percent": [
+      25,
+      95
+    ],
+    "qcovs_min_percent": 70,
+    "evalue_max": "1e-20",
+    "bitscore_per_reference_residue_min": 0.5,
+    "length_ratio": [
+      0.75,
+      1.25
+    ],
+    "ambiguous_residue_fraction_max": 0.01,
+    "signature_screen": "PROSITE PS00086",
+    "excluded_signature_failures": 138,
+    "anchor_mismatches_excluded": 13,
+    "overlap_exclusions": 3,
+    "total_unique_exclusions": 148
+  },
+  "model": {
+    "reference": "UniProt Q8VS75; AAW49320.1 retained as BGC reference row",
+    "N": 3860,
+    "L": 361,
+    "Neff": 2358.643820881473,
+    "Neff_per_L": 6.533639393023471,
+    "weight_definition": "identical non-gap residues / all final L positions >=0.80; exact post-mask focus duplicates removed",
+    "anchors": [
+      "237:T"
+    ],
+    "full_pair_count": 64980,
+    "eligible_pair_count": 61899,
+    "eligible_rule": "reference separation >=6 and both sites variable"
+  },
+  "mip": {
+    "alphabet_states": 21,
+    "gap_state_included": true,
+    "apc": "off-diagonal APC, operation-manual implementation",
+    "top20_overlap": 3,
+    "top50_overlap": 12,
+    "top100_overlap": 23,
+    "spearman_rho": 0.38755
+  },
+  "plmc": {
+    "binary_sha256": "be3ceb4719b23478ec7679a9fa1ea688826c7ba25ae8c5df0da91a4cf6378c1d",
+    "lambda_h": 0.01,
+    "lambda_e_base": 0.01,
+    "lambda_e_value": 75.81,
+    "lambda_e_formula": "0.01*21*L",
+    "iterations_cap": 100,
+    "threads": 4,
+    "optimizer_status": "MAXIMUMITERATION",
+    "converged": false,
+    "score": "APC-corrected Frobenius norm CN"
+  },
+  "lambda_sensitivity": {
+    "0.5x": {
+      "lambda_e": 37.905,
+      "optimizer_status": "ROUNDING_ERROR",
+      "rho_vs_1x": 0.978856,
+      "top20_overlap_vs_1x": 19,
+      "top50_overlap_vs_1x": 49,
+      "top100_overlap_vs_1x": 95
+    },
+    "2x": {
+      "lambda_e": 151.62,
+      "optimizer_status": "MAXIMUMITERATION",
+      "rho_vs_1x": 0.962649,
+      "top20_overlap_vs_1x": 18,
+      "top50_overlap_vs_1x": 48,
+      "top100_overlap_vs_1x": 96
+    }
+  },
+  "structure": {
+    "reference": "Q8VS75",
+    "PDB_chains": {
+      "6F0B": "A",
+      "6F0C": "A"
+    },
+    "identical_mapped_residues": 383,
+    "residue_237": "Thr; maps to PDB author residue 237 in both structures",
+    "nearest_cysteine_sg_to_heme_fe_reference_position": 344,
+    "6F0B_cys_fe_A": 2.518426,
+    "6F0C_cys_fe_A": 2.352304,
+    "DCA_top20_heavy_contacts_le5A": {
+      "6F0B": "17/20",
+      "6F0C": "17/20"
+    },
+    "MIp_top20_heavy_contacts_le5A": {
+      "6F0B": "5/20",
+      "6F0C": "5/20"
+    }
+  },
+  "tool_versions": {
+    "python": "3.10.12",
+    "mafft": "7.490",
+    "blastp": "2.12.0",
+    "plmc_binary": "/home/byep101/software/plmc/bin/plmc",
+    "numpy": "1.21.5",
+    "biopython": "1.79",
+    "pandas": "1.3.5",
+    "scipy": "1.8.0"
+  },
+  "support_zip_sha256": "f17fed6fb6d5f05fe8be2eb3b4d14c5eb8b78fa7355fcbb642cecc36267d31d1",
+  "test_results": {
+    "support_tool_synthetic_tests": "6/6 PASS",
+    "TxtC_pipeline_starter_smoke_test": "PASS on synthetic data"
+  },
+  "source_hashes": {
+    "AAW49320.1": "cc56c3e34cf6803a2d8f96442d416ccaca3bc9a759b8e976bea413380a30e373",
+    "Q8VS75": "a0b296236e5847f6687dfa1fd17226af7ac829b7d14cd27f40ef7d9dbf86777f",
+    "expanded_filtered": "c7af732f3bdc696811ff1239d2e209b696fe61badb6ac93ef8bbbecad5c839ae",
+    "expanded_prefilter": "61cefbef81157a87677cd60dcef8c9dccd9ebcd1ff71b1e8353e23ac8a1e46ea",
+    "expanded_sequence_metadata": "5eaa201b82a545908becd10b0aa98a5e00cd15c140b0b70718313052fbe3a75b",
+    "seqid95_clusters": "4e9f1182de2aaef9b641ad5c663c8ba9db7e713e902f298832a03411671aa9e1",
+    "blast_expansion_summary": "af0da35ca60c6a5e02cfcd9c4a26e3d58b5d1c6438f37ae2e5e110684c2f1ca3",
+    "UniRef90_membership": "df37e8a719455c51754ac9e16a16a42d887ba630899e63852cf302985778f679",
+    "PDB_6F0B": "777cc5257d5048f7055da0f502ace638d00e89288940f6a0a05330fcbc1c239b",
+    "PDB_6F0C": "a5a94614cddde1acc7177e31953628f4db3fc29a762d539244bf90dbb25ed2ef",
+    "prior_NCBI_BLAST_log": "8c86ded297c047ae3a00c34f4530a4e0566c993d41c2f4d6cab6f832886423b1",
+    "raw_Uniprot_bacteria_P450_fasta_gz": "8adeb965e4a44055e6314a088528dd74afdf8855999885a1631e99c14ca12d67",
+    "raw_expansion_BLAST_table": "0cfe45a922bbb0ca589a8f8f5b5978162be8d16d7071464daef7d3a62f866487",
+    "UniRef90_Q8VS75_json": "0a571ba5e9a597965d10aa189b3e88fcc9e7fa3c31c9944ce1507ac0e9b765b8",
+    "UniRef90_Q8VS75_fasta": "163b006f9594ccba102032ad48fbb50f922a7f74e9ab6b310c2d34f0431eb259",
+    "expanded_excluded_metadata": "2b65b2f00077eb50048cc299e37bed94abfda8d1b653bfce8eabdbab83830a7b",
+    "local_Blast_recheck": "a2ae8e9464c5e5001d2f2c54e5ada9b86c6151eeffabb3bef7e880c95d24700c"
+  },
+  "output_hashes": {
+    "input/full_alignment_curated.fasta": "a0cf04afdb7581ea969b038bd34e0d2ae1bfea04e4607b3b08198f105eeababf",
+    "input/exclude_curated_model.txt": "232292963653fb2f8c615d01a36b7ca833045c99dec13c0470ca27204db3a5a7",
+    "input/exclusion_audit.tsv": "95f930b4c52f708833db7f7f053b9dfe5b74360248ecf8754a0a8bbdf27094ab",
+    "input/curation_summary.json": "a14ff26bcc05c64b41c61b32f11cbbda3284e43a50c6003bd39a6a85b307047b",
+    "align/focus/txtc_focus.fasta": "62eea2eb8789df753132af7c9522731e9cadd6225aabfa5363608bc015bac3d2",
+    "align/focus/weights.txt": "6c6f7c36bf348750d23f7c019daac58bad85da01b1053d3897dd91250c49d5df",
+    "align/focus/position_map.csv": "0cc3caad67ef35356e1de9a51f372ee34ebd0d472dd62d27ddef4c2024df917f",
+    "align/focus/site_qc.csv": "1808494d1f931a0c1942dc8960a7ce962a3fe02298a088fa56bc30dbeed6fd12",
+    "align/focus/qc.json": "127edddc1e6b5ac7c0c99ddfe558010dc5cd3a8ec87f1a06e6c6a1a7fe38044d",
+    "results/mip/mip_allpairs.csv": "f3158dc45fce25b7182d88cf44fa0f0b6b410f63b5aa4c1899cfe228b3fc1554",
+    "results/dca/plmc_couplings.txt": "c31de0e2027f7fc79d12da9d248e613c5bf5342c6a3fe45495aad037dce00a0e",
+    "results/dca/plmc.params": "b57ace3cd5787f13f3bc7d19e014c43c4cb6e97e7036f32f6014e4d031c3edbb",
+    "results/dca/plmc.log": "85f75fbafc48da490845db62112833dcab292d1b4f02f9e9cb71cc2945efcb8e",
+    "results/compare/ranked_comparison.csv": "75f0a92dbaea6cc1d1cabb19e692ee77d1008b17448b49015bed528e4b839bd8",
+    "results/compare/comparison_summary.txt": "e70851221a8934e4a8b812f0d31b4b06c2a077cb6f7c59c4657d7955e5ee3de7",
+    "results/compare/intersection_top20.csv": "3735e5d2a10173a9b1cc3d1707e479d1a31609fe8412b5e862c3d98706a873bf",
+    "results/compare/intersection_top50.csv": "cb40fb49eb048175d0b8e86d55e01f3e6e6fc54bb0e1bdd6af4d7289ee2e14fb",
+    "results/compare/intersection_top100.csv": "84b2db52d94fd2322b1a85d32988194f8c7139809005ce0a9151f34735852f43",
+    "results/structure/6F0B_MIp_summary.txt": "b17c2b79761897d0c13245dd7c503a459096801281442161c15a616563870a8b",
+    "results/structure/6F0B_DCA_summary.txt": "d297367926e0b4434d6b6021a3d57332dd6ceaa22dc12278a4bf5dc7482fe676",
+    "results/structure/6F0C_MIp_summary.txt": "95e8e731877ee341545cefdf878007a6d998996d1cab2ea673a7f77e5bf37a70",
+    "results/structure/6F0C_DCA_summary.txt": "e5d692c6832c1d1c68b92328fca61d2557a382ca0ff59289d957e11b304e5962",
+    "results/dca_sensitivity/lambda_0.5x/couplings.txt": "0c8cd5320a9b0cc22bdd130149efd8aa2a355d4b78a94176a28ec94230c0864a",
+    "results/dca_sensitivity/lambda_0.5x/plmc.log": "d68ba6b5b212cc859219ad30b9cd78e175bf86a34f68dfe3eef744dd1a271eea",
+    "results/dca_sensitivity/lambda_2x/couplings.txt": "db3fef22489b2ceafdd1a9415e631405edc9eba16bf10dd16d601b3d6195d7d0",
+    "results/dca_sensitivity/lambda_2x/plmc.log": "680340217ab57aeb8b1de8d2067c3781e6d894c5bf0f7ab1abc72fe44e07bdef",
+    "results/dca_sensitivity/lambda_0.5x/compare/comparison_summary.txt": "f20a8df992e70380536287960fdc69483d9839db234b347e2e12d14829d696d6",
+    "results/dca_sensitivity/lambda_2x/compare/comparison_summary.txt": "f566ddb99de7074ba4a71e624ddf709a54f2554ad6cc365ffcfc1374465afec5",
+    "results/validation.json": "e1ebf01c91c60b68804d4a07c18c286bce9659081de1de2d5aa2d4d97a1040b1",
+    "commands.json": "b3108fb750abb724446886ceb6ee02e2363f4d9c7cc89a78b0f6ac80bfab8625",
+    "environment.txt": "2af67ee342fcdfe8cf23e20c63912edc0c0ff6de7ecae0c290c5a43c094ecd78",
+    "results/dca_sensitivity/lambda_0.5x/compare/ranked_comparison.csv": "e484a3ada37c37fc982795d6f4794c1c4537bb52c8b79ad23c755f06e6850cff",
+    "results/dca_sensitivity/lambda_2x/compare/ranked_comparison.csv": "8673fbeac77dea7d28c5a65ac25949193cfe4290657af14317dabd980bf9ca68"
+  }
+}

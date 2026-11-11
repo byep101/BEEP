@@ -1,0 +1,6 @@
+All pair scores: 64980
+Eligible nonlocal and variable pairs: 61899
+Spearman rho on eligible pairs: 0.343209; p=0
+Top20 intersection: 4 / 20 (20.0%)
+Top50 intersection: 12 / 50 (24.0%)
+Top100 intersection: 22 / 100 (22.0%)

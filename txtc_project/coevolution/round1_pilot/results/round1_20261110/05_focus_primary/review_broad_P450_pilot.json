@@ -1,0 +1,9 @@
+{
+  "reviewer": "Copilot AI-assisted computational preflight, 2026-11-10",
+  "reference_mapping_reviewed": true,
+  "motif_alignment_reviewed": true,
+  "homolog_scope_reviewed": true,
+  "homolog_scope": "broad_P450_pilot",
+  "unresolved_count": 0,
+  "notes": "Reviewed AAW49320.1/Q8VS75 as equal-length 395-aa sequences with 40 same-index substitutions; key positions map directly (280 AAW=A/Q8VS75=S; 385 T/T). Reviewed the expanded candidate metadata, P450 motif screen, 4,008-row MAFFT alignment, and all 13 anchor exceptions. The 13 rows deviating at E272/R275/C344 are excluded from the frozen primary focus set; all 3 anchors pass in the retained 3,995 rows. Scope is explicitly broad bacterial P450: only one of 6,801 expansion homologs has an explicit GN=txtC label, and the 44-sequence existing Swiss-Prot alignment has Neff/L=0.101, below the project threshold. Thus any scores are exploratory P450-family results, not TxtC-specific functional evidence; no unresolved execution-gate issue remains, but biological annotation and human review remain recommended."
+}

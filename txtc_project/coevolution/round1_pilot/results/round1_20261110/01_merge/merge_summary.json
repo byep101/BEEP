@@ -1,0 +1,8 @@
+{
+  "unique_with_reference": 4008,
+  "input_records": 4007,
+  "input_hashes": {
+    "/mnt/c/Users/31441/Desktop/work/BEEP/txtc_project/data/processed/homologs/TxtC_expanded/TxtC_expanded_filtered.faa": "c7af732f3bdc696811ff1239d2e209b696fe61badb6ac93ef8bbbecad5c839ae"
+  },
+  "output_sha256": "70960dc541533d5c75d1e9af53624c44f6c9052aac9d103fbbae18c2cc335bae"
+}

@@ -1,0 +1,11 @@
+{
+  "n_input_alignment": 4008,
+  "n_excluded_unique": 148,
+  "n_retained": 3860,
+  "excluded_ids_sha256": "232292963653fb2f8c615d01a36b7ca833045c99dec13c0470ca27204db3a5a7",
+  "curated_full_alignment_sha256": "a0cf04afdb7581ea969b038bd34e0d2ae1bfea04e4607b3b08198f105eeababf",
+  "q8vs75_original_id": "S0000266",
+  "q8vs75_focus_id": "TXT_C_REF_Q8VS75",
+  "also_retained_bgc_reference_id": "TxtC_REF_AAW49320.1",
+  "source_mafft_alignment_sha256": "697c22406ad6ced8070913bd790809ede919896e1a63a5b6f6b9c81d1b6593db"
+}

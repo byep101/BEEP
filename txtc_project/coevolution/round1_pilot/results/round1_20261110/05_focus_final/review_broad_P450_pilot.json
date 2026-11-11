@@ -1,0 +1,9 @@
+{
+  "reviewer": "AI-assisted manual input review, 2026-11-10",
+  "reference_mapping_reviewed": true,
+  "motif_alignment_reviewed": true,
+  "homolog_scope_reviewed": true,
+  "homolog_scope": "broad_P450_pilot",
+  "unresolved_count": 0,
+  "notes": "Reviewed source sequences and residue correspondence: AAW49320.1 and Q8VS75 are both 395 aa with 40 same-index substitutions; all remain position-mapped, including 280=A/S and 385=T/T. The expansion begins from UniProtKB bacteria cytochrome-P450 candidates plus UniRef90 membership and includes 6,802 prefilter records; after numeric BLAST QC and exact deduplication 4,007 homologs remain. Of these, 138 fail the recorded PROSITE PS00086 P450 signature screen. The full alignment was reviewed at all three reference anchors E272/R275/C344; 13 additional sequence rows fail one or more anchors (3 overlap signature failures). All 148 unique noncanonical records are explicitly excluded from the frozen model. The resulting 3,860-row/357-column model passes all retained anchors, occupancy/coverage, and Neff/L. Only one expansion record carries explicit GN=txtC annotation; therefore the scope is broad bacterial P450 exploratory analysis, not a curated TxtC ortholog set or functional validation. NCBI remote BLAST expansion and BGC-context validation were not performed in this execution; existing UniRef90 snapshot is retained as provenance."
+}

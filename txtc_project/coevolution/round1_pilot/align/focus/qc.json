@@ -1,0 +1,15 @@
+{
+  "n_input": 8,
+  "n_post_coverage": 8,
+  "n_final": 8,
+  "L": 395,
+  "Neff": 1.0,
+  "Neff_per_L": 0.002531645569620253,
+  "identity_threshold": 0.8,
+  "weight_definition": "identical non-gap aa / all L model columns >= threshold",
+  "min_row_coverage": 0.7,
+  "max_column_gap": 0.5,
+  "expected_all_pairs": 77815,
+  "anchors_checked": [],
+  "gate_0_3": "LOW_DEPTH_REVIEW"
+}

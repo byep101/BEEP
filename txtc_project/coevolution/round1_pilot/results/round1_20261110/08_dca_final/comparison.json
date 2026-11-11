@@ -1,0 +1,20 @@
+{
+  "scope": "broad_P450_pilot",
+  "top_overlap": [
+    {
+      "requested_top": 20,
+      "MIp_size": 20,
+      "DCA_size": 20,
+      "overlap": 7
+    },
+    {
+      "requested_top": 50,
+      "MIp_size": 50,
+      "DCA_size": 50,
+      "overlap": 22
+    }
+  ],
+  "eligible_pairs": 60509,
+  "tie_policy": "score descending then reference indices; boundary ties may affect overlap",
+  "interpretation": "descriptive pilot only"
+}

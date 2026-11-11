@@ -1,0 +1,9 @@
+Structure: /mnt/c/Users/31441/Desktop/work/BEEP/txtc_project/coevolution/round1_pilot/raw/structure/6F0C.cif, chain: A
+Mapped identical residues: 383/383 (100.00%)
+Ligands found: HEM=1, substrate C8H/C8B=1
+Top20 evaluable pairs: 20/20
+Top20 min-heavy <=5A: 12/20 (only evaluable denominator)
+Top20 Cb-Cb <=8A: 12/20 (only evaluable denominator)
+Background min-heavy <=5A: 30/50
+Background Cb-Cb <=8A: 32/50
+Nearest Cys-SG to heme Fe: (2.3523049354553223, 344, 344) (distance A, reference pos, PDB author pos)

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checks": [
+    "focus/reference ID and rectangularity",
+    "sequence count/length/weights",
+    "Neff exact match",
+    "unique focus rows",
+    "complete unique MIp model-pair set and finite scores",
+    "complete unique plmc model-pair set and finite CN scores",
+    "plmc focus residue letters match model sequence",
+    "all model/reference coordinates mapped"
+  ],
+  "N": 3860,
+  "L": 361,
+  "Neff": 2358.6438208814056,
+  "Neff_per_L": 6.533639393023284,
+  "expected_pairs": 64980,
+  "mip_rows": 64980,
+  "mip_unique_pairs": 64980,
+  "dca_rows": 64980,
+  "dca_unique_pairs": 64980,
+  "invalid_mip_values_or_maps": 0,
+  "invalid_dca_values_or_maps": 0,
+  "min_row_coverage": 0.7950138504155124,
+  "max_column_gap_fraction": 0.49300518134715027,
+  "reference_position_237": {
+    "model_position": 205,
+    "residue": "T"
+  },
+  "reference_position_280": {
+    "model_position": 247,
+    "Q8VS75_residue": "S"
+  },
+  "reference_position_344": {
+    "model_position": 310,
+    "residue": "C",
+    "variable": "0"
+  },
+  "input_sha256": {
+    "align/focus/txtc_focus.fasta": "62eea2eb8789df753132af7c9522731e9cadd6225aabfa5363608bc015bac3d2",
+    "align/focus/weights.txt": "6c6f7c36bf348750d23f7c019daac58bad85da01b1053d3897dd91250c49d5df",
+    "align/focus/position_map.csv": "0cc3caad67ef35356e1de9a51f372ee34ebd0d472dd62d27ddef4c2024df917f",
+    "results/mip/mip_allpairs.csv": "f3158dc45fce25b7182d88cf44fa0f0b6b410f63b5aa4c1899cfe228b3fc1554",
+    "results/dca/plmc_couplings.txt": "c31de0e2027f7fc79d12da9d248e613c5bf5342c6a3fe45495aad037dce00a0e"
+  }
+}

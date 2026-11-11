@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "path": "txtc_project/data/processed/msa/TxtC/TxtC_full_msa.faa",
+      "exists": true,
+      "records": 44,
+      "unique_sequences": 44,
+      "reference_sequence_present": true,
+      "sha256": "473f44f0a766d98f82c0588675a66da3b659eb7c06ad3e1d4bc0b40617c80f52"
+    },
+    {
+      "path": "txtc_project/data/processed/homologs/TxtC_expanded/TxtC_expanded_prefilter.faa",
+      "exists": true,
+      "records": 6802,
+      "unique_sequences": 6802,
+      "reference_sequence_present": true,
+      "sha256": "61cefbef81157a87677cd60dcef8c9dccd9ebcd1ff71b1e8353e23ac8a1e46ea"
+    },
+    {
+      "path": "txtc_project/data/processed/homologs/TxtC_expanded/TxtC_expanded_filtered.faa",
+      "exists": true,
+      "records": 4007,
+      "unique_sequences": 4007,
+      "reference_sequence_present": false,
+      "sha256": "c7af732f3bdc696811ff1239d2e209b696fe61badb6ac93ef8bbbecad5c839ae"
+    }
+  ],
+  "reference_length": 395,
+  "reference_sequence_sha256": "b7a3e9b9629cf6e8ff7882bfc4b151ec8e54a795e96fe673eafc8699fab4b9db",
+  "structure_sequence_sha256": "ce85d2d1dcaf0e85a048be8d41e482fd547122e644f8fe218e7db367c29c4aa0",
+  "substitutions": 40
+}

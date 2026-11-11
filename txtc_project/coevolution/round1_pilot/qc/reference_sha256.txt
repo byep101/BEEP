@@ -1,0 +1,3 @@
+a0b296236e5847f6687dfa1fd17226af7ac829b7d14cd27f40ef7d9dbf86777f  raw/reference/TxtC_Q8VS75.fasta
+777cc5257d5048f7055da0f502ace638d00e89288940f6a0a05330fcbc1c239b  raw/structure/6F0B.cif
+a5a94614cddde1acc7177e31953628f4db3fc29a762d539244bf90dbb25ed2ef  raw/structure/6F0C.cif

@@ -1,0 +1,41 @@
+Reference length: 34 aa; kept including reference: 19; candidate rejects: 1
+Note: sequence length filtering does NOT establish TxtC orthology. Curate BLAST hits and BGC context.
+
+{
+  "n_input": 19,
+  "n_post_coverage": 19,
+  "n_final": 19,
+  "L": 34,
+  "Neff": 14.80952380952381,
+  "Neff_per_L": 0.43557422969187676,
+  "identity_threshold": 0.8,
+  "weight_definition": "identical non-gap aa / all L model columns >= threshold",
+  "min_row_coverage": 0.7,
+  "max_column_gap": 0.5,
+  "expected_all_pairs": 561,
+  "anchors_checked": [
+    "1:A"
+  ],
+  "gate_0_3": "PASS"
+}
+
+Wrote MIp score for 561 pairs; N=19, L=34, Neff=14.80952
+
+All pair scores: 561
+Eligible nonlocal and variable pairs: 406
+Spearman rho on eligible pairs: 0.016946; p=0.7335
+Top20 intersection: 0 / 20 (0.0%)
+Top50 intersection: 2 / 50 (4.0%)
+Top100 intersection: 19 / 100 (19.0%)
+
+Structure: /tmp/tmp412h45ur/fake.pdb, chain: A
+Mapped identical residues: 34/34 (100.00%)
+Ligands found: HEM=0, substrate C8H/C8B=0
+Top20 evaluable pairs: 20/20
+Top20 min-heavy <=5A: 0/20 (only evaluable denominator)
+Top20 Cb-Cb <=8A: 0/20 (only evaluable denominator)
+Background min-heavy <=5A: 0/406
+Background Cb-Cb <=8A: 0/406
+Nearest Cys-SG to heme Fe: not found (distance A, reference pos, PDB author pos)
+
+SMOKE TEST PASS on synthetic data; no real biological dataset was used.

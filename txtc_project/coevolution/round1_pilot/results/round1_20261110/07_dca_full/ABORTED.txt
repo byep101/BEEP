@@ -1,0 +1,3 @@
+This partial plmc run was interrupted at iteration 80 after the candidate-set review found that P450-signature screening had not yet been applied.
+Its focus alignment is superseded by ../10_official_method/, which applies both P450-signature and reference-anchor exclusions and follows the repository operation manual.
+Do not use this directory's partial parameters or scores as analysis results.

@@ -1,0 +1,11 @@
+{
+  "local_blastp_recheck": "blastp -query 00_audit/reference.faa -subject 01_merge/merged.faa -evalue 1e-20 -max_hsps 1 -max_target_seqs 5000 -num_threads 4 -outfmt '7 qseqid sseqid pident qcovs ppos length qlen slen qstart qend evalue bitscore'",
+  "mafft": "mafft --auto --thread 4 03_intake/numeric_pass.faa > 04_alignment/full_alignment.faa",
+  "focus_prepare": "python3 TxtC_pipeline_starter/scripts/02_focus_weights.py --msa input/full_alignment_curated.fasta --outdir align/focus --anchors 237:T",
+  "mip": "python3 TxtC_pipeline_starter/scripts/03_mip.py --msa align/focus/txtc_focus.fasta --weights align/focus/weights.txt --position-map align/focus/position_map.csv --output results/mip/mip_allpairs.csv",
+  "dca_1x": "plmc -f TXT_C_REF_Q8VS75 -g -w align/focus/weights.txt -lh 0.01 -le 75.81 -m 100 -n 4 -c results/dca/plmc_couplings.txt -o results/dca/plmc.params align/focus/txtc_focus.fasta",
+  "dca_0.5x": "plmc -f TXT_C_REF_Q8VS75 -g -w align/focus/weights.txt -lh 0.01 -le 37.905 -m 100 -n 4 -c results/dca_sensitivity/lambda_0.5x/couplings.txt align/focus/txtc_focus.fasta",
+  "dca_2x": "plmc -f TXT_C_REF_Q8VS75 -g -w align/focus/weights.txt -lh 0.01 -le 151.62 -m 100 -n 4 -c results/dca_sensitivity/lambda_2x/couplings.txt align/focus/txtc_focus.fasta",
+  "compare": "python3 TxtC_pipeline_starter/scripts/04_compare.py --mip results/mip/mip_allpairs.csv --plmc results/dca/plmc_couplings.txt --position-map align/focus/position_map.csv --site-qc align/focus/site_qc.csv --outdir results/compare --min-separation 6",
+  "structure": "python3 TxtC_pipeline_starter/scripts/05_structure_contacts.py --reference raw/reference/TxtC_Q8VS75.fasta --position-map align/focus/position_map.csv --pairs results/compare/dca_ranked.csv --structure raw/structure/6F0B.cif --chain A --out-prefix results/structure/6F0B_DCA (repeat for 6F0C and for mip_ranked.csv)"
+}

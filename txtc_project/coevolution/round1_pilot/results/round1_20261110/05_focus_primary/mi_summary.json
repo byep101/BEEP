@@ -1,0 +1,12 @@
+{
+  "pair_count": 63190,
+  "expected_pairs": 63190,
+  "input_hashes": {
+    "focus.faa": "2d87db8fb6231e2591c79bf4879b972d1e50b941b85fc2f810bb19670f842760",
+    "weights.txt": "57a6be789dd50af302aa68689b58635d00315f98ded07108f34590d9ccaebbfe",
+    "column_map.tsv": "030d7c95217be88a0d374b3f746d668ed94a055dd057772e1983ca462fded2d8"
+  },
+  "pairs_sha256": "05e276c217a9ddae93222d7c9124c20413f1d56b7802b0e3227a19da0708cab1",
+  "definition": "weighted empirical MI, pairwise delete missing, no pseudocount, natural log; APC off-diagonal before separation/entropy filtering",
+  "status": "scores_generated"
+}

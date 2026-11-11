@@ -1,0 +1,9 @@
+OpenMP: Using 4 of 16 threads
+Found focus TxtC_REF_AAW49320.1 as sequence 1
+3995 valid sequences out of 3995 
+356 sites out of 356
+Weights loaded successfully. Effective number of samples (to 1 decimal place): 2135.8.
+iter	time	cond	fx	-loglk	||h||	||e||
+1	5.2	210.97	964025.6	963787.0	162.7	1.0
+2	8.2	303.18	871202.4	869354.9	162.7	7.0
+Gradient optimization: MAXIMUMITERATION

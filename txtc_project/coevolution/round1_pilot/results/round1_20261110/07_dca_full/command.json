@@ -1,0 +1,34 @@
+{
+  "command": [
+    "/home/byep101/software/plmc/bin/plmc",
+    "-f",
+    "TxtC_REF_AAW49320.1",
+    "-g",
+    "-w",
+    "/mnt/c/Users/31441/Desktop/work/BEEP/txtc_project/coevolution/round1_pilot/results/round1_20261110/05_focus_primary/weights.txt",
+    "-lh",
+    "0.01",
+    "-le",
+    "67.45",
+    "-m",
+    "100",
+    "-n",
+    "4",
+    "-c",
+    "/mnt/c/Users/31441/Desktop/work/BEEP/txtc_project/coevolution/round1_pilot/results/round1_20261110/07_dca_full/couplings.txt",
+    "-o",
+    "/mnt/c/Users/31441/Desktop/work/BEEP/txtc_project/coevolution/round1_pilot/results/round1_20261110/07_dca_full/TxtC.params",
+    "/mnt/c/Users/31441/Desktop/work/BEEP/txtc_project/coevolution/round1_pilot/results/round1_20261110/05_focus_primary/focus.faa"
+  ],
+  "input_hashes": {
+    "focus.faa": "2d87db8fb6231e2591c79bf4879b972d1e50b941b85fc2f810bb19670f842760",
+    "weights.txt": "57a6be789dd50af302aa68689b58635d00315f98ded07108f34590d9ccaebbfe",
+    "column_map.tsv": "030d7c95217be88a0d374b3f746d668ed94a055dd057772e1983ca462fded2d8"
+  },
+  "plmc_sha256": "be3ceb4719b23478ec7679a9fa1ea688826c7ba25ae8c5df0da91a4cf6378c1d",
+  "lambda_h": 0.01,
+  "lambda_J_base": 0.01,
+  "lambda_J_effective": 67.45,
+  "iterations_cap": 100,
+  "smoke": false
+}

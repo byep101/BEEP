@@ -1,0 +1,38 @@
+{
+  "N": 3860,
+  "L": 357,
+  "Neff": 2037.9896015994525,
+  "Neff_over_L": 5.708654346216954,
+  "Neff_over_reference_length": 5.159467345821398,
+  "theta_identity": 0.8,
+  "min_pairwise_shared_fraction": 0.7,
+  "model_min_row_coverage": 0.803921568627451,
+  "model_min_column_occupancy": 0.7,
+  "retained_motif_failures": 0,
+  "candidate_positions": {
+    "280": {
+      "reference_position": 280,
+      "reference_aa": "A",
+      "full_msa_column": 1747,
+      "occupancy": 0.8461139896373057,
+      "model_column": 244,
+      "status": "retained"
+    },
+    "385": {
+      "reference_position": 385,
+      "reference_aa": "T",
+      "full_msa_column": 1999,
+      "occupancy": 0.9953367875647668,
+      "model_column": 347,
+      "status": "retained"
+    }
+  },
+  "missing_anchor_columns": [],
+  "post_mask_duplicate_policy": "retain and downweight; mask is frozen",
+  "source_msa_sha256": "697c22406ad6ced8070913bd790809ede919896e1a63a5b6f6b9c81d1b6593db",
+  "hashes": {
+    "focus.faa": "6871fce0034957018479086fe868f57353b85e9540d7cb7125fca7b328f887fe",
+    "weights.txt": "cb6da1cf0a5118f479b6bd5fd0347fd702cd545483b67ade16c46b629dad9c91",
+    "column_map.tsv": "a496f9ed57064408a828571864b3df4836b61ff2320f8db167eb789d45f2c00a"
+  }
+}

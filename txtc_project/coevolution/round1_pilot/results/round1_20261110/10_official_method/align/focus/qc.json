@@ -1,0 +1,17 @@
+{
+  "n_input": 3860,
+  "n_post_coverage": 3860,
+  "n_final": 3860,
+  "L": 361,
+  "Neff": 2358.643820881473,
+  "Neff_per_L": 6.533639393023471,
+  "identity_threshold": 0.8,
+  "weight_definition": "identical non-gap aa / all L model columns >= threshold",
+  "min_row_coverage": 0.7,
+  "max_column_gap": 0.5,
+  "expected_all_pairs": 64980,
+  "anchors_checked": [
+    "237:T"
+  ],
+  "gate_0_3": "PASS"
+}
